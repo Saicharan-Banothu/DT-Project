@@ -736,5 +736,12 @@ if os.path.exists(FRONTEND_DIR):
 def serve_index():
     idx_path = os.path.join(FRONTEND_DIR, "index.html")
     if os.path.exists(idx_path):
-        return FileResponse(idx_path)
+        return FileResponse(
+            idx_path,
+            headers={
+                "Cache-Control": "no-cache, no-store, must-revalidate",
+                "Pragma": "no-cache",
+                "Expires": "0"
+            }
+        )
     return {"message": "SentiCall v2 Backend active. Frontend not yet mounted."}
