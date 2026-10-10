@@ -1,0 +1,16 @@
+{
+  "total_audio_files": 47,
+  "scam_files_count": 23,
+  "normal_files_count": 24,
+  "raw_dumb_baseline_accuracy": 0.7244,
+  "normalized_dumb_baseline_accuracy": 0.5956,
+  "has_recording_bias": true,
+  "explanation": "Raw audio files exhibited notable recording variations (mean dumb baseline accuracy: 72.4%), demonstrating that classifiers on unnormalized audio can inadvertently exploit microphone encoding, sample rate, or duration shortcuts. After telephony profile normalization (16 kHz mono, 300\u20133400 Hz band-pass, -20 dBFS loudness norm, silence trimming), the acoustic baseline accuracy dropped to 59.6%, forcing the model to rely on genuine temporal rhythm and prosody.",
+  "sample_rates_found": [
+    44100,
+    8000,
+    48000
+  ],
+  "mean_scam_duration_sec": 70.81,
+  "mean_normal_duration_sec": 57.77
+}

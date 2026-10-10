@@ -1,0 +1,5331 @@
+{
+  "scam_1.mp3": {
+    "filename": "scam_1.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Scam calls\\scam_1.mp3",
+    "label": 1,
+    "label_name": "scam",
+    "text": "Hello sir, I am bank manager of State Bank of India. Your debit card is about to expire today. Would you like to renew your card? Please tell me the four digit OTP sent to your mobile number to confirm.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 16.0,
+        "text": "Hello sir, I am bank manager of State Bank of India. Your debit card is about to expire today. Would you like to renew your card? Please tell me the four digit OTP sent to your mobile number to confirm.",
+        "words": [
+          {
+            "word": "Hello",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.95
+          },
+          {
+            "word": "sir,",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.95
+          },
+          {
+            "word": "I",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.95
+          },
+          {
+            "word": "am",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.95
+          },
+          {
+            "word": "bank",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.95
+          },
+          {
+            "word": "manager",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.95
+          },
+          {
+            "word": "of",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.95
+          },
+          {
+            "word": "State",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.95
+          },
+          {
+            "word": "Bank",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.95
+          },
+          {
+            "word": "of",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.95
+          },
+          {
+            "word": "India.",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.95
+          },
+          {
+            "word": "Your",
+            "start": 4.4,
+            "end": 4.8,
+            "probability": 0.95
+          },
+          {
+            "word": "debit",
+            "start": 4.8,
+            "end": 5.2,
+            "probability": 0.95
+          },
+          {
+            "word": "card",
+            "start": 5.2,
+            "end": 5.6,
+            "probability": 0.95
+          },
+          {
+            "word": "is",
+            "start": 5.6,
+            "end": 6.0,
+            "probability": 0.95
+          },
+          {
+            "word": "about",
+            "start": 6.0,
+            "end": 6.4,
+            "probability": 0.95
+          },
+          {
+            "word": "to",
+            "start": 6.4,
+            "end": 6.8,
+            "probability": 0.95
+          },
+          {
+            "word": "expire",
+            "start": 6.8,
+            "end": 7.2,
+            "probability": 0.95
+          },
+          {
+            "word": "today.",
+            "start": 7.2,
+            "end": 7.6,
+            "probability": 0.95
+          },
+          {
+            "word": "Would",
+            "start": 7.6,
+            "end": 8.0,
+            "probability": 0.95
+          },
+          {
+            "word": "you",
+            "start": 8.0,
+            "end": 8.4,
+            "probability": 0.95
+          },
+          {
+            "word": "like",
+            "start": 8.4,
+            "end": 8.8,
+            "probability": 0.95
+          },
+          {
+            "word": "to",
+            "start": 8.8,
+            "end": 9.2,
+            "probability": 0.95
+          },
+          {
+            "word": "renew",
+            "start": 9.2,
+            "end": 9.6,
+            "probability": 0.95
+          },
+          {
+            "word": "your",
+            "start": 9.6,
+            "end": 10.0,
+            "probability": 0.95
+          },
+          {
+            "word": "card?",
+            "start": 10.0,
+            "end": 10.4,
+            "probability": 0.95
+          },
+          {
+            "word": "Please",
+            "start": 10.4,
+            "end": 10.8,
+            "probability": 0.95
+          },
+          {
+            "word": "tell",
+            "start": 10.8,
+            "end": 11.2,
+            "probability": 0.95
+          },
+          {
+            "word": "me",
+            "start": 11.2,
+            "end": 11.6,
+            "probability": 0.95
+          },
+          {
+            "word": "the",
+            "start": 11.6,
+            "end": 12.0,
+            "probability": 0.95
+          },
+          {
+            "word": "four",
+            "start": 12.0,
+            "end": 12.4,
+            "probability": 0.95
+          },
+          {
+            "word": "digit",
+            "start": 12.4,
+            "end": 12.8,
+            "probability": 0.95
+          },
+          {
+            "word": "OTP",
+            "start": 12.8,
+            "end": 13.2,
+            "probability": 0.95
+          },
+          {
+            "word": "sent",
+            "start": 13.2,
+            "end": 13.6,
+            "probability": 0.95
+          },
+          {
+            "word": "to",
+            "start": 13.6,
+            "end": 14.0,
+            "probability": 0.95
+          },
+          {
+            "word": "your",
+            "start": 14.0,
+            "end": 14.4,
+            "probability": 0.95
+          },
+          {
+            "word": "mobile",
+            "start": 14.4,
+            "end": 14.8,
+            "probability": 0.95
+          },
+          {
+            "word": "number",
+            "start": 14.8,
+            "end": 15.2,
+            "probability": 0.95
+          },
+          {
+            "word": "to",
+            "start": 15.2,
+            "end": 15.6,
+            "probability": 0.95
+          },
+          {
+            "word": "confirm.",
+            "start": 15.6,
+            "end": 16.0,
+            "probability": 0.95
+          }
+        ]
+      }
+    ]
+  },
+  "scam_10.mp3": {
+    "filename": "scam_10.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Scam calls\\scam_10.mp3",
+    "label": 1,
+    "label_name": "scam",
+    "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.2,
+        "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+        "words": [
+          {
+            "word": "Notice:",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "Urgent",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "verification",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "required",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "for",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "your",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "account",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "or",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "SIM",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "card.",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "Please",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          },
+          {
+            "word": "share",
+            "start": 4.4,
+            "end": 4.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confidential",
+            "start": 4.8,
+            "end": 5.2,
+            "probability": 0.9
+          },
+          {
+            "word": "credentials",
+            "start": 5.2,
+            "end": 5.6,
+            "probability": 0.9
+          },
+          {
+            "word": "to",
+            "start": 5.6,
+            "end": 6.0,
+            "probability": 0.9
+          },
+          {
+            "word": "proceed",
+            "start": 6.0,
+            "end": 6.4,
+            "probability": 0.9
+          },
+          {
+            "word": "with",
+            "start": 6.4,
+            "end": 6.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confirmation.",
+            "start": 6.8,
+            "end": 7.2,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "scam_11.mp3": {
+    "filename": "scam_11.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Scam calls\\scam_11.mp3",
+    "label": 1,
+    "label_name": "scam",
+    "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.2,
+        "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+        "words": [
+          {
+            "word": "Notice:",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "Urgent",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "verification",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "required",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "for",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "your",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "account",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "or",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "SIM",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "card.",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "Please",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          },
+          {
+            "word": "share",
+            "start": 4.4,
+            "end": 4.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confidential",
+            "start": 4.8,
+            "end": 5.2,
+            "probability": 0.9
+          },
+          {
+            "word": "credentials",
+            "start": 5.2,
+            "end": 5.6,
+            "probability": 0.9
+          },
+          {
+            "word": "to",
+            "start": 5.6,
+            "end": 6.0,
+            "probability": 0.9
+          },
+          {
+            "word": "proceed",
+            "start": 6.0,
+            "end": 6.4,
+            "probability": 0.9
+          },
+          {
+            "word": "with",
+            "start": 6.4,
+            "end": 6.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confirmation.",
+            "start": 6.8,
+            "end": 7.2,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "scam_12.mp3": {
+    "filename": "scam_12.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Scam calls\\scam_12.mp3",
+    "label": 1,
+    "label_name": "scam",
+    "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.2,
+        "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+        "words": [
+          {
+            "word": "Notice:",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "Urgent",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "verification",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "required",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "for",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "your",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "account",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "or",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "SIM",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "card.",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "Please",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          },
+          {
+            "word": "share",
+            "start": 4.4,
+            "end": 4.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confidential",
+            "start": 4.8,
+            "end": 5.2,
+            "probability": 0.9
+          },
+          {
+            "word": "credentials",
+            "start": 5.2,
+            "end": 5.6,
+            "probability": 0.9
+          },
+          {
+            "word": "to",
+            "start": 5.6,
+            "end": 6.0,
+            "probability": 0.9
+          },
+          {
+            "word": "proceed",
+            "start": 6.0,
+            "end": 6.4,
+            "probability": 0.9
+          },
+          {
+            "word": "with",
+            "start": 6.4,
+            "end": 6.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confirmation.",
+            "start": 6.8,
+            "end": 7.2,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "scam_13.mp3": {
+    "filename": "scam_13.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Scam calls\\scam_13.mp3",
+    "label": 1,
+    "label_name": "scam",
+    "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.2,
+        "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+        "words": [
+          {
+            "word": "Notice:",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "Urgent",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "verification",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "required",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "for",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "your",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "account",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "or",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "SIM",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "card.",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "Please",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          },
+          {
+            "word": "share",
+            "start": 4.4,
+            "end": 4.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confidential",
+            "start": 4.8,
+            "end": 5.2,
+            "probability": 0.9
+          },
+          {
+            "word": "credentials",
+            "start": 5.2,
+            "end": 5.6,
+            "probability": 0.9
+          },
+          {
+            "word": "to",
+            "start": 5.6,
+            "end": 6.0,
+            "probability": 0.9
+          },
+          {
+            "word": "proceed",
+            "start": 6.0,
+            "end": 6.4,
+            "probability": 0.9
+          },
+          {
+            "word": "with",
+            "start": 6.4,
+            "end": 6.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confirmation.",
+            "start": 6.8,
+            "end": 7.2,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "scam_14.mp3": {
+    "filename": "scam_14.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Scam calls\\scam_14.mp3",
+    "label": 1,
+    "label_name": "scam",
+    "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.2,
+        "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+        "words": [
+          {
+            "word": "Notice:",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "Urgent",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "verification",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "required",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "for",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "your",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "account",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "or",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "SIM",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "card.",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "Please",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          },
+          {
+            "word": "share",
+            "start": 4.4,
+            "end": 4.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confidential",
+            "start": 4.8,
+            "end": 5.2,
+            "probability": 0.9
+          },
+          {
+            "word": "credentials",
+            "start": 5.2,
+            "end": 5.6,
+            "probability": 0.9
+          },
+          {
+            "word": "to",
+            "start": 5.6,
+            "end": 6.0,
+            "probability": 0.9
+          },
+          {
+            "word": "proceed",
+            "start": 6.0,
+            "end": 6.4,
+            "probability": 0.9
+          },
+          {
+            "word": "with",
+            "start": 6.4,
+            "end": 6.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confirmation.",
+            "start": 6.8,
+            "end": 7.2,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "scam_15.mp3": {
+    "filename": "scam_15.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Scam calls\\scam_15.mp3",
+    "label": 1,
+    "label_name": "scam",
+    "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.2,
+        "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+        "words": [
+          {
+            "word": "Notice:",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "Urgent",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "verification",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "required",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "for",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "your",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "account",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "or",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "SIM",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "card.",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "Please",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          },
+          {
+            "word": "share",
+            "start": 4.4,
+            "end": 4.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confidential",
+            "start": 4.8,
+            "end": 5.2,
+            "probability": 0.9
+          },
+          {
+            "word": "credentials",
+            "start": 5.2,
+            "end": 5.6,
+            "probability": 0.9
+          },
+          {
+            "word": "to",
+            "start": 5.6,
+            "end": 6.0,
+            "probability": 0.9
+          },
+          {
+            "word": "proceed",
+            "start": 6.0,
+            "end": 6.4,
+            "probability": 0.9
+          },
+          {
+            "word": "with",
+            "start": 6.4,
+            "end": 6.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confirmation.",
+            "start": 6.8,
+            "end": 7.2,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "scam_16.mp3": {
+    "filename": "scam_16.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Scam calls\\scam_16.mp3",
+    "label": 1,
+    "label_name": "scam",
+    "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.2,
+        "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+        "words": [
+          {
+            "word": "Notice:",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "Urgent",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "verification",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "required",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "for",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "your",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "account",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "or",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "SIM",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "card.",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "Please",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          },
+          {
+            "word": "share",
+            "start": 4.4,
+            "end": 4.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confidential",
+            "start": 4.8,
+            "end": 5.2,
+            "probability": 0.9
+          },
+          {
+            "word": "credentials",
+            "start": 5.2,
+            "end": 5.6,
+            "probability": 0.9
+          },
+          {
+            "word": "to",
+            "start": 5.6,
+            "end": 6.0,
+            "probability": 0.9
+          },
+          {
+            "word": "proceed",
+            "start": 6.0,
+            "end": 6.4,
+            "probability": 0.9
+          },
+          {
+            "word": "with",
+            "start": 6.4,
+            "end": 6.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confirmation.",
+            "start": 6.8,
+            "end": 7.2,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "scam_17.mp3": {
+    "filename": "scam_17.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Scam calls\\scam_17.mp3",
+    "label": 1,
+    "label_name": "scam",
+    "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.2,
+        "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+        "words": [
+          {
+            "word": "Notice:",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "Urgent",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "verification",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "required",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "for",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "your",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "account",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "or",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "SIM",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "card.",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "Please",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          },
+          {
+            "word": "share",
+            "start": 4.4,
+            "end": 4.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confidential",
+            "start": 4.8,
+            "end": 5.2,
+            "probability": 0.9
+          },
+          {
+            "word": "credentials",
+            "start": 5.2,
+            "end": 5.6,
+            "probability": 0.9
+          },
+          {
+            "word": "to",
+            "start": 5.6,
+            "end": 6.0,
+            "probability": 0.9
+          },
+          {
+            "word": "proceed",
+            "start": 6.0,
+            "end": 6.4,
+            "probability": 0.9
+          },
+          {
+            "word": "with",
+            "start": 6.4,
+            "end": 6.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confirmation.",
+            "start": 6.8,
+            "end": 7.2,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "scam_18_sus.mp3": {
+    "filename": "scam_18_sus.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Scam calls\\scam_18_sus.mp3",
+    "label": 1,
+    "label_name": "scam",
+    "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.2,
+        "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+        "words": [
+          {
+            "word": "Notice:",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "Urgent",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "verification",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "required",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "for",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "your",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "account",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "or",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "SIM",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "card.",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "Please",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          },
+          {
+            "word": "share",
+            "start": 4.4,
+            "end": 4.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confidential",
+            "start": 4.8,
+            "end": 5.2,
+            "probability": 0.9
+          },
+          {
+            "word": "credentials",
+            "start": 5.2,
+            "end": 5.6,
+            "probability": 0.9
+          },
+          {
+            "word": "to",
+            "start": 5.6,
+            "end": 6.0,
+            "probability": 0.9
+          },
+          {
+            "word": "proceed",
+            "start": 6.0,
+            "end": 6.4,
+            "probability": 0.9
+          },
+          {
+            "word": "with",
+            "start": 6.4,
+            "end": 6.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confirmation.",
+            "start": 6.8,
+            "end": 7.2,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "scam_19.mp3": {
+    "filename": "scam_19.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Scam calls\\scam_19.mp3",
+    "label": 1,
+    "label_name": "scam",
+    "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.2,
+        "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+        "words": [
+          {
+            "word": "Notice:",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "Urgent",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "verification",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "required",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "for",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "your",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "account",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "or",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "SIM",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "card.",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "Please",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          },
+          {
+            "word": "share",
+            "start": 4.4,
+            "end": 4.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confidential",
+            "start": 4.8,
+            "end": 5.2,
+            "probability": 0.9
+          },
+          {
+            "word": "credentials",
+            "start": 5.2,
+            "end": 5.6,
+            "probability": 0.9
+          },
+          {
+            "word": "to",
+            "start": 5.6,
+            "end": 6.0,
+            "probability": 0.9
+          },
+          {
+            "word": "proceed",
+            "start": 6.0,
+            "end": 6.4,
+            "probability": 0.9
+          },
+          {
+            "word": "with",
+            "start": 6.4,
+            "end": 6.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confirmation.",
+            "start": 6.8,
+            "end": 7.2,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "scam_2.mp3": {
+    "filename": "scam_2.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Scam calls\\scam_2.mp3",
+    "label": 1,
+    "label_name": "scam",
+    "text": "Hello sir, I am calling from Jio customer care. In 23 hours your SIM card will be closed due to incomplete KYC verification. Please confirm your Aadhaar number and account details to keep your service active.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 14.4,
+        "text": "Hello sir, I am calling from Jio customer care. In 23 hours your SIM card will be closed due to incomplete KYC verification. Please confirm your Aadhaar number and account details to keep your service active.",
+        "words": [
+          {
+            "word": "Hello",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.95
+          },
+          {
+            "word": "sir,",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.95
+          },
+          {
+            "word": "I",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.95
+          },
+          {
+            "word": "am",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.95
+          },
+          {
+            "word": "calling",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.95
+          },
+          {
+            "word": "from",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.95
+          },
+          {
+            "word": "Jio",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.95
+          },
+          {
+            "word": "customer",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.95
+          },
+          {
+            "word": "care.",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.95
+          },
+          {
+            "word": "In",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.95
+          },
+          {
+            "word": "23",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.95
+          },
+          {
+            "word": "hours",
+            "start": 4.4,
+            "end": 4.8,
+            "probability": 0.95
+          },
+          {
+            "word": "your",
+            "start": 4.8,
+            "end": 5.2,
+            "probability": 0.95
+          },
+          {
+            "word": "SIM",
+            "start": 5.2,
+            "end": 5.6,
+            "probability": 0.95
+          },
+          {
+            "word": "card",
+            "start": 5.6,
+            "end": 6.0,
+            "probability": 0.95
+          },
+          {
+            "word": "will",
+            "start": 6.0,
+            "end": 6.4,
+            "probability": 0.95
+          },
+          {
+            "word": "be",
+            "start": 6.4,
+            "end": 6.8,
+            "probability": 0.95
+          },
+          {
+            "word": "closed",
+            "start": 6.8,
+            "end": 7.2,
+            "probability": 0.95
+          },
+          {
+            "word": "due",
+            "start": 7.2,
+            "end": 7.6,
+            "probability": 0.95
+          },
+          {
+            "word": "to",
+            "start": 7.6,
+            "end": 8.0,
+            "probability": 0.95
+          },
+          {
+            "word": "incomplete",
+            "start": 8.0,
+            "end": 8.4,
+            "probability": 0.95
+          },
+          {
+            "word": "KYC",
+            "start": 8.4,
+            "end": 8.8,
+            "probability": 0.95
+          },
+          {
+            "word": "verification.",
+            "start": 8.8,
+            "end": 9.2,
+            "probability": 0.95
+          },
+          {
+            "word": "Please",
+            "start": 9.2,
+            "end": 9.6,
+            "probability": 0.95
+          },
+          {
+            "word": "confirm",
+            "start": 9.6,
+            "end": 10.0,
+            "probability": 0.95
+          },
+          {
+            "word": "your",
+            "start": 10.0,
+            "end": 10.4,
+            "probability": 0.95
+          },
+          {
+            "word": "Aadhaar",
+            "start": 10.4,
+            "end": 10.8,
+            "probability": 0.95
+          },
+          {
+            "word": "number",
+            "start": 10.8,
+            "end": 11.2,
+            "probability": 0.95
+          },
+          {
+            "word": "and",
+            "start": 11.2,
+            "end": 11.6,
+            "probability": 0.95
+          },
+          {
+            "word": "account",
+            "start": 11.6,
+            "end": 12.0,
+            "probability": 0.95
+          },
+          {
+            "word": "details",
+            "start": 12.0,
+            "end": 12.4,
+            "probability": 0.95
+          },
+          {
+            "word": "to",
+            "start": 12.4,
+            "end": 12.8,
+            "probability": 0.95
+          },
+          {
+            "word": "keep",
+            "start": 12.8,
+            "end": 13.2,
+            "probability": 0.95
+          },
+          {
+            "word": "your",
+            "start": 13.2,
+            "end": 13.6,
+            "probability": 0.95
+          },
+          {
+            "word": "service",
+            "start": 13.6,
+            "end": 14.0,
+            "probability": 0.95
+          },
+          {
+            "word": "active.",
+            "start": 14.0,
+            "end": 14.4,
+            "probability": 0.95
+          }
+        ]
+      }
+    ]
+  },
+  "scam_20_fraud.mp3": {
+    "filename": "scam_20_fraud.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Scam calls\\scam_20_fraud.mp3",
+    "label": 1,
+    "label_name": "scam",
+    "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.2,
+        "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+        "words": [
+          {
+            "word": "Notice:",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "Urgent",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "verification",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "required",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "for",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "your",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "account",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "or",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "SIM",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "card.",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "Please",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          },
+          {
+            "word": "share",
+            "start": 4.4,
+            "end": 4.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confidential",
+            "start": 4.8,
+            "end": 5.2,
+            "probability": 0.9
+          },
+          {
+            "word": "credentials",
+            "start": 5.2,
+            "end": 5.6,
+            "probability": 0.9
+          },
+          {
+            "word": "to",
+            "start": 5.6,
+            "end": 6.0,
+            "probability": 0.9
+          },
+          {
+            "word": "proceed",
+            "start": 6.0,
+            "end": 6.4,
+            "probability": 0.9
+          },
+          {
+            "word": "with",
+            "start": 6.4,
+            "end": 6.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confirmation.",
+            "start": 6.8,
+            "end": 7.2,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "scam_21_sus.mp3": {
+    "filename": "scam_21_sus.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Scam calls\\scam_21_sus.mp3",
+    "label": 1,
+    "label_name": "scam",
+    "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.2,
+        "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+        "words": [
+          {
+            "word": "Notice:",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "Urgent",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "verification",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "required",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "for",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "your",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "account",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "or",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "SIM",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "card.",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "Please",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          },
+          {
+            "word": "share",
+            "start": 4.4,
+            "end": 4.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confidential",
+            "start": 4.8,
+            "end": 5.2,
+            "probability": 0.9
+          },
+          {
+            "word": "credentials",
+            "start": 5.2,
+            "end": 5.6,
+            "probability": 0.9
+          },
+          {
+            "word": "to",
+            "start": 5.6,
+            "end": 6.0,
+            "probability": 0.9
+          },
+          {
+            "word": "proceed",
+            "start": 6.0,
+            "end": 6.4,
+            "probability": 0.9
+          },
+          {
+            "word": "with",
+            "start": 6.4,
+            "end": 6.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confirmation.",
+            "start": 6.8,
+            "end": 7.2,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "scam_22.wav": {
+    "filename": "scam_22.wav",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Scam calls\\scam_22.wav",
+    "label": 1,
+    "label_name": "scam",
+    "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.2,
+        "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+        "words": [
+          {
+            "word": "Notice:",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "Urgent",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "verification",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "required",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "for",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "your",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "account",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "or",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "SIM",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "card.",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "Please",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          },
+          {
+            "word": "share",
+            "start": 4.4,
+            "end": 4.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confidential",
+            "start": 4.8,
+            "end": 5.2,
+            "probability": 0.9
+          },
+          {
+            "word": "credentials",
+            "start": 5.2,
+            "end": 5.6,
+            "probability": 0.9
+          },
+          {
+            "word": "to",
+            "start": 5.6,
+            "end": 6.0,
+            "probability": 0.9
+          },
+          {
+            "word": "proceed",
+            "start": 6.0,
+            "end": 6.4,
+            "probability": 0.9
+          },
+          {
+            "word": "with",
+            "start": 6.4,
+            "end": 6.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confirmation.",
+            "start": 6.8,
+            "end": 7.2,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "scam_23_fraud.wav": {
+    "filename": "scam_23_fraud.wav",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Scam calls\\scam_23_fraud.wav",
+    "label": 1,
+    "label_name": "scam",
+    "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.2,
+        "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+        "words": [
+          {
+            "word": "Notice:",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "Urgent",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "verification",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "required",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "for",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "your",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "account",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "or",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "SIM",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "card.",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "Please",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          },
+          {
+            "word": "share",
+            "start": 4.4,
+            "end": 4.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confidential",
+            "start": 4.8,
+            "end": 5.2,
+            "probability": 0.9
+          },
+          {
+            "word": "credentials",
+            "start": 5.2,
+            "end": 5.6,
+            "probability": 0.9
+          },
+          {
+            "word": "to",
+            "start": 5.6,
+            "end": 6.0,
+            "probability": 0.9
+          },
+          {
+            "word": "proceed",
+            "start": 6.0,
+            "end": 6.4,
+            "probability": 0.9
+          },
+          {
+            "word": "with",
+            "start": 6.4,
+            "end": 6.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confirmation.",
+            "start": 6.8,
+            "end": 7.2,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "scam_24.wav": {
+    "filename": "scam_24.wav",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Scam calls\\scam_24.wav",
+    "label": 1,
+    "label_name": "scam",
+    "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.2,
+        "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+        "words": [
+          {
+            "word": "Notice:",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "Urgent",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "verification",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "required",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "for",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "your",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "account",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "or",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "SIM",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "card.",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "Please",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          },
+          {
+            "word": "share",
+            "start": 4.4,
+            "end": 4.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confidential",
+            "start": 4.8,
+            "end": 5.2,
+            "probability": 0.9
+          },
+          {
+            "word": "credentials",
+            "start": 5.2,
+            "end": 5.6,
+            "probability": 0.9
+          },
+          {
+            "word": "to",
+            "start": 5.6,
+            "end": 6.0,
+            "probability": 0.9
+          },
+          {
+            "word": "proceed",
+            "start": 6.0,
+            "end": 6.4,
+            "probability": 0.9
+          },
+          {
+            "word": "with",
+            "start": 6.4,
+            "end": 6.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confirmation.",
+            "start": 6.8,
+            "end": 7.2,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "scam_3 (online-audio-converter.com).mp3": {
+    "filename": "scam_3 (online-audio-converter.com).mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Scam calls\\scam_3 (online-audio-converter.com).mp3",
+    "label": 1,
+    "label_name": "scam",
+    "text": "Congratulations! Your mobile number ending with 4882 has won an exclusive cash prize of 350 pounds. Please confirm your bank details to claim your award immediately.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 10.4,
+        "text": "Congratulations! Your mobile number ending with 4882 has won an exclusive cash prize of 350 pounds. Please confirm your bank details to claim your award immediately.",
+        "words": [
+          {
+            "word": "Congratulations!",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.95
+          },
+          {
+            "word": "Your",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.95
+          },
+          {
+            "word": "mobile",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.95
+          },
+          {
+            "word": "number",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.95
+          },
+          {
+            "word": "ending",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.95
+          },
+          {
+            "word": "with",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.95
+          },
+          {
+            "word": "4882",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.95
+          },
+          {
+            "word": "has",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.95
+          },
+          {
+            "word": "won",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.95
+          },
+          {
+            "word": "an",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.95
+          },
+          {
+            "word": "exclusive",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.95
+          },
+          {
+            "word": "cash",
+            "start": 4.4,
+            "end": 4.8,
+            "probability": 0.95
+          },
+          {
+            "word": "prize",
+            "start": 4.8,
+            "end": 5.2,
+            "probability": 0.95
+          },
+          {
+            "word": "of",
+            "start": 5.2,
+            "end": 5.6,
+            "probability": 0.95
+          },
+          {
+            "word": "350",
+            "start": 5.6,
+            "end": 6.0,
+            "probability": 0.95
+          },
+          {
+            "word": "pounds.",
+            "start": 6.0,
+            "end": 6.4,
+            "probability": 0.95
+          },
+          {
+            "word": "Please",
+            "start": 6.4,
+            "end": 6.8,
+            "probability": 0.95
+          },
+          {
+            "word": "confirm",
+            "start": 6.8,
+            "end": 7.2,
+            "probability": 0.95
+          },
+          {
+            "word": "your",
+            "start": 7.2,
+            "end": 7.6,
+            "probability": 0.95
+          },
+          {
+            "word": "bank",
+            "start": 7.6,
+            "end": 8.0,
+            "probability": 0.95
+          },
+          {
+            "word": "details",
+            "start": 8.0,
+            "end": 8.4,
+            "probability": 0.95
+          },
+          {
+            "word": "to",
+            "start": 8.4,
+            "end": 8.8,
+            "probability": 0.95
+          },
+          {
+            "word": "claim",
+            "start": 8.8,
+            "end": 9.2,
+            "probability": 0.95
+          },
+          {
+            "word": "your",
+            "start": 9.2,
+            "end": 9.6,
+            "probability": 0.95
+          },
+          {
+            "word": "award",
+            "start": 9.6,
+            "end": 10.0,
+            "probability": 0.95
+          },
+          {
+            "word": "immediately.",
+            "start": 10.0,
+            "end": 10.4,
+            "probability": 0.95
+          }
+        ]
+      }
+    ]
+  },
+  "scam_5.mp3": {
+    "filename": "scam_5.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Scam calls\\scam_5.mp3",
+    "label": 1,
+    "label_name": "scam",
+    "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.2,
+        "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+        "words": [
+          {
+            "word": "Notice:",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "Urgent",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "verification",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "required",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "for",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "your",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "account",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "or",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "SIM",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "card.",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "Please",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          },
+          {
+            "word": "share",
+            "start": 4.4,
+            "end": 4.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confidential",
+            "start": 4.8,
+            "end": 5.2,
+            "probability": 0.9
+          },
+          {
+            "word": "credentials",
+            "start": 5.2,
+            "end": 5.6,
+            "probability": 0.9
+          },
+          {
+            "word": "to",
+            "start": 5.6,
+            "end": 6.0,
+            "probability": 0.9
+          },
+          {
+            "word": "proceed",
+            "start": 6.0,
+            "end": 6.4,
+            "probability": 0.9
+          },
+          {
+            "word": "with",
+            "start": 6.4,
+            "end": 6.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confirmation.",
+            "start": 6.8,
+            "end": 7.2,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "scam_6.mp3": {
+    "filename": "scam_6.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Scam calls\\scam_6.mp3",
+    "label": 1,
+    "label_name": "scam",
+    "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.2,
+        "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+        "words": [
+          {
+            "word": "Notice:",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "Urgent",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "verification",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "required",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "for",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "your",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "account",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "or",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "SIM",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "card.",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "Please",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          },
+          {
+            "word": "share",
+            "start": 4.4,
+            "end": 4.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confidential",
+            "start": 4.8,
+            "end": 5.2,
+            "probability": 0.9
+          },
+          {
+            "word": "credentials",
+            "start": 5.2,
+            "end": 5.6,
+            "probability": 0.9
+          },
+          {
+            "word": "to",
+            "start": 5.6,
+            "end": 6.0,
+            "probability": 0.9
+          },
+          {
+            "word": "proceed",
+            "start": 6.0,
+            "end": 6.4,
+            "probability": 0.9
+          },
+          {
+            "word": "with",
+            "start": 6.4,
+            "end": 6.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confirmation.",
+            "start": 6.8,
+            "end": 7.2,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "scam_7.mp3": {
+    "filename": "scam_7.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Scam calls\\scam_7.mp3",
+    "label": 1,
+    "label_name": "scam",
+    "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.2,
+        "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+        "words": [
+          {
+            "word": "Notice:",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "Urgent",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "verification",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "required",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "for",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "your",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "account",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "or",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "SIM",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "card.",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "Please",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          },
+          {
+            "word": "share",
+            "start": 4.4,
+            "end": 4.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confidential",
+            "start": 4.8,
+            "end": 5.2,
+            "probability": 0.9
+          },
+          {
+            "word": "credentials",
+            "start": 5.2,
+            "end": 5.6,
+            "probability": 0.9
+          },
+          {
+            "word": "to",
+            "start": 5.6,
+            "end": 6.0,
+            "probability": 0.9
+          },
+          {
+            "word": "proceed",
+            "start": 6.0,
+            "end": 6.4,
+            "probability": 0.9
+          },
+          {
+            "word": "with",
+            "start": 6.4,
+            "end": 6.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confirmation.",
+            "start": 6.8,
+            "end": 7.2,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "scam_8.mp3": {
+    "filename": "scam_8.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Scam calls\\scam_8.mp3",
+    "label": 1,
+    "label_name": "scam",
+    "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.2,
+        "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+        "words": [
+          {
+            "word": "Notice:",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "Urgent",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "verification",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "required",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "for",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "your",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "account",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "or",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "SIM",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "card.",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "Please",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          },
+          {
+            "word": "share",
+            "start": 4.4,
+            "end": 4.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confidential",
+            "start": 4.8,
+            "end": 5.2,
+            "probability": 0.9
+          },
+          {
+            "word": "credentials",
+            "start": 5.2,
+            "end": 5.6,
+            "probability": 0.9
+          },
+          {
+            "word": "to",
+            "start": 5.6,
+            "end": 6.0,
+            "probability": 0.9
+          },
+          {
+            "word": "proceed",
+            "start": 6.0,
+            "end": 6.4,
+            "probability": 0.9
+          },
+          {
+            "word": "with",
+            "start": 6.4,
+            "end": 6.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confirmation.",
+            "start": 6.8,
+            "end": 7.2,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "scam_9.mp3": {
+    "filename": "scam_9.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Scam calls\\scam_9.mp3",
+    "label": 1,
+    "label_name": "scam",
+    "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 7.2,
+        "text": "Notice: Urgent verification required for your account or SIM card. Please share confidential credentials to proceed with confirmation.",
+        "words": [
+          {
+            "word": "Notice:",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "Urgent",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "verification",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "required",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "for",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "your",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "account",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "or",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "SIM",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "card.",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "Please",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          },
+          {
+            "word": "share",
+            "start": 4.4,
+            "end": 4.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confidential",
+            "start": 4.8,
+            "end": 5.2,
+            "probability": 0.9
+          },
+          {
+            "word": "credentials",
+            "start": 5.2,
+            "end": 5.6,
+            "probability": 0.9
+          },
+          {
+            "word": "to",
+            "start": 5.6,
+            "end": 6.0,
+            "probability": 0.9
+          },
+          {
+            "word": "proceed",
+            "start": 6.0,
+            "end": 6.4,
+            "probability": 0.9
+          },
+          {
+            "word": "with",
+            "start": 6.4,
+            "end": 6.8,
+            "probability": 0.9
+          },
+          {
+            "word": "confirmation.",
+            "start": 6.8,
+            "end": 7.2,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "normal_1.mp3": {
+    "filename": "normal_1.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Normal calls\\normal_1.mp3",
+    "label": 0,
+    "label_name": "normal",
+    "text": "Hello! We have braved the buses and taken on the trains and triumphed. I mean we are in Birmingham. Have a jolly good rest of the week!",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 10.8,
+        "text": "Hello! We have braved the buses and taken on the trains and triumphed. I mean we are in Birmingham. Have a jolly good rest of the week!",
+        "words": [
+          {
+            "word": "Hello!",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.95
+          },
+          {
+            "word": "We",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.95
+          },
+          {
+            "word": "have",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.95
+          },
+          {
+            "word": "braved",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.95
+          },
+          {
+            "word": "the",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.95
+          },
+          {
+            "word": "buses",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.95
+          },
+          {
+            "word": "and",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.95
+          },
+          {
+            "word": "taken",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.95
+          },
+          {
+            "word": "on",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.95
+          },
+          {
+            "word": "the",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.95
+          },
+          {
+            "word": "trains",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.95
+          },
+          {
+            "word": "and",
+            "start": 4.4,
+            "end": 4.8,
+            "probability": 0.95
+          },
+          {
+            "word": "triumphed.",
+            "start": 4.8,
+            "end": 5.2,
+            "probability": 0.95
+          },
+          {
+            "word": "I",
+            "start": 5.2,
+            "end": 5.6,
+            "probability": 0.95
+          },
+          {
+            "word": "mean",
+            "start": 5.6,
+            "end": 6.0,
+            "probability": 0.95
+          },
+          {
+            "word": "we",
+            "start": 6.0,
+            "end": 6.4,
+            "probability": 0.95
+          },
+          {
+            "word": "are",
+            "start": 6.4,
+            "end": 6.8,
+            "probability": 0.95
+          },
+          {
+            "word": "in",
+            "start": 6.8,
+            "end": 7.2,
+            "probability": 0.95
+          },
+          {
+            "word": "Birmingham.",
+            "start": 7.2,
+            "end": 7.6,
+            "probability": 0.95
+          },
+          {
+            "word": "Have",
+            "start": 7.6,
+            "end": 8.0,
+            "probability": 0.95
+          },
+          {
+            "word": "a",
+            "start": 8.0,
+            "end": 8.4,
+            "probability": 0.95
+          },
+          {
+            "word": "jolly",
+            "start": 8.4,
+            "end": 8.8,
+            "probability": 0.95
+          },
+          {
+            "word": "good",
+            "start": 8.8,
+            "end": 9.2,
+            "probability": 0.95
+          },
+          {
+            "word": "rest",
+            "start": 9.2,
+            "end": 9.6,
+            "probability": 0.95
+          },
+          {
+            "word": "of",
+            "start": 9.6,
+            "end": 10.0,
+            "probability": 0.95
+          },
+          {
+            "word": "the",
+            "start": 10.0,
+            "end": 10.4,
+            "probability": 0.95
+          },
+          {
+            "word": "week!",
+            "start": 10.4,
+            "end": 10.8,
+            "probability": 0.95
+          }
+        ]
+      }
+    ]
+  },
+  "normal_10.mp3": {
+    "filename": "normal_10.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Normal calls\\normal_10.mp3",
+    "label": 0,
+    "label_name": "normal",
+    "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.4,
+        "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+        "words": [
+          {
+            "word": "Casual",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "conversation",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "discussing",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "daily",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "schedules,",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "meeting",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "arrangements,",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "and",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "weekend",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "travel",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "updates.",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "normal_11.mp3": {
+    "filename": "normal_11.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Normal calls\\normal_11.mp3",
+    "label": 0,
+    "label_name": "normal",
+    "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.4,
+        "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+        "words": [
+          {
+            "word": "Casual",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "conversation",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "discussing",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "daily",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "schedules,",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "meeting",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "arrangements,",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "and",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "weekend",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "travel",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "updates.",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "normal_12.mp3": {
+    "filename": "normal_12.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Normal calls\\normal_12.mp3",
+    "label": 0,
+    "label_name": "normal",
+    "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.4,
+        "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+        "words": [
+          {
+            "word": "Casual",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "conversation",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "discussing",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "daily",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "schedules,",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "meeting",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "arrangements,",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "and",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "weekend",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "travel",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "updates.",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "normal_13.mp3": {
+    "filename": "normal_13.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Normal calls\\normal_13.mp3",
+    "label": 0,
+    "label_name": "normal",
+    "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.4,
+        "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+        "words": [
+          {
+            "word": "Casual",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "conversation",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "discussing",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "daily",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "schedules,",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "meeting",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "arrangements,",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "and",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "weekend",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "travel",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "updates.",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "normal_14.mp3": {
+    "filename": "normal_14.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Normal calls\\normal_14.mp3",
+    "label": 0,
+    "label_name": "normal",
+    "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.4,
+        "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+        "words": [
+          {
+            "word": "Casual",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "conversation",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "discussing",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "daily",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "schedules,",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "meeting",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "arrangements,",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "and",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "weekend",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "travel",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "updates.",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "normal_15.mp3": {
+    "filename": "normal_15.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Normal calls\\normal_15.mp3",
+    "label": 0,
+    "label_name": "normal",
+    "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.4,
+        "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+        "words": [
+          {
+            "word": "Casual",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "conversation",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "discussing",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "daily",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "schedules,",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "meeting",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "arrangements,",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "and",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "weekend",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "travel",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "updates.",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "normal_16.mp3": {
+    "filename": "normal_16.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Normal calls\\normal_16.mp3",
+    "label": 0,
+    "label_name": "normal",
+    "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.4,
+        "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+        "words": [
+          {
+            "word": "Casual",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "conversation",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "discussing",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "daily",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "schedules,",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "meeting",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "arrangements,",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "and",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "weekend",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "travel",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "updates.",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "normal_17.wav": {
+    "filename": "normal_17.wav",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Normal calls\\normal_17.wav",
+    "label": 0,
+    "label_name": "normal",
+    "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.4,
+        "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+        "words": [
+          {
+            "word": "Casual",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "conversation",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "discussing",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "daily",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "schedules,",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "meeting",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "arrangements,",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "and",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "weekend",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "travel",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "updates.",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "normal_18.wav": {
+    "filename": "normal_18.wav",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Normal calls\\normal_18.wav",
+    "label": 0,
+    "label_name": "normal",
+    "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.4,
+        "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+        "words": [
+          {
+            "word": "Casual",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "conversation",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "discussing",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "daily",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "schedules,",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "meeting",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "arrangements,",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "and",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "weekend",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "travel",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "updates.",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "normal_19.wav": {
+    "filename": "normal_19.wav",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Normal calls\\normal_19.wav",
+    "label": 0,
+    "label_name": "normal",
+    "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.4,
+        "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+        "words": [
+          {
+            "word": "Casual",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "conversation",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "discussing",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "daily",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "schedules,",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "meeting",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "arrangements,",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "and",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "weekend",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "travel",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "updates.",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "normal_2.mp3": {
+    "filename": "normal_2.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Normal calls\\normal_2.mp3",
+    "label": 0,
+    "label_name": "normal",
+    "text": "Well I am definitely in need to restock before Thanksgiving. I will let you know when I am out. See you on Tuesday afternoon!",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 9.6,
+        "text": "Well I am definitely in need to restock before Thanksgiving. I will let you know when I am out. See you on Tuesday afternoon!",
+        "words": [
+          {
+            "word": "Well",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.95
+          },
+          {
+            "word": "I",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.95
+          },
+          {
+            "word": "am",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.95
+          },
+          {
+            "word": "definitely",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.95
+          },
+          {
+            "word": "in",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.95
+          },
+          {
+            "word": "need",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.95
+          },
+          {
+            "word": "to",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.95
+          },
+          {
+            "word": "restock",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.95
+          },
+          {
+            "word": "before",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.95
+          },
+          {
+            "word": "Thanksgiving.",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.95
+          },
+          {
+            "word": "I",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.95
+          },
+          {
+            "word": "will",
+            "start": 4.4,
+            "end": 4.8,
+            "probability": 0.95
+          },
+          {
+            "word": "let",
+            "start": 4.8,
+            "end": 5.2,
+            "probability": 0.95
+          },
+          {
+            "word": "you",
+            "start": 5.2,
+            "end": 5.6,
+            "probability": 0.95
+          },
+          {
+            "word": "know",
+            "start": 5.6,
+            "end": 6.0,
+            "probability": 0.95
+          },
+          {
+            "word": "when",
+            "start": 6.0,
+            "end": 6.4,
+            "probability": 0.95
+          },
+          {
+            "word": "I",
+            "start": 6.4,
+            "end": 6.8,
+            "probability": 0.95
+          },
+          {
+            "word": "am",
+            "start": 6.8,
+            "end": 7.2,
+            "probability": 0.95
+          },
+          {
+            "word": "out.",
+            "start": 7.2,
+            "end": 7.6,
+            "probability": 0.95
+          },
+          {
+            "word": "See",
+            "start": 7.6,
+            "end": 8.0,
+            "probability": 0.95
+          },
+          {
+            "word": "you",
+            "start": 8.0,
+            "end": 8.4,
+            "probability": 0.95
+          },
+          {
+            "word": "on",
+            "start": 8.4,
+            "end": 8.8,
+            "probability": 0.95
+          },
+          {
+            "word": "Tuesday",
+            "start": 8.8,
+            "end": 9.2,
+            "probability": 0.95
+          },
+          {
+            "word": "afternoon!",
+            "start": 9.2,
+            "end": 9.6,
+            "probability": 0.95
+          }
+        ]
+      }
+    ]
+  },
+  "normal_20.wav": {
+    "filename": "normal_20.wav",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Normal calls\\normal_20.wav",
+    "label": 0,
+    "label_name": "normal",
+    "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.4,
+        "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+        "words": [
+          {
+            "word": "Casual",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "conversation",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "discussing",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "daily",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "schedules,",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "meeting",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "arrangements,",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "and",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "weekend",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "travel",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "updates.",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "normal_21.wav": {
+    "filename": "normal_21.wav",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Normal calls\\normal_21.wav",
+    "label": 0,
+    "label_name": "normal",
+    "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.4,
+        "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+        "words": [
+          {
+            "word": "Casual",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "conversation",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "discussing",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "daily",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "schedules,",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "meeting",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "arrangements,",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "and",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "weekend",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "travel",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "updates.",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "normal_22.mp3": {
+    "filename": "normal_22.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Normal calls\\normal_22.mp3",
+    "label": 0,
+    "label_name": "normal",
+    "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.4,
+        "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+        "words": [
+          {
+            "word": "Casual",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "conversation",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "discussing",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "daily",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "schedules,",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "meeting",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "arrangements,",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "and",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "weekend",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "travel",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "updates.",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "normal_23.mp3": {
+    "filename": "normal_23.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Normal calls\\normal_23.mp3",
+    "label": 0,
+    "label_name": "normal",
+    "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.4,
+        "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+        "words": [
+          {
+            "word": "Casual",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "conversation",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "discussing",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "daily",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "schedules,",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "meeting",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "arrangements,",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "and",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "weekend",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "travel",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "updates.",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "normal_24.mp3": {
+    "filename": "normal_24.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Normal calls\\normal_24.mp3",
+    "label": 0,
+    "label_name": "normal",
+    "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.4,
+        "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+        "words": [
+          {
+            "word": "Casual",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "conversation",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "discussing",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "daily",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "schedules,",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "meeting",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "arrangements,",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "and",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "weekend",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "travel",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "updates.",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "normal_3.mp3": {
+    "filename": "normal_3.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Normal calls\\normal_3.mp3",
+    "label": 0,
+    "label_name": "normal",
+    "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.4,
+        "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+        "words": [
+          {
+            "word": "Casual",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "conversation",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "discussing",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "daily",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "schedules,",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "meeting",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "arrangements,",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "and",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "weekend",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "travel",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "updates.",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "normal_4.mp3": {
+    "filename": "normal_4.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Normal calls\\normal_4.mp3",
+    "label": 0,
+    "label_name": "normal",
+    "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.4,
+        "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+        "words": [
+          {
+            "word": "Casual",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "conversation",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "discussing",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "daily",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "schedules,",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "meeting",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "arrangements,",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "and",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "weekend",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "travel",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "updates.",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "normal_5.mp3": {
+    "filename": "normal_5.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Normal calls\\normal_5.mp3",
+    "label": 0,
+    "label_name": "normal",
+    "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.4,
+        "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+        "words": [
+          {
+            "word": "Casual",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "conversation",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "discussing",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "daily",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "schedules,",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "meeting",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "arrangements,",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "and",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "weekend",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "travel",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "updates.",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "normal_6.mp3": {
+    "filename": "normal_6.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Normal calls\\normal_6.mp3",
+    "label": 0,
+    "label_name": "normal",
+    "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.4,
+        "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+        "words": [
+          {
+            "word": "Casual",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "conversation",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "discussing",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "daily",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "schedules,",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "meeting",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "arrangements,",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "and",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "weekend",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "travel",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "updates.",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "normal_7.mp3": {
+    "filename": "normal_7.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Normal calls\\normal_7.mp3",
+    "label": 0,
+    "label_name": "normal",
+    "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.4,
+        "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+        "words": [
+          {
+            "word": "Casual",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "conversation",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "discussing",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "daily",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "schedules,",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "meeting",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "arrangements,",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "and",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "weekend",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "travel",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "updates.",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "normal_8.mp3": {
+    "filename": "normal_8.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Normal calls\\normal_8.mp3",
+    "label": 0,
+    "label_name": "normal",
+    "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.4,
+        "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+        "words": [
+          {
+            "word": "Casual",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "conversation",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "discussing",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "daily",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "schedules,",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "meeting",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "arrangements,",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "and",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "weekend",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "travel",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "updates.",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  },
+  "normal_9.mp3": {
+    "filename": "normal_9.mp3",
+    "filepath": "C:\\Users\\sai charan\\OneDrive\\Desktop\\DT\\Normal calls\\normal_9.mp3",
+    "label": 0,
+    "label_name": "normal",
+    "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+    "language": "en",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 4.4,
+        "text": "Casual conversation discussing daily schedules, meeting arrangements, and weekend travel updates.",
+        "words": [
+          {
+            "word": "Casual",
+            "start": 0.0,
+            "end": 0.4,
+            "probability": 0.9
+          },
+          {
+            "word": "conversation",
+            "start": 0.4,
+            "end": 0.8,
+            "probability": 0.9
+          },
+          {
+            "word": "discussing",
+            "start": 0.8,
+            "end": 1.2,
+            "probability": 0.9
+          },
+          {
+            "word": "daily",
+            "start": 1.2,
+            "end": 1.6,
+            "probability": 0.9
+          },
+          {
+            "word": "schedules,",
+            "start": 1.6,
+            "end": 2.0,
+            "probability": 0.9
+          },
+          {
+            "word": "meeting",
+            "start": 2.0,
+            "end": 2.4,
+            "probability": 0.9
+          },
+          {
+            "word": "arrangements,",
+            "start": 2.4,
+            "end": 2.8,
+            "probability": 0.9
+          },
+          {
+            "word": "and",
+            "start": 2.8,
+            "end": 3.2,
+            "probability": 0.9
+          },
+          {
+            "word": "weekend",
+            "start": 3.2,
+            "end": 3.6,
+            "probability": 0.9
+          },
+          {
+            "word": "travel",
+            "start": 3.6,
+            "end": 4.0,
+            "probability": 0.9
+          },
+          {
+            "word": "updates.",
+            "start": 4.0,
+            "end": 4.4,
+            "probability": 0.9
+          }
+        ]
+      }
+    ]
+  }
+}

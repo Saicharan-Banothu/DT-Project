@@ -1,220 +1,311 @@
+"""
+SentiCall v2 — Tactic Tagger & Multilingual Manipulation Detector
+Extracts multi-label manipulation tactics across English and Hinglish phrasings.
+Provides exact character/word spans and severity classifications.
+"""
+
 import re
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Tuple
 
-# Plain-language tactic definitions designed for non-technical users
-TACTIC_DEFINITIONS = {
-    "authority_impersonation": {
+# Comprehensive tactic definitions matching the 5 Core + 4 Expanded Tactics
+TACTIC_DEFINITIONS = [
+    {
         "id": "authority_impersonation",
-        "title": "Pretending to Be an Authority",
-        "badge": "Authority Claim",
+        "title": "Pretending to be an authority",
         "icon": "shield-alert",
-        "description": "Claims to represent a bank manager, telecom company, cyber cell, or government official to gain your trust and intimidate you.",
-        "patterns": [
-            r"\b(?:bank\s+manager|manager\s+of\s+\w+)\b",
-            r"\b(?:customer\s+care(?:\s+center)?)\b",
-            r"\b(?:jio|airtel|vodafone|bsnl|idea|mtnl)\s+customer\s+care\b",
-            r"\b(?:sbi|hdfc|icici|axis\s+bank|pnb|kotak|canara\s+bank)\b",
-            r"\b(?:police|customs\s+department|cyber\s+cell|rbi|income\s+tax|telecom\s+department|cbi|trai)\b",
-            r"\b(?:official\s+verification|head\s+office|branch\s+manager)\b"
-        ],
-        "weight": 0.25
+        "severity": "high",
+        "badge_class": "badge-authority",
+        "description": "Claims to represent a bank manager, telecom company, police, customs, or court official.",
+        "regex": (
+            r'\b('
+            r'bank\s+manager|sbi\s+bank|hdfc\s+bank|icici\s+bank|axis\s+bank|state\s+bank\s+of\s+india|'
+            r'jio\s+customer\s+care|airtel\s+customer\s+care|vodafone\s+customer|vi\s+customer|telecom\s+official|'
+            r'cyber\s+crime\s+branch|police\s+officer|cbi\s+officer|customs\s+officer|income\s+tax\s+department|'
+            r'rbi\s+officer|supreme\s+court|high\s+court|mha\s+official|trai\s+official|customs\s+department|'
+            r'sharma\s+speaking\s+from\s+sbi|calling\s+from\s+head\s+office|customer\s+care\s+executive|'
+            r'branch\s+manager|nodal\s+officer|investigating\s+officer'
+            r')\b'
+        ),
+        "hinglish_regex": (
+            r'\b('
+            r'mai\s+bank\s+se\s+bol\s+raha\s+hu|sbi\s+ka\s+manager\s+hu|jio\s+office\s+se\s+call\s+hai|'
+            r'police\s+thana\s+se\s+bol\s+rahe\s+hai|cyber\s+branch\s+se\s+phone\s+hai'
+            r')\b'
+        )
     },
-    "urgency_threat": {
+    {
         "id": "urgency_threat",
-        "title": "Creating False Urgency or Pressure",
-        "badge": "Urgency / Threat",
-        "icon": "alarm",
-        "description": "Pressures you with immediate deadlines, threats of SIM deactivation, or legal penalties so you act without thinking.",
-        "patterns": [
-            r"\bin\s+\d+\s+(?:hours|minutes|hrs|mins)\b",
-            r"\b(?:sim\s+will\s+be\s+(?:closed|deactivate[d]?|blocked|suspended))\b",
-            r"\b(?:account\s+will\s+be\s+(?:blocked|frozen|suspended|closed|deactivate[d]?))\b",
-            r"\b(?:immediate(?:ly)?|urgent(?:ly)?|last\s+warning|within\s+24\s+hours|today\s+only)\b",
-            r"\b(?:legal\s+action|police\s+case|arrest\s+warrant|penalty|fine|action\s+will\s+be\s+taken)\b",
-            r"\b(?:card\s+is\s+about\s+to\s+expire|expiring\s+today)\b"
-        ],
-        "weight": 0.25
+        "title": "Creating false urgency or pressure",
+        "icon": "clock",
+        "severity": "high",
+        "badge_class": "badge-urgency",
+        "description": "Forces quick compliance with strict time limits or threats of immediate service cutoff.",
+        "regex": (
+            r'\b('
+            r'in\s+23\s+hours|in\s+2\s+hours|within\s+\d+\s+hours|immediately|right\s+now|urgent|urgently|'
+            r'sim\s+will\s+be\s+closed|sim\s+will\s+be\s+blocked|account\s+will\s+be\s+blocked|'
+            r'card\s+is\s+about\s+to\s+expire|last\s+chance|before\s+midnight|today\s+only|'
+            r'final\s+notice|service\s+will\s+be\s+suspended|electricity\s+power\s+cut'
+            r')\b'
+        ),
+        "hinglish_regex": (
+            r'\b('
+            r'turant\s+karna\s+hoga|aaj\s+hi\s+karna\s+padega|23\s+ghante\s+me\s+sim\s+band\s+hoga|'
+            r'account\s+block\s+ho\s+jayega|line\s+kat\s+di\s+jayegi|aakhri\s+mauka'
+            r')\b'
+        )
     },
-    "payment_credential_request": {
-        "id": "payment_credential_request",
-        "title": "Asking for Passwords, OTP, or Money",
-        "badge": "Credential / Payment",
+    {
+        "id": "secrecy_isolation",
+        "title": "Demanding secrecy and isolation",
+        "icon": "lock",
+        "severity": "critical",
+        "badge_class": "badge-secrecy",
+        "description": "Instructs the listener not to disconnect, not to speak to family, or to remain isolated on video.",
+        "regex": (
+            r'\b('
+            r'don\'t\s+tell\s+anyone|do\s+not\s+tell\s+anyone|stay\s+on\s+the\s+line|do\s+not\s+hang\s+up|'
+            r'don\'t\s+hang\s+up|stay\s+on\s+video|do\s+not\s+speak\s+to\s+family|keep\s+it\s+strictly\s+confidential|'
+            r'close\s+the\s+door|go\s+to\s+a\s+quiet\s+room|do\s+not\s+share\s+with\s+anyone'
+            r')\b'
+        ),
+        "hinglish_regex": (
+            r'\b('
+            r'kisi\s+ko\s+mat\s+batana|ghar\s+walo\s+se\s+baat\s+mat\s+karo|phone\s+mat\s+katna|'
+            r'line\s+par\s+raho|kamra\s+band\s+karlo'
+            r')\b'
+        )
+    },
+    {
+        "id": "credential_request",
+        "title": "Asking for passwords, OTP, or money",
         "icon": "key",
-        "description": "Asks for your secret one-time password (OTP), PIN, CVV, or asks you to make an upfront payment or download remote access software.",
-        "patterns": [
-            r"\b(?:(?:four|six|\d+)\s+digit\s+(?:otp|opt|code))\b",
-            r"\b(?:tell\s+me\s+that\s+otp|share\s+(?:your\s+)?otp|send\s+otp|otp\s+sent|opt\s+will\s+have\s+send)\b",
-            r"\b(?:cvv|card\s+number|pin\s+number|atm\s+pin|password|net\s+banking\s+password)\b",
-            r"\b(?:send\s+money|transfer\s+fee|processing\s+fee|refundable\s+amount|registration\s+charge|pay\s+now)\b",
-            r"\b(?:anydesk|teamviewer|quicksupport|rustdesk|download\s+this\s+app)\b"
-        ],
-        "weight": 0.30
+        "severity": "critical",
+        "badge_class": "badge-credential",
+        "description": "Demands disclosure of one-time passwords, CVV, ATM PINs, or money transfers.",
+        "regex": (
+            r'\b('
+            r'four\s+digit\s+otp|six\s+digit\s+otp|\botp\b|one\s+time\s+password|verification\s+code|'
+            r'share\s+the\s+otp|tell\s+me\s+the\s+otp|read\s+out\s+the\s+code|tell\s+me\s+the\s+code|'
+            r'cvv|atm\s+pin|upi\s+pin|net\s+banking\s+password|card\s+number|'
+            r'transfer\s+money|send\s+amount|processing\s+fee|registration\s+charge|refundable\s+security\s+deposit'
+            r')\b'
+        ),
+        "hinglish_regex": (
+            r'\b('
+            r'chaar\s+digit\s+ka\s+otp|otp\s+bataiye|otp\s+share\s+kare|pin\s+number\s+batao|'
+            r'paise\s+transfer\s+karo|charge\s+dena\s+padega'
+            r')\b'
+        )
     },
-    "reward_lottery_bait": {
-        "id": "reward_lottery_bait",
-        "title": "Dangling Fake Prizes or Lotteries",
-        "badge": "Prize / Lottery Bait",
-        "icon": "gift",
-        "description": "Promises cash prizes, lottery payouts, or expensive gift vouchers for contests you never entered.",
-        "patterns": [
-            r"\b(?:selected\s+to\s+receive|selected\s+for|lucky\s+winner|won\s+(?:cash|lottery|prize|award))\b",
-            r"\b(?:receive\s+a\s+[£\$€₹]?\s*\d+\s*(?:award|prize|cash)?)\b",
-            r"\b(?:won\s+[£\$€₹]?\s*\d+)\b",
-            r"\b(?:claim\s+(?:your\s+)?(?:prize|award|lottery|reward|cash))\b",
-            r"\b(?:congratulations\s+you\s+have\s+won|gift\s+voucher|bonus\s+points|free\s+iphone)\b"
-        ],
-        "weight": 0.20
-    },
-    "identity_document_request": {
+    {
         "id": "identity_document_request",
-        "title": "Requesting Sensitive Identity Details",
-        "badge": "Identity / KYC Request",
+        "title": "Requesting sensitive identity details",
         "icon": "id-card",
-        "description": "Requests sensitive personal credentials like Aadhaar, PAN, date of birth, or claims your KYC verification has expired.",
-        "patterns": [
-            r"\b(?:kyc\s+has\s+been\s+expired|kyc\s+is\s+expired|kyc\s+expire[d]?)\b",
-            r"\b(?:kyc\s+your\s*self|kyc\s+online|update\s+(?:your\s+)?kyc|complete\s+kyc)\b",
-            r"\b(?:account\s+detail[s]?|bank\s+account\s+number|account\s+information)\b",
-            r"\b(?:aadhaar(?:\s+card|\s+number)?|aadhar(?:\s+card|\s+number)?|pan\s+card(?:\s+number)?)\b",
-            r"\b(?:verify\s+your\s+identity|date\s+of\s+birth|mother(?:'s)?\s+maiden\s+name)\b"
-        ],
-        "weight": 0.20
+        "severity": "medium",
+        "badge_class": "badge-identity",
+        "description": "Demands Aadhaar numbers, PAN cards, dates of birth, or full bank account details.",
+        "regex": (
+            r'\b('
+            r'aadhaar|pan\s+card|pan\s+number|account\s+details|account\s+number|'
+            r'date\s+of\s+birth|passport\s+number|voter\s+id|kyc\s+documents|'
+            r'kyc\s+details|verify\s+your\s+identity'
+            r')\b'
+        ),
+        "hinglish_regex": (
+            r'\b('
+            r'aadhaar\s+number\s+batao|pan\s+card\s+bhejo|account\s+number\s+bataiye|'
+            r'apna\s+kyc\s+detail\s+do'
+            r')\b'
+        )
+    },
+    {
+        "id": "remote_access_install",
+        "title": "Asking you to install an app or share your screen",
+        "icon": "monitor-down",
+        "severity": "critical",
+        "badge_class": "badge-remote",
+        "description": "Instructs the listener to download remote access software or APK files.",
+        "regex": (
+            r'\b('
+            r'anydesk|teamviewer|rustdesk|quicksupport|screen\s+share|share\s+screen|'
+            r'install\s+this\s+app|download\s+app|download\s+apk|open\s+play\s+store|'
+            r'accept\s+remote\s+connection|give\s+permission|allow\s+access'
+            r')\b'
+        ),
+        "hinglish_regex": (
+            r'\b('
+            r'anydesk\s+install\s+karo|screen\s+share\s+kijiye|ye\s+app\s+download\s+karo|'
+            r'remote\s+access\s+accept\s+karo'
+            r')\b'
+        )
+    },
+    {
+        "id": "reward_prize_bait",
+        "title": "Dangling a fake prize, lottery or reward",
+        "icon": "gift",
+        "severity": "medium",
+        "badge_class": "badge-reward",
+        "description": "Promises unsolicited lottery jackpots, cash awards, or prizes to lure advance fee payments.",
+        "regex": (
+            r'\b('
+            r'won|selected\s+to\s+receive|£350\s+award|\$350\s+award|cash\s+prize|'
+            r'lucky\s+winner|won\s+a\s+car|lottery\s+winner|unclaimed\s+reward|'
+            r'cashback\s+bonus|claim\s+your\s+prize'
+            r')\b'
+        ),
+        "hinglish_regex": (
+            r'\b('
+            r'aapko\s+lottery\s+lagi\s+hai|inaam\s+jeeta\s+hai|lucky\s+draw\s+nikla\s+hai|'
+            r'cash\s+prize\s+mila\s+hai'
+            r')\b'
+        )
+    },
+    {
+        "id": "legal_arrest_threat",
+        "title": "Threatening arrest or legal consequences",
+        "icon": "alert-triangle",
+        "severity": "critical",
+        "badge_class": "badge-legal",
+        "description": "Threatens digital arrest, court prosecution, CBI probe, or FIR registration.",
+        "regex": (
+            r'\b('
+            r'digital\s+arrest|arrest\s+warrant|police\s+custody|fir\s+registered|'
+            r'supreme\s+court\s+notice|court\s+order|criminal\s+case|narcotics\s+case|'
+            r'customs\s+seizure|illegal\s+parcel|jail\s+term|imprisonment'
+            r')\b'
+        ),
+        "hinglish_regex": (
+            r'\b('
+            r'digital\s+arrest\s+kiya\s+jata\s+hai|police\s+pakad\s+ke\s+le\s+jayegi|'
+            r'fir\s+darj\s+ho\s+chuki\s+hai|jail\s+jana\s+padega'
+            r')\b'
+        )
+    },
+    {
+        "id": "abusive_language",
+        "title": "Abusive or harassing language",
+        "icon": "message-square-off",
+        "severity": "high",
+        "badge_class": "badge-abusive",
+        "description": "Uses vulgarity, verbal abuse, aggressive profanity, or harassment.",
+        "regex": (
+            r'\b('
+            r'bastard|bitch|idiot|fool|shut\s+up|nonsense|harass|'
+            r'verbal\s+abuse|threaten\s+you|kill\s+you|destroy\s+you'
+            r')\b'
+        ),
+        "hinglish_regex": (
+            r'\b('
+            r'kutta|harami|badtameez|pagal|gali|marunga'
+            r')\b'
+        )
     }
-}
+]
 
-class TacticTagger:
-    def __init__(self):
-        # Precompile regular expressions
-        self.compiled_rules = {}
-        for tactic_id, info in TACTIC_DEFINITIONS.items():
-            compiled = [re.compile(p, re.IGNORECASE) for p in info["patterns"]]
-            self.compiled_rules[tactic_id] = compiled
 
-    def tag_transcript(self, transcript: str) -> Dict[str, Any]:
-        """
-        Analyzes a transcript for manipulation tactics and extracts
-        exact matched text snippets and character spans for highlight rendering.
-        """
-        if not transcript or not isinstance(transcript, str):
-            return {
-                "tactics_detected": [],
-                "tactic_breakdown": [],
-                "highlights": [],
-                "manipulation_score": 0.0,
-                "has_critical_indicators": False
-            }
+def detect_all_tactics(text: str) -> Dict[str, Any]:
+    """
+    Run regex pattern matching across all 9 tactics (English + Hinglish).
+    Returns list of tactic hits, highlights, and critical safety indicator flag.
+    """
+    t_lower = text.lower()
+    tactic_hits = []
+    has_critical = False
+    highlights = []
 
-        text = transcript
-        detected_tactics = []
-        breakdown = []
-        highlights = []
-        total_weight_score = 0.0
-        has_critical = False
+    for item in TACTIC_DEFINITIONS:
+        en_matches = list(re.finditer(item["regex"], t_lower))
+        hi_matches = list(re.finditer(item["hinglish_regex"], t_lower))
+        all_m = en_matches + hi_matches
 
-        # Find matches for each tactic
-        for tactic_id, info in TACTIC_DEFINITIONS.items():
-            regexes = self.compiled_rules[tactic_id]
-            matched_phrases = set()
-            tactic_spans = []
-
-            for rgx in regexes:
-                for match in rgx.finditer(text):
-                    phrase = match.group(0).strip()
-                    matched_phrases.add(phrase)
-                    tactic_spans.append({
-                        "start": match.start(),
-                        "end": match.end(),
-                        "text": phrase,
-                        "tactic_id": tactic_id,
-                        "tactic_title": info["title"],
-                        "badge": info["badge"]
-                    })
-
-            presence_score = 0.0
-            if matched_phrases:
-                # Score increases with multiple hits up to 1.0
-                presence_score = min(1.0, 0.45 + 0.25 * len(matched_phrases))
-                total_weight_score += info["weight"] * presence_score
-                
-                # Check critical risk indicators (OTP requests or KYC + urgency)
-                if tactic_id in ["payment_credential_request", "identity_document_request"]:
-                    has_critical = True
-
-                detected_tactics.append(tactic_id)
-                highlights.extend(tactic_spans)
-
-            breakdown.append({
-                "id": tactic_id,
-                "title": info["title"],
-                "badge": info["badge"],
-                "description": info["description"],
-                "detected": bool(matched_phrases),
-                "confidence": round(presence_score * 100),
-                "matched_phrases": list(matched_phrases),
-                "match_count": len(matched_phrases)
+        if all_m:
+            matched_phrases = list(set([m.group(0).strip() for m in all_m]))
+            tactic_hits.append({
+                "id": item["id"],
+                "title": item["title"],
+                "description": item["description"],
+                "severity": item["severity"],
+                "icon": item["icon"],
+                "badge_class": item["badge_class"],
+                "matched_phrases": matched_phrases[:4],
+                "detected": True
             })
 
-        # Sort and deduplicate highlights by start index
-        # Avoid overlapping highlight tags
-        sorted_highlights = sorted(highlights, key=lambda x: (x["start"], -(x["end"] - x["start"])))
-        non_overlapping_highlights = []
-        last_end = -1
-        for h in sorted_highlights:
-            if h["start"] >= last_end:
-                non_overlapping_highlights.append(h)
-                last_end = h["end"]
+            if item["severity"] == "critical":
+                has_critical = True
 
-        # Build highlighted HTML transcript for safe rendering
-        highlighted_html = self._generate_highlighted_html(text, non_overlapping_highlights)
+            for m in all_m:
+                highlights.append({
+                    "start": m.start(),
+                    "end": m.end(),
+                    "phrase": text[m.start():m.end()],
+                    "tactic_id": item["id"],
+                    "tactic_title": item["title"],
+                    "severity": item["severity"]
+                })
 
-        normalized_manipulation_score = min(1.0, total_weight_score)
+    # Sort highlights by character position
+    highlights.sort(key=lambda x: x["start"])
 
-        return {
-            "tactics_detected": detected_tactics,
-            "tactic_breakdown": breakdown,
-            "highlights": non_overlapping_highlights,
-            "highlighted_html": highlighted_html,
-            "manipulation_score": normalized_manipulation_score,
-            "has_critical_indicators": has_critical
-        }
+    # Remove overlapping highlights
+    clean_highlights = []
+    last_end = -1
+    for h in highlights:
+        if h["start"] >= last_end:
+            clean_highlights.append(h)
+            last_end = h["end"]
 
-    def _generate_highlighted_html(self, original_text: str, highlights: List[Dict[str, Any]]) -> str:
-        """Create clean HTML wrapping flagged phrases in gentle highlight spans."""
-        if not highlights:
-            return self._escape_html(original_text)
+    return {
+        "tactic_breakdown": tactic_hits,
+        "total_tactics_found": len(tactic_hits),
+        "has_critical_indicators": has_critical,
+        "highlights": clean_highlights
+    }
 
-        html_pieces = []
-        current_idx = 0
 
-        for h in highlights:
-            start, end = h["start"], h["end"]
-            if start > current_idx:
-                html_pieces.append(self._escape_html(original_text[current_idx:start]))
+def generate_highlighted_transcript_html(text: str, highlights: List[Dict[str, Any]], word_weights: Dict[str, float] = None) -> str:
+    """
+    Build HTML with soft pastel colored pills for detected tactics and gentle word shading.
+    """
+    if not text:
+        return ""
 
-            flagged_text = self._escape_html(original_text[start:end])
-            tactic_title = self._escape_html(h["tactic_title"])
-            tactic_id = h["tactic_id"]
-            
-            span_tag = f'<mark class="flagged-phrase tactic-{tactic_id}" data-tactic="{tactic_id}" title="{tactic_title}: {flagged_text}">{flagged_text}</mark>'
-            html_pieces.append(span_tag)
-            current_idx = end
+    if not highlights:
+        # Render clean paragraphs with subtle word shading
+        words = text.split()
+        shaded_words = []
+        for w in words:
+            clean_w = re.sub(r'[^\w]', '', w.lower())
+            w_weight = word_weights.get(clean_w, 0.0) if word_weights else 0.0
+            if w_weight > 0.8:
+                alpha = min(0.35, max(0.08, w_weight * 0.12))
+                shaded_words.append(f'<span class="word-shade-risk" style="background-color: rgba(220, 38, 38, {alpha:.2f})">{w}</span>')
+            else:
+                shaded_words.append(w)
+        return " ".join(shaded_words)
 
-        if current_idx < len(original_text):
-            html_pieces.append(self._escape_html(original_text[current_idx:]))
+    html_parts = []
+    curr_pos = 0
 
-        return "".join(html_pieces)
+    for h in highlights:
+        # Preceding normal text
+        if h["start"] > curr_pos:
+            pre_text = text[curr_pos : h["start"]]
+            html_parts.append(pre_text)
 
-    @staticmethod
-    def _escape_html(text: str) -> str:
-        return (text.replace("&", "&amp;")
-                    .replace("<", "&lt;")
-                    .replace(">", "&gt;")
-                    .replace('"', "&quot;")
-                    .replace("'", "&#39;"))
+        # Highlighted span
+        hl_phrase = text[h["start"] : h["end"]]
+        t_id = h["tactic_id"]
+        sev = h["severity"]
+        title = h["tactic_title"]
 
-if __name__ == "__main__":
-    tagger = TacticTagger()
-    sample = "hello, i m bank manager of SBI, ur debit card is about to expire. tell me four digit otp to activate in 23 hours."
-    res = tagger.tag_transcript(sample)
-    print("Detected Tactics:", res["tactics_detected"])
-    print("Highlighted HTML:", res["highlighted_html"])
+        pill_class = f"tactic-pill pill-{sev}"
+        html_parts.append(f'<mark class="{pill_class}" data-tactic="{t_id}" title="{title}">{hl_phrase}</mark>')
+        curr_pos = h["end"]
+
+    # Trailing text
+    if curr_pos < len(text):
+        html_parts.append(text[curr_pos:])
+
+    return "".join(html_parts)

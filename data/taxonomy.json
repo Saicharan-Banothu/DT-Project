@@ -1,0 +1,751 @@
+{
+  "scam_families": [
+    {
+      "id": "bank_kyc_impersonation",
+      "number": 1,
+      "name": "Bank, Card & KYC Impersonation",
+      "plain_name": "Bank & Card Impersonation",
+      "harm_type": "Money",
+      "badge_color": "#DC2626",
+      "evidence_strength": "Learned from real examples",
+      "evidence_count": 842,
+      "signature_tactics": [
+        "Pretending to be an authority",
+        "Creating false urgency",
+        "Asking for passwords, OTP, or money",
+        "Requesting sensitive identity details"
+      ],
+      "red_flag_phrases": [
+        "debit card is about to expire",
+        "bank manager of sbi",
+        "hdfc bank manager",
+        "kyc has been expired",
+        "block your account immediately",
+        "pan card number",
+        "account detail verify"
+      ],
+      "how_it_works": [
+        "Caller claims to be your bank manager or KYC verification officer.",
+        "They invent a false emergency (expired card, blocked account, KYC deadline).",
+        "They demand your card numbers, CVV, OTP, or net banking password to 'fix' it."
+      ],
+      "do_now_steps": [
+        {
+          "title": "Hang up the phone immediately",
+          "detail": "Do not stay on the line. Legitimate bank staff will never threaten you with instant account suspension.",
+          "action_type": "none"
+        },
+        {
+          "title": "Call your bank's official number",
+          "detail": "Use the toll-free customer support number printed on the back of your debit/credit card or inside your official mobile banking app.",
+          "action_type": "helpline",
+          "action_target": "bank_card"
+        },
+        {
+          "title": "Report to National Cyber Crime Helpline",
+          "detail": "Dial 1930 immediately if any financial information was shared.",
+          "action_type": "tel",
+          "action_target": "1930"
+        }
+      ],
+      "never_do": [
+        "Never share any 4 or 6 digit OTP sent to your mobile phone.",
+        "Never reveal your CVV (3-digit code on the back of your card) or ATM PIN.",
+        "Never install any 'quick support' or remote screen-sharing software."
+      ],
+      "per_chip_actions": {
+        "shared_otp": "Call your bank immediately to block your debit/credit card, freeze UPI access, and change net-banking passwords.",
+        "shared_documents": "File an alert on cybercrime.gov.in and monitor your credit report and bank statements for unauthorized inquiries.",
+        "sent_money": "Call 1930 within the golden hour so law enforcement can coordinate with the receiving bank to freeze the beneficiary account.",
+        "installed_app": "Turn on Airplane Mode immediately, uninstall any unfamiliar app (AnyDesk, TeamViewer, RustDesk), and format the device if needed.",
+        "clicked_link": "Disconnect Wi-Fi/data, clear browser cache, and update all banking credentials from another secure device."
+      },
+      "safe_replies": [
+        "I do not share banking information over the phone. I will visit my branch directly.",
+        "Please send an official postal notice or secure in-app message through the banking portal."
+      ],
+      "helpline_ids": ["1930", "cybercrime_gov", "chakshu"]
+    },
+    {
+      "id": "otp_account_takeover",
+      "number": 2,
+      "name": "OTP & Account Takeover Trap",
+      "plain_name": "OTP & Account Takeover",
+      "harm_type": "Money / Identity",
+      "badge_color": "#DC2626",
+      "evidence_strength": "Learned from real examples",
+      "evidence_count": 1240,
+      "signature_tactics": [
+        "Asking for passwords, OTP, or money",
+        "Creating false urgency",
+        "Pretending to be an authority"
+      ],
+      "red_flag_phrases": [
+        "tell me the four digit otp",
+        "otp sent to your mobile",
+        "share the verification code",
+        "read out the sms code",
+        "otp for verification"
+      ],
+      "how_it_works": [
+        "Fraudsters trigger a password reset or fund transfer on your account.",
+        "They call pretending to be technical support or security verification.",
+        "They persuade you to read out the OTP to 'cancel' or 'verify' the transaction."
+      ],
+      "do_now_steps": [
+        {
+          "title": "Never read out or forward the OTP",
+          "detail": "An OTP is like a digital signature; sharing it authorizes the scammer to drain funds.",
+          "action_type": "none"
+        },
+        {
+          "title": "Check your recent SMS alerts",
+          "detail": "Read the SMS carefully to see what organization and amount the OTP is actually for.",
+          "action_type": "none"
+        },
+        {
+          "title": "Block digital access if shared",
+          "detail": "Dial 1930 or your bank's emergency lock line immediately.",
+          "action_type": "tel",
+          "action_target": "1930"
+        }
+      ],
+      "never_do": [
+        "Never believe that an OTP is needed to 'receive money' or 'cancel an order'.",
+        "Never share OTPs with someone claiming to be customer service."
+      ],
+      "per_chip_actions": {
+        "shared_otp": "Lock your net banking, UPI apps, and cards immediately. Call 1930 to trigger a freeze request.",
+        "sent_money": "Report the transaction UTR number to 1930 and file a complaint on cybercrime.gov.in.",
+        "shared_documents": "Lock your Aadhaar biometrics via mAadhaar app."
+      },
+      "safe_replies": [
+        "OTPs are strictly confidential. I will never share any code over the phone.",
+        "I am hanging up now and will verify this in my official account dashboard."
+      ],
+      "helpline_ids": ["1930", "cybercrime_gov", "chakshu"]
+    },
+    {
+      "id": "telecom_sim_threat",
+      "number": 3,
+      "name": "SIM & Telecom Deactivation Threat",
+      "plain_name": "SIM & Telecom Threat",
+      "harm_type": "Identity",
+      "badge_color": "#D97706",
+      "evidence_strength": "Learned from real examples",
+      "evidence_count": 915,
+      "signature_tactics": [
+        "Creating false urgency",
+        "Pretending to be an authority",
+        "Requesting sensitive identity details"
+      ],
+      "red_flag_phrases": [
+        "in 23 hours your sim will be closed",
+        "sim deactivation notice",
+        "jio customer care",
+        "airtel customer care",
+        "vodafone sim verification",
+        "telecom regulatory authority"
+      ],
+      "how_it_works": [
+        "An automated or live call claims your mobile number is involved in illegal activity or unpaid KYC.",
+        "They threaten that your SIM card will be deactivated within 2 hours or 23 hours.",
+        "They demand your Aadhaar number, date of birth, and an OTP to 'reactivate' the line."
+      ],
+      "do_now_steps": [
+        {
+          "title": "Hang up and ignore the ultimatum",
+          "detail": "Telecom providers (Jio, Airtel, Vi, BSNL) do not disconnect numbers via automated phone threats.",
+          "action_type": "none"
+        },
+        {
+          "title": "Check your status in official operator app",
+          "detail": "Open MyJio, Airtel Thanks, or Vi app to verify your plan and KYC status securely.",
+          "action_type": "none"
+        },
+        {
+          "title": "Report the number on Chakshu (Sanchar Saathi)",
+          "detail": "Report the fraudulent caller on the government telecom fraud portal.",
+          "action_type": "link",
+          "action_target": "https://sancharsaathi.gov.in/sfc/"
+        }
+      ],
+      "never_do": [
+        "Never dial IVR shortcodes (e.g., *21*, *401*) that enable call forwarding.",
+        "Never share Aadhaar or OTP with someone claiming to be telecom support."
+      ],
+      "per_chip_actions": {
+        "shared_documents": "Lock your Aadhaar biometric authentication immediately using the official mAadhaar portal.",
+        "shared_otp": "Check with your telecom provider in person at an official store to ensure no unauthorized SIM swap was requested.",
+        "clicked_link": "Uninstall any third-party APKs downloaded from messages."
+      },
+      "safe_replies": [
+        "I will check my account status in my telecom provider's official app.",
+        "If my SIM has an issue, I will visit the authorized store in person with my ID."
+      ],
+      "helpline_ids": ["chakshu", "trai_1909", "uidai_1947"]
+    },
+    {
+      "id": "prize_lottery_cashback",
+      "number": 4,
+      "name": "Prize, Lottery & Cashback Lure",
+      "plain_name": "Prize & Lottery Lure",
+      "harm_type": "Money",
+      "badge_color": "#D97706",
+      "evidence_strength": "Learned from real examples",
+      "evidence_count": 620,
+      "signature_tactics": [
+        "Dangling a prize or reward",
+        "Asking for passwords, OTP, or money"
+      ],
+      "red_flag_phrases": [
+        "selected to receive a £350 award",
+        "won cash prize",
+        "lucky winner of car",
+        "lottery claim number",
+        "pay registration charge to claim"
+      ],
+      "how_it_works": [
+        "Caller announces you won a massive lottery, luxury vehicle, or cash reward you never entered.",
+        "To release the prize, they instruct you to pay 'GST', 'customs clearance', or 'registration fees'.",
+        "Once money is transferred, the caller disappears and demands even higher fees."
+      ],
+      "do_now_steps": [
+        {
+          "title": "Remember: Genuine prizes never require upfront payments",
+          "detail": "Any contest demanding a fee or tax advance to release winnings is 100% fraudulent.",
+          "action_type": "none"
+        },
+        {
+          "title": "Never click claim links or call premium toll numbers",
+          "detail": "Scam numbers beginning with 0906 or international codes charge exorbitant rates.",
+          "action_type": "none"
+        },
+        {
+          "title": "Report suspicious lottery calls",
+          "detail": "Submit the number to the Chakshu portal and block the caller.",
+          "action_type": "link",
+          "action_target": "https://sancharsaathi.gov.in/sfc/"
+        }
+      ],
+      "never_do": [
+        "Never send money to claim any prize, reward, or lottery.",
+        "Never provide bank account details to receive an unexpected large award."
+      ],
+      "per_chip_actions": {
+        "sent_money": "Dial 1930 immediately with the transaction details and beneficiary UPI ID/account.",
+        "shared_otp": "Lock your net banking and debit cards immediately."
+      },
+      "safe_replies": [
+        "I did not enter any lottery. Deduct any fees from the winnings or cancel the entry.",
+        "Do not contact this number again. I am reporting this call to Chakshu."
+      ],
+      "helpline_ids": ["1930", "chakshu", "cybercrime_gov"]
+    },
+    {
+      "id": "govt_law_enforcement_digital_arrest",
+      "number": 5,
+      "name": "Government, Police & 'Digital Arrest' Scam",
+      "plain_name": "Police & 'Digital Arrest' Threat",
+      "harm_type": "Fear and threat / Money",
+      "badge_color": "#DC2626",
+      "evidence_strength": "Based on warning-sign rules",
+      "evidence_count": 0,
+      "signature_tactics": [
+        "Threatening arrest or legal consequences",
+        "Pretending to be an authority",
+        "Asking you to keep it secret",
+        "Asking for passwords, OTP, or money"
+      ],
+      "red_flag_phrases": [
+        "digital arrest",
+        "cyber crime branch delhi",
+        "cbi officer calling",
+        "customs parcel containing drugs",
+        "stay on video call or be arrested",
+        "supreme court warrant",
+        "transfer money to rbi verification account"
+      ],
+      "how_it_works": [
+        "Fraudsters impersonate police, CBI, ED, customs, or court judges on Skype/WhatsApp video.",
+        "They display fake badges, uniforms, and forged legal documents claiming a parcel in your name had illegal drugs.",
+        "They place you under fake 'digital arrest', forbid you from speaking to family, and demand money transfer for 'RBI verification'."
+      ],
+      "do_now_steps": [
+        {
+          "title": "Hang up and disconnect the video call",
+          "detail": "There is NO legal concept of 'Digital Arrest' in Indian or international law. No police or court conducts trials over video calls.",
+          "action_type": "none"
+        },
+        {
+          "title": "Talk to a family member or trusted friend",
+          "detail": "Scammers rely on isolation and fear. Sharing the situation breaks their psychological hold immediately.",
+          "action_type": "none"
+        },
+        {
+          "title": "Call National Cyber Crime Helpline 1930 or Police 112",
+          "detail": "Report the imposter numbers, Skype IDs, and payment details to 1930 immediately.",
+          "action_type": "tel",
+          "action_target": "1930"
+        }
+      ],
+      "never_do": [
+        "Never transfer money to any 'safe government escrow' or 'RBI verification account'—no such accounts exist.",
+        "Never remain isolated in a room on video call under threat of arrest.",
+        "Never hand over your digital signatures, OTPs, or financial statements."
+      ],
+      "per_chip_actions": {
+        "sent_money": "Call 1930 within minutes. Every minute counts for inter-bank fund recovery.",
+        "shared_documents": "File an official police report on cybercrime.gov.in noting that your identity documents were extorted under duress.",
+        "installed_app": "Disconnect all internet connections, boot into safe mode, and remove any remote desktop tools."
+      },
+      "safe_replies": [
+        "There is no legal provision for digital arrest. I am disconnecting and contacting my local police station.",
+        "Send an official written summons to my registered physical address."
+      ],
+      "helpline_ids": ["1930", "police_112", "cybercrime_gov", "chakshu"]
+    },
+    {
+      "id": "loan_investment_job_advance",
+      "number": 6,
+      "name": "Loan, Investment & Part-Time Job Advance-Fee",
+      "plain_name": "Fake Loan & Job Advance Fee",
+      "harm_type": "Money",
+      "badge_color": "#D97706",
+      "evidence_strength": "Learned from real examples",
+      "evidence_count": 310,
+      "signature_tactics": [
+        "Dangling a prize or reward",
+        "Asking for passwords, OTP, or money",
+        "Creating false urgency"
+      ],
+      "red_flag_phrases": [
+        "pre-approved instant loan without cibil",
+        "daily earnings 5000 from home",
+        "telegram task rating job",
+        "pay processing fee for loan disbursement",
+        "vip crypto investment guaranteed returns"
+      ],
+      "how_it_works": [
+        "Victims are offered guaranteed high-yield investments, instant collateral-free loans, or easy work-from-home tasks.",
+        "Early small payouts are given to build false trust.",
+        "Large sums of 'processing fees', 'margin deposits', or 'tax clearance' are requested before you can withdraw."
+      ],
+      "do_now_steps": [
+        {
+          "title": "Do not pay any advance fees",
+          "detail": "Legitimate RBI-registered banks deduct processing fees from loan disbursement, never upfront via UPI.",
+          "action_type": "none"
+        },
+        {
+          "title": "Verify RBI registration status",
+          "detail": "Check if the lending entity is listed on the official RBI Sachet portal (sachet.rbi.org.in).",
+          "action_type": "none"
+        },
+        {
+          "title": "Report suspicious Telegram/WhatsApp job groups",
+          "detail": "File a report on Chakshu and cybercrime.gov.in.",
+          "action_type": "link",
+          "action_target": "https://sancharsaathi.gov.in/sfc/"
+        }
+      ],
+      "never_do": [
+        "Never pay money in advance to secure a job, loan, or investment return.",
+        "Never install unofficial lending APKs that ask for contact and photo gallery permissions."
+      ],
+      "per_chip_actions": {
+        "sent_money": "Dial 1930 with transaction IDs. Collect screenshots of chat history, payment receipts, and group links.",
+        "shared_documents": "Monitor your PAN and bank accounts for unauthorized loan applications."
+      },
+      "safe_replies": [
+        "I only take loans from RBI-licensed commercial banks with standard physical documentation.",
+        "I do not pay upfront fees for job placements or online tasks."
+      ],
+      "helpline_ids": ["1930", "cybercrime_gov", "chakshu"]
+    },
+    {
+      "id": "tech_support_remote_access",
+      "number": 7,
+      "name": "Tech Support, Screen Share & 'UPI Upgrade'",
+      "plain_name": "Tech Support & Screen Share Trap",
+      "harm_type": "Device / Money",
+      "badge_color": "#DC2626",
+      "evidence_strength": "Based on warning-sign rules",
+      "evidence_count": 0,
+      "signature_tactics": [
+        "Asking you to install an app or share your screen",
+        "Pretending to be an authority",
+        "Creating false urgency"
+      ],
+      "red_flag_phrases": [
+        "install anydesk app",
+        "download teamviewer quicksupport",
+        "rustdesk screen sharing",
+        "upgrade your upi application",
+        "accept remote connection request",
+        "virus detected on your computer"
+      ],
+      "how_it_works": [
+        "Caller claims your computer has malware or your UPI app requires a mandatory security update.",
+        "They guide you to install remote access software (AnyDesk, TeamViewer, RustDesk) from Play Store.",
+        "They ask you to open your mobile banking app or transfer Re 1, allowing them to capture your MPIN and passwords live on screen."
+      ],
+      "do_now_steps": [
+        {
+          "title": "Turn on Airplane Mode immediately",
+          "detail": "Cutting internet access immediately severs the scammer's remote connection to your device.",
+          "action_type": "none"
+        },
+        {
+          "title": "Uninstall the remote access app",
+          "detail": "Remove AnyDesk, TeamViewer, RustDesk, or any newly installed APKs.",
+          "action_type": "none"
+        },
+        {
+          "title": "Change banking passwords from another device",
+          "detail": "Change your net banking password and UPI PINs from a clean family phone or laptop.",
+          "action_type": "none"
+        }
+      ],
+      "never_do": [
+        "Never install AnyDesk or TeamViewer on instruction from an unknown caller.",
+        "Never open banking apps while screen sharing is active."
+      ],
+      "per_chip_actions": {
+        "installed_app": "Turn on Airplane Mode, backup important files, uninstall the suspicious apps, or perform a factory reset.",
+        "shared_otp": "Lock your net banking and UPI access immediately via your bank's emergency lock facility.",
+        "sent_money": "Call 1930 to freeze the receiving account."
+      },
+      "safe_replies": [
+        "I do not permit remote screen access to my devices.",
+        "I will have my device inspected by an authorized service centre technician."
+      ],
+      "helpline_ids": ["1930", "cybercrime_gov", "chakshu"]
+    },
+    {
+      "id": "health_vaccine_insurance_scheme",
+      "number": 8,
+      "name": "Health, Vaccine, Insurance & Welfare Scheme",
+      "plain_name": "Health & Welfare Scheme Scam",
+      "harm_type": "Identity / Money",
+      "badge_color": "#D97706",
+      "evidence_strength": "Learned from real examples",
+      "evidence_count": 180,
+      "signature_tactics": [
+        "Pretending to be an authority",
+        "Requesting sensitive identity details",
+        "Asking for passwords, OTP, or money"
+      ],
+      "red_flag_phrases": [
+        "ayushman bharat card update",
+        "covid booster dose verification",
+        "government welfare grant subsidy",
+        "insurance policy maturity bonus",
+        "claim your lapsed policy funds"
+      ],
+      "how_it_works": [
+        "Scammers pose as Ministry of Health, IRDAI, or insurance representatives offering free bonus payouts or policy renewals.",
+        "They demand Aadhaar numbers, OTP verification, or advance documentation stamp charges."
+      ],
+      "do_now_steps": [
+        {
+          "title": "Verify only on official government portals",
+          "detail": "Check benefits directly on cowin.gov.in, pmjay.gov.in, or your insurance provider's official customer portal.",
+          "action_type": "none"
+        },
+        {
+          "title": "Never share OTPs for healthcare updates",
+          "detail": "Government health and welfare schemes do not require phone OTP verification to release benefits.",
+          "action_type": "none"
+        },
+        {
+          "title": "Report impersonation on Chakshu",
+          "detail": "Report the fraudulent contact number.",
+          "action_type": "link",
+          "action_target": "https://sancharsaathi.gov.in/sfc/"
+        }
+      ],
+      "never_do": [
+        "Never pay advance stamp fees to claim lapsed insurance bonuses.",
+        "Never share Aadhaar OTPs for unsolicited health scheme calls."
+      ],
+      "per_chip_actions": {
+        "shared_documents": "Lock your Aadhaar biometric profile in the mAadhaar app.",
+        "sent_money": "Call 1930 immediately to log a financial fraud complaint."
+      },
+      "safe_replies": [
+        "I manage my health policies and government schemes through official portals only.",
+        "I will contact my designated insurance agent directly."
+      ],
+      "helpline_ids": ["1930", "chakshu", "uidai_1947"]
+    },
+    {
+      "id": "family_emergency_voice_cloning",
+      "number": 9,
+      "name": "Family Emergency & Relative Impersonation (AI Voice Clone)",
+      "plain_name": "Family Emergency & Voice Cloning",
+      "harm_type": "Emotional / Money",
+      "badge_color": "#DC2626",
+      "evidence_strength": "Based on warning-sign rules",
+      "evidence_count": 0,
+      "signature_tactics": [
+        "Creating false urgency",
+        "Threatening arrest or legal consequences",
+        "Asking you to keep it secret",
+        "Asking for passwords, OTP, or money"
+      ],
+      "red_flag_phrases": [
+        "your son has been arrested in accident",
+        "your daughter is in hospital emergency",
+        "send bail money immediately",
+        "don't call your spouse or child",
+        "pay hospital deposit to start surgery"
+      ],
+      "how_it_works": [
+        "Caller claims your child, spouse, or relative is in police custody, injured in a critical accident, or kidnapped.",
+        "They may use AI voice cloning or background crying sounds to imitate the relative.",
+        "They demand instant money transfer to a third-party UPI account while forbidding you from hanging up."
+      ],
+      "do_now_steps": [
+        {
+          "title": "Hang up and call your relative on their saved number",
+          "detail": "Always call back directly on the trusted phone number you have saved in your contacts.",
+          "action_type": "none"
+        },
+        {
+          "title": "Use a secret family safe word",
+          "detail": "Ask a simple question only your actual family member would know (e.g., pet's name, childhood memory).",
+          "action_type": "none"
+        },
+        {
+          "title": "Call trusted relatives or local police",
+          "detail": "If you cannot reach the person, contact their school, workplace, or dial 112 before sending any money.",
+          "action_type": "tel",
+          "action_target": "112"
+        }
+      ],
+      "never_do": [
+        "Never send money under panic without independently speaking with your relative.",
+        "Never stay on the line if the caller demands you not inform other family members."
+      ],
+      "per_chip_actions": {
+        "sent_money": "Dial 1930 immediately to request an urgent inter-bank freeze on the beneficiary account.",
+        "shared_documents": "File an emergency report on cybercrime.gov.in."
+      },
+      "safe_replies": [
+        "I am hanging up now to call my family member directly on their phone.",
+        "What is our family safe word? I will not transfer money until verified."
+      ],
+      "helpline_ids": ["1930", "police_112", "cybercrime_gov"]
+    },
+    {
+      "id": "threat_extortion_sextortion",
+      "number": 10,
+      "name": "Threat, Extortion & Video Sextortion",
+      "plain_name": "Extortion & Sextortion Blackmail",
+      "harm_type": "Fear and threat / Emotional",
+      "badge_color": "#DC2626",
+      "evidence_strength": "Based on warning-sign rules",
+      "evidence_count": 0,
+      "signature_tactics": [
+        "Threatening arrest or legal consequences",
+        "Asking you to keep it secret",
+        "Asking for passwords, OTP, or money",
+        "Abusive or harassing language"
+      ],
+      "red_flag_phrases": [
+        "recorded your private video",
+        "will viral your photos on social media",
+        "calling from youtube crime branch",
+        "pay money or face defamation",
+        "delete video charge"
+      ],
+      "how_it_works": [
+        "A video call is initiated by a stranger who strips or plays explicit video, capturing the victim's face in screenshot/recording.",
+        "Minutes later, someone posing as police or YouTube executive demands extortion payments to stop public leak.",
+        "Paying once leads to endless demands for higher sums."
+      ],
+      "do_now_steps": [
+        {
+          "title": "Do NOT pay any money",
+          "detail": "Paying never stops blackmail—it confirms you are compliant and leads to bigger demands.",
+          "action_type": "none"
+        },
+        {
+          "title": "Screenshot evidence and block the caller",
+          "detail": "Save chat logs, phone numbers, payment QR codes, and profiles before blocking.",
+          "action_type": "none"
+        },
+        {
+          "title": "Report to Cyber Crime 1930 & StopNCII.org",
+          "detail": "StopNCII.org creates cryptographic hashes to prevent intimate images from being uploaded across major social platforms.",
+          "action_type": "link",
+          "action_target": "https://stopncii.org"
+        }
+      ],
+      "never_do": [
+        "Never transfer any extortion money.",
+        "Never delete evidence or chats in panic; evidence is vital for law enforcement.",
+        "Never suffer in silence—confide in a close friend, counsellor, or helpline."
+      ],
+      "per_chip_actions": {
+        "shared_photos": "Create protective hashes immediately on StopNCII.org and file a report on cybercrime.gov.in.",
+        "sent_money": "Dial 1930 immediately to attempt recovery and document extortion payments.",
+        "shared_documents": "File an FIR at your local cyber cell or online portal."
+      },
+      "safe_replies": [
+        "I am documenting all communications and filing an immediate complaint with the Cyber Crime Branch.",
+        "I do not respond to extortion demands."
+      ],
+      "helpline_ids": ["1930", "stopncii", "cybercrime_gov", "women_181", "police_112"]
+    },
+    {
+      "id": "abusive_harassing_caller",
+      "number": 11,
+      "name": "Abusive, Harassing or Intimidating Caller",
+      "plain_name": "Harassment & Intimidation",
+      "harm_type": "Emotional harassment",
+      "badge_color": "#DC2626",
+      "evidence_strength": "Based on warning-sign rules",
+      "evidence_count": 0,
+      "signature_tactics": [
+        "Abusive or harassing language",
+        "Threatening arrest or legal consequences",
+        "Creating false urgency"
+      ],
+      "red_flag_phrases": [
+        "foul abusive language",
+        "verbal abuse",
+        "threat of physical violence",
+        "continuous repeated calls",
+        "abusive recovery agent"
+      ],
+      "how_it_works": [
+        "Caller uses profanity, vulgarity, intimidation, or aggressive threats (often rogue recovery agents or stalkers).",
+        "They attempt to humiliate or terrorize the victim into compliance."
+      ],
+      "do_now_steps": [
+        {
+          "title": "Disconnect immediately and block the caller",
+          "detail": "Do not engage or argue; toxic callers escalate when they receive emotional reactions.",
+          "action_type": "none"
+        },
+        {
+          "title": "Enable spam call blocking on your phone",
+          "detail": "Use built-in phone spam protection or operator DND registration (TRAI 1909).",
+          "action_type": "tel",
+          "action_target": "1909"
+        },
+        {
+          "title": "Contact Women Helpline (181) or Emergency (112)",
+          "detail": "If you face stalking, sexual harassment, or physical threats, reach out for protection.",
+          "action_type": "tel",
+          "action_target": "181"
+        }
+      ],
+      "never_do": [
+        "Never engage in prolonged arguments with abusive callers.",
+        "Never give out your home address or routine."
+      ],
+      "per_chip_actions": {
+        "shared_documents": "File an alert on cybercrime.gov.in.",
+        "threatened": "Call 112 or visit your local police station if you feel physically unsafe."
+      },
+      "safe_replies": [
+        "This call is being recorded and logged with law enforcement. Disconnect immediately.",
+        "Any further calls will result in an FIR for criminal intimidation under BNS/IPC."
+      ],
+      "helpline_ids": ["police_112", "women_181", "trai_1909", "chakshu"]
+    },
+    {
+      "id": "courier_customs_parcel",
+      "number": 12,
+      "name": "Courier, Parcel & Customs Delivery Scam",
+      "plain_name": "Courier & Customs Parcel Scam",
+      "harm_type": "Fear and threat / Money",
+      "badge_color": "#D97706",
+      "evidence_strength": "Learned from real examples",
+      "evidence_count": 210,
+      "signature_tactics": [
+        "Pretending to be an authority",
+        "Creating false urgency",
+        "Asking for passwords, OTP, or money"
+      ],
+      "red_flag_phrases": [
+        "fedex parcel containing passports",
+        "dhl customs detained shipment",
+        "pay customs clearance charge",
+        "delivery address update link",
+        "unclaimed package pending delivery"
+      ],
+      "how_it_works": [
+        "Caller or SMS claims a courier in your name is held at customs or couldn't be delivered due to wrong address.",
+        "They demand a Rs 5–50 'redelivery fee' via a phishing link, or claim the package has illegal contraband to trigger a police scam."
+      ],
+      "do_now_steps": [
+        {
+          "title": "Check tracking only on the official courier website",
+          "detail": "Open the official FedEx, BlueDart, India Post, or DHL app and enter the tracking number yourself.",
+          "action_type": "none"
+        },
+        {
+          "title": "Never click links to update delivery address",
+          "detail": "Phishing links steal card numbers and SMS OTPs under the guise of tiny Re 5 charges.",
+          "action_type": "none"
+        },
+        {
+          "title": "Report the suspicious message on Chakshu",
+          "detail": "Submit the sender number and URL.",
+          "action_type": "link",
+          "action_target": "https://sancharsaathi.gov.in/sfc/"
+        }
+      ],
+      "never_do": [
+        "Never pay delivery fees through unsolicited SMS links.",
+        "Never believe phone claims that a courier company has placed you under police investigation."
+      ],
+      "per_chip_actions": {
+        "clicked_link": "Block your card if you entered payment details and clear browser data.",
+        "shared_otp": "Lock your net banking immediately and dial 1930.",
+        "sent_money": "Call 1930 within the golden hour."
+      },
+      "safe_replies": [
+        "I will track my shipments exclusively via the courier's official tracking portal.",
+        "I do not process delivery updates through third-party links or phone calls."
+      ],
+      "helpline_ids": ["1930", "chakshu", "cybercrime_gov"]
+    },
+    {
+      "id": "no_concern_found",
+      "number": 0,
+      "name": "No Scam Indicators Detected",
+      "plain_name": "No Concern Found",
+      "harm_type": "None",
+      "badge_color": "#059669",
+      "evidence_strength": "Learned from real examples",
+      "evidence_count": 5200,
+      "signature_tactics": [],
+      "red_flag_phrases": [],
+      "how_it_works": [
+        "This conversation appears to be a genuine, everyday phone call or message.",
+        "No manipulative pressure tactics, authority impersonation, or credential requests were identified."
+      ],
+      "do_now_steps": [
+        {
+          "title": "Keep general phone safety in mind",
+          "detail": "Remember the Golden Rule: Real banks and government agencies never ask for passwords or OTPs over a phone call.",
+          "action_type": "none"
+        }
+      ],
+      "never_do": [
+        "Never share sensitive OTPs or bank credentials, even on seemingly normal calls."
+      ],
+      "per_chip_actions": {},
+      "safe_replies": [
+        "Thank you. Have a great day."
+      ],
+      "helpline_ids": ["chakshu", "cybercrime_gov"]
+    }
+  ],
+  "golden_rule": "When in doubt, hang up and call back on a number you trust."
+}

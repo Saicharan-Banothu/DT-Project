@@ -1,0 +1,1782 @@
+{
+  "total_scam_calls_evaluated": 23,
+  "median_lead_time_seconds": 7.1,
+  "mean_lead_time_seconds": 7.1,
+  "lead_time_range_seconds": [
+    7.1,
+    7.1
+  ],
+  "detection_rate_by_call_pct": {
+    "20": 100.0,
+    "40": 100.0,
+    "60": 100.0,
+    "80": 100.0,
+    "100": 100.0
+  },
+  "sample_call_timelines": {
+    "scam_1.mp3": {
+      "filename": "scam_1.mp3",
+      "label": 1,
+      "duration_s": 16.0,
+      "first_alert_s": 0.0,
+      "ask_moment_s": 11.8,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 77
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 93
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 92
+        },
+        {
+          "time_s": 6.0,
+          "risk_score": 92
+        },
+        {
+          "time_s": 8.0,
+          "risk_score": 92
+        },
+        {
+          "time_s": 10.0,
+          "risk_score": 93
+        },
+        {
+          "time_s": 12.0,
+          "risk_score": 92
+        },
+        {
+          "time_s": 14.0,
+          "risk_score": 93
+        },
+        {
+          "time_s": 16.0,
+          "risk_score": 94
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Claims official authority",
+          "tier": "moderate"
+        },
+        {
+          "time_s": 6.0,
+          "label": "Creates artificial urgency",
+          "tier": "moderate"
+        },
+        {
+          "time_s": 11.8,
+          "label": "Asks for secret OTP / access",
+          "tier": "high"
+        }
+      ]
+    },
+    "scam_10.mp3": {
+      "filename": "scam_10.mp3",
+      "label": 1,
+      "duration_s": 7.2,
+      "first_alert_s": 2.0,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 45
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 83
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 93
+        },
+        {
+          "time_s": 6.0,
+          "risk_score": 92
+        },
+        {
+          "time_s": 8.0,
+          "risk_score": 93
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "You should hang up here",
+          "tier": "high",
+          "is_first_alert": true
+        }
+      ]
+    },
+    "scam_11.mp3": {
+      "filename": "scam_11.mp3",
+      "label": 1,
+      "duration_s": 7.2,
+      "first_alert_s": 2.0,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 45
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 83
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 93
+        },
+        {
+          "time_s": 6.0,
+          "risk_score": 92
+        },
+        {
+          "time_s": 8.0,
+          "risk_score": 93
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "You should hang up here",
+          "tier": "high",
+          "is_first_alert": true
+        }
+      ]
+    },
+    "scam_12.mp3": {
+      "filename": "scam_12.mp3",
+      "label": 1,
+      "duration_s": 7.2,
+      "first_alert_s": 2.0,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 45
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 83
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 93
+        },
+        {
+          "time_s": 6.0,
+          "risk_score": 92
+        },
+        {
+          "time_s": 8.0,
+          "risk_score": 93
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "You should hang up here",
+          "tier": "high",
+          "is_first_alert": true
+        }
+      ]
+    },
+    "scam_13.mp3": {
+      "filename": "scam_13.mp3",
+      "label": 1,
+      "duration_s": 7.2,
+      "first_alert_s": 2.0,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 45
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 83
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 93
+        },
+        {
+          "time_s": 6.0,
+          "risk_score": 92
+        },
+        {
+          "time_s": 8.0,
+          "risk_score": 93
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "You should hang up here",
+          "tier": "high",
+          "is_first_alert": true
+        }
+      ]
+    },
+    "scam_14.mp3": {
+      "filename": "scam_14.mp3",
+      "label": 1,
+      "duration_s": 7.2,
+      "first_alert_s": 2.0,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 45
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 83
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 93
+        },
+        {
+          "time_s": 6.0,
+          "risk_score": 92
+        },
+        {
+          "time_s": 8.0,
+          "risk_score": 93
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "You should hang up here",
+          "tier": "high",
+          "is_first_alert": true
+        }
+      ]
+    },
+    "scam_15.mp3": {
+      "filename": "scam_15.mp3",
+      "label": 1,
+      "duration_s": 7.2,
+      "first_alert_s": 2.0,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 45
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 83
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 93
+        },
+        {
+          "time_s": 6.0,
+          "risk_score": 92
+        },
+        {
+          "time_s": 8.0,
+          "risk_score": 93
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "You should hang up here",
+          "tier": "high",
+          "is_first_alert": true
+        }
+      ]
+    },
+    "scam_16.mp3": {
+      "filename": "scam_16.mp3",
+      "label": 1,
+      "duration_s": 7.2,
+      "first_alert_s": 2.0,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 45
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 83
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 93
+        },
+        {
+          "time_s": 6.0,
+          "risk_score": 92
+        },
+        {
+          "time_s": 8.0,
+          "risk_score": 93
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "You should hang up here",
+          "tier": "high",
+          "is_first_alert": true
+        }
+      ]
+    },
+    "scam_17.mp3": {
+      "filename": "scam_17.mp3",
+      "label": 1,
+      "duration_s": 7.2,
+      "first_alert_s": 2.0,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 45
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 83
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 93
+        },
+        {
+          "time_s": 6.0,
+          "risk_score": 92
+        },
+        {
+          "time_s": 8.0,
+          "risk_score": 93
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "You should hang up here",
+          "tier": "high",
+          "is_first_alert": true
+        }
+      ]
+    },
+    "scam_18_sus.mp3": {
+      "filename": "scam_18_sus.mp3",
+      "label": 1,
+      "duration_s": 7.2,
+      "first_alert_s": 2.0,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 45
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 83
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 93
+        },
+        {
+          "time_s": 6.0,
+          "risk_score": 92
+        },
+        {
+          "time_s": 8.0,
+          "risk_score": 93
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "You should hang up here",
+          "tier": "high",
+          "is_first_alert": true
+        }
+      ]
+    },
+    "scam_19.mp3": {
+      "filename": "scam_19.mp3",
+      "label": 1,
+      "duration_s": 7.2,
+      "first_alert_s": 2.0,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 45
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 83
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 93
+        },
+        {
+          "time_s": 6.0,
+          "risk_score": 92
+        },
+        {
+          "time_s": 8.0,
+          "risk_score": 93
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "You should hang up here",
+          "tier": "high",
+          "is_first_alert": true
+        }
+      ]
+    },
+    "scam_2.mp3": {
+      "filename": "scam_2.mp3",
+      "label": 1,
+      "duration_s": 14.4,
+      "first_alert_s": 0.0,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 77
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 92
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 89
+        },
+        {
+          "time_s": 6.0,
+          "risk_score": 92
+        },
+        {
+          "time_s": 8.0,
+          "risk_score": 93
+        },
+        {
+          "time_s": 10.0,
+          "risk_score": 93
+        },
+        {
+          "time_s": 12.0,
+          "risk_score": 94
+        },
+        {
+          "time_s": 14.0,
+          "risk_score": 94
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Claims official authority",
+          "tier": "moderate"
+        },
+        {
+          "time_s": 6.0,
+          "label": "Creates artificial urgency",
+          "tier": "moderate"
+        }
+      ]
+    },
+    "scam_20_fraud.mp3": {
+      "filename": "scam_20_fraud.mp3",
+      "label": 1,
+      "duration_s": 7.2,
+      "first_alert_s": 2.0,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 45
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 83
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 93
+        },
+        {
+          "time_s": 6.0,
+          "risk_score": 92
+        },
+        {
+          "time_s": 8.0,
+          "risk_score": 93
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "You should hang up here",
+          "tier": "high",
+          "is_first_alert": true
+        }
+      ]
+    },
+    "scam_21_sus.mp3": {
+      "filename": "scam_21_sus.mp3",
+      "label": 1,
+      "duration_s": 7.2,
+      "first_alert_s": 2.0,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 45
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 83
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 93
+        },
+        {
+          "time_s": 6.0,
+          "risk_score": 92
+        },
+        {
+          "time_s": 8.0,
+          "risk_score": 93
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "You should hang up here",
+          "tier": "high",
+          "is_first_alert": true
+        }
+      ]
+    },
+    "scam_22.wav": {
+      "filename": "scam_22.wav",
+      "label": 1,
+      "duration_s": 7.2,
+      "first_alert_s": 2.0,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 45
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 83
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 93
+        },
+        {
+          "time_s": 6.0,
+          "risk_score": 92
+        },
+        {
+          "time_s": 8.0,
+          "risk_score": 93
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "You should hang up here",
+          "tier": "high",
+          "is_first_alert": true
+        }
+      ]
+    },
+    "scam_23_fraud.wav": {
+      "filename": "scam_23_fraud.wav",
+      "label": 1,
+      "duration_s": 7.2,
+      "first_alert_s": 2.0,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 45
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 83
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 93
+        },
+        {
+          "time_s": 6.0,
+          "risk_score": 92
+        },
+        {
+          "time_s": 8.0,
+          "risk_score": 93
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "You should hang up here",
+          "tier": "high",
+          "is_first_alert": true
+        }
+      ]
+    },
+    "scam_24.wav": {
+      "filename": "scam_24.wav",
+      "label": 1,
+      "duration_s": 7.2,
+      "first_alert_s": 2.0,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 45
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 83
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 93
+        },
+        {
+          "time_s": 6.0,
+          "risk_score": 92
+        },
+        {
+          "time_s": 8.0,
+          "risk_score": 93
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "You should hang up here",
+          "tier": "high",
+          "is_first_alert": true
+        }
+      ]
+    },
+    "scam_3 (online-audio-converter.com).mp3": {
+      "filename": "scam_3 (online-audio-converter.com).mp3",
+      "label": 1,
+      "duration_s": 10.4,
+      "first_alert_s": 2.0,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 42
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 90
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 91
+        },
+        {
+          "time_s": 6.0,
+          "risk_score": 94
+        },
+        {
+          "time_s": 8.0,
+          "risk_score": 94
+        },
+        {
+          "time_s": 10.0,
+          "risk_score": 94
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Claims official authority",
+          "tier": "moderate"
+        },
+        {
+          "time_s": 2.0,
+          "label": "You should hang up here",
+          "tier": "high",
+          "is_first_alert": true
+        }
+      ]
+    },
+    "scam_5.mp3": {
+      "filename": "scam_5.mp3",
+      "label": 1,
+      "duration_s": 7.2,
+      "first_alert_s": 2.0,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 45
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 83
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 93
+        },
+        {
+          "time_s": 6.0,
+          "risk_score": 92
+        },
+        {
+          "time_s": 8.0,
+          "risk_score": 93
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "You should hang up here",
+          "tier": "high",
+          "is_first_alert": true
+        }
+      ]
+    },
+    "scam_6.mp3": {
+      "filename": "scam_6.mp3",
+      "label": 1,
+      "duration_s": 7.2,
+      "first_alert_s": 2.0,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 45
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 83
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 93
+        },
+        {
+          "time_s": 6.0,
+          "risk_score": 92
+        },
+        {
+          "time_s": 8.0,
+          "risk_score": 93
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "You should hang up here",
+          "tier": "high",
+          "is_first_alert": true
+        }
+      ]
+    },
+    "scam_7.mp3": {
+      "filename": "scam_7.mp3",
+      "label": 1,
+      "duration_s": 7.2,
+      "first_alert_s": 2.0,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 45
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 83
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 93
+        },
+        {
+          "time_s": 6.0,
+          "risk_score": 92
+        },
+        {
+          "time_s": 8.0,
+          "risk_score": 93
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "You should hang up here",
+          "tier": "high",
+          "is_first_alert": true
+        }
+      ]
+    },
+    "scam_8.mp3": {
+      "filename": "scam_8.mp3",
+      "label": 1,
+      "duration_s": 7.2,
+      "first_alert_s": 2.0,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 45
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 83
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 93
+        },
+        {
+          "time_s": 6.0,
+          "risk_score": 92
+        },
+        {
+          "time_s": 8.0,
+          "risk_score": 93
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "You should hang up here",
+          "tier": "high",
+          "is_first_alert": true
+        }
+      ]
+    },
+    "scam_9.mp3": {
+      "filename": "scam_9.mp3",
+      "label": 1,
+      "duration_s": 7.2,
+      "first_alert_s": 2.0,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 45
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 83
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 93
+        },
+        {
+          "time_s": 6.0,
+          "risk_score": 92
+        },
+        {
+          "time_s": 8.0,
+          "risk_score": 93
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "You should hang up here",
+          "tier": "high",
+          "is_first_alert": true
+        }
+      ]
+    },
+    "normal_1.mp3": {
+      "filename": "normal_1.mp3",
+      "label": 0,
+      "duration_s": 10.8,
+      "first_alert_s": null,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 53
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 22
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 16
+        },
+        {
+          "time_s": 6.0,
+          "risk_score": 14
+        },
+        {
+          "time_s": 8.0,
+          "risk_score": 14
+        },
+        {
+          "time_s": 10.0,
+          "risk_score": 12
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Friendly greeting",
+          "tier": "low"
+        },
+        {
+          "time_s": 8.0,
+          "label": "Casual conversational flow",
+          "tier": "low"
+        }
+      ]
+    },
+    "normal_10.mp3": {
+      "filename": "normal_10.mp3",
+      "label": 0,
+      "duration_s": 4.4,
+      "first_alert_s": null,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 12
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 10
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 11
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Friendly greeting",
+          "tier": "low"
+        },
+        {
+          "time_s": 4.4,
+          "label": "Casual conversational flow",
+          "tier": "low"
+        }
+      ]
+    },
+    "normal_11.mp3": {
+      "filename": "normal_11.mp3",
+      "label": 0,
+      "duration_s": 4.4,
+      "first_alert_s": null,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 12
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 10
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 11
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Friendly greeting",
+          "tier": "low"
+        },
+        {
+          "time_s": 4.4,
+          "label": "Casual conversational flow",
+          "tier": "low"
+        }
+      ]
+    },
+    "normal_12.mp3": {
+      "filename": "normal_12.mp3",
+      "label": 0,
+      "duration_s": 4.4,
+      "first_alert_s": null,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 12
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 10
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 11
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Friendly greeting",
+          "tier": "low"
+        },
+        {
+          "time_s": 4.4,
+          "label": "Casual conversational flow",
+          "tier": "low"
+        }
+      ]
+    },
+    "normal_13.mp3": {
+      "filename": "normal_13.mp3",
+      "label": 0,
+      "duration_s": 4.4,
+      "first_alert_s": null,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 12
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 10
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 11
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Friendly greeting",
+          "tier": "low"
+        },
+        {
+          "time_s": 4.4,
+          "label": "Casual conversational flow",
+          "tier": "low"
+        }
+      ]
+    },
+    "normal_14.mp3": {
+      "filename": "normal_14.mp3",
+      "label": 0,
+      "duration_s": 4.4,
+      "first_alert_s": null,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 12
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 10
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 11
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Friendly greeting",
+          "tier": "low"
+        },
+        {
+          "time_s": 4.4,
+          "label": "Casual conversational flow",
+          "tier": "low"
+        }
+      ]
+    },
+    "normal_15.mp3": {
+      "filename": "normal_15.mp3",
+      "label": 0,
+      "duration_s": 4.4,
+      "first_alert_s": null,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 12
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 10
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 11
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Friendly greeting",
+          "tier": "low"
+        },
+        {
+          "time_s": 4.4,
+          "label": "Casual conversational flow",
+          "tier": "low"
+        }
+      ]
+    },
+    "normal_16.mp3": {
+      "filename": "normal_16.mp3",
+      "label": 0,
+      "duration_s": 4.4,
+      "first_alert_s": null,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 12
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 10
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 11
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Friendly greeting",
+          "tier": "low"
+        },
+        {
+          "time_s": 4.4,
+          "label": "Casual conversational flow",
+          "tier": "low"
+        }
+      ]
+    },
+    "normal_17.wav": {
+      "filename": "normal_17.wav",
+      "label": 0,
+      "duration_s": 4.4,
+      "first_alert_s": null,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 12
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 10
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 11
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Friendly greeting",
+          "tier": "low"
+        },
+        {
+          "time_s": 4.4,
+          "label": "Casual conversational flow",
+          "tier": "low"
+        }
+      ]
+    },
+    "normal_18.wav": {
+      "filename": "normal_18.wav",
+      "label": 0,
+      "duration_s": 4.4,
+      "first_alert_s": null,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 12
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 10
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 11
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Friendly greeting",
+          "tier": "low"
+        },
+        {
+          "time_s": 4.4,
+          "label": "Casual conversational flow",
+          "tier": "low"
+        }
+      ]
+    },
+    "normal_19.wav": {
+      "filename": "normal_19.wav",
+      "label": 0,
+      "duration_s": 4.4,
+      "first_alert_s": null,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 12
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 10
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 11
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Friendly greeting",
+          "tier": "low"
+        },
+        {
+          "time_s": 4.4,
+          "label": "Casual conversational flow",
+          "tier": "low"
+        }
+      ]
+    },
+    "normal_2.mp3": {
+      "filename": "normal_2.mp3",
+      "label": 0,
+      "duration_s": 9.6,
+      "first_alert_s": null,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 7
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 10
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 11
+        },
+        {
+          "time_s": 6.0,
+          "risk_score": 9
+        },
+        {
+          "time_s": 8.0,
+          "risk_score": 8
+        },
+        {
+          "time_s": 10.0,
+          "risk_score": 9
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Friendly greeting",
+          "tier": "low"
+        },
+        {
+          "time_s": 8.0,
+          "label": "Casual conversational flow",
+          "tier": "low"
+        }
+      ]
+    },
+    "normal_20.wav": {
+      "filename": "normal_20.wav",
+      "label": 0,
+      "duration_s": 4.4,
+      "first_alert_s": null,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 12
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 10
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 11
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Friendly greeting",
+          "tier": "low"
+        },
+        {
+          "time_s": 4.4,
+          "label": "Casual conversational flow",
+          "tier": "low"
+        }
+      ]
+    },
+    "normal_21.wav": {
+      "filename": "normal_21.wav",
+      "label": 0,
+      "duration_s": 4.4,
+      "first_alert_s": null,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 12
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 10
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 11
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Friendly greeting",
+          "tier": "low"
+        },
+        {
+          "time_s": 4.4,
+          "label": "Casual conversational flow",
+          "tier": "low"
+        }
+      ]
+    },
+    "normal_22.mp3": {
+      "filename": "normal_22.mp3",
+      "label": 0,
+      "duration_s": 4.4,
+      "first_alert_s": null,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 12
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 10
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 11
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Friendly greeting",
+          "tier": "low"
+        },
+        {
+          "time_s": 4.4,
+          "label": "Casual conversational flow",
+          "tier": "low"
+        }
+      ]
+    },
+    "normal_23.mp3": {
+      "filename": "normal_23.mp3",
+      "label": 0,
+      "duration_s": 4.4,
+      "first_alert_s": null,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 12
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 10
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 11
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Friendly greeting",
+          "tier": "low"
+        },
+        {
+          "time_s": 4.4,
+          "label": "Casual conversational flow",
+          "tier": "low"
+        }
+      ]
+    },
+    "normal_24.mp3": {
+      "filename": "normal_24.mp3",
+      "label": 0,
+      "duration_s": 4.4,
+      "first_alert_s": null,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 12
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 10
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 11
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Friendly greeting",
+          "tier": "low"
+        },
+        {
+          "time_s": 4.4,
+          "label": "Casual conversational flow",
+          "tier": "low"
+        }
+      ]
+    },
+    "normal_3.mp3": {
+      "filename": "normal_3.mp3",
+      "label": 0,
+      "duration_s": 4.4,
+      "first_alert_s": null,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 12
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 10
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 11
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Friendly greeting",
+          "tier": "low"
+        },
+        {
+          "time_s": 4.4,
+          "label": "Casual conversational flow",
+          "tier": "low"
+        }
+      ]
+    },
+    "normal_4.mp3": {
+      "filename": "normal_4.mp3",
+      "label": 0,
+      "duration_s": 4.4,
+      "first_alert_s": null,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 12
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 10
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 11
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Friendly greeting",
+          "tier": "low"
+        },
+        {
+          "time_s": 4.4,
+          "label": "Casual conversational flow",
+          "tier": "low"
+        }
+      ]
+    },
+    "normal_5.mp3": {
+      "filename": "normal_5.mp3",
+      "label": 0,
+      "duration_s": 4.4,
+      "first_alert_s": null,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 12
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 10
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 11
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Friendly greeting",
+          "tier": "low"
+        },
+        {
+          "time_s": 4.4,
+          "label": "Casual conversational flow",
+          "tier": "low"
+        }
+      ]
+    },
+    "normal_6.mp3": {
+      "filename": "normal_6.mp3",
+      "label": 0,
+      "duration_s": 4.4,
+      "first_alert_s": null,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 12
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 10
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 11
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Friendly greeting",
+          "tier": "low"
+        },
+        {
+          "time_s": 4.4,
+          "label": "Casual conversational flow",
+          "tier": "low"
+        }
+      ]
+    },
+    "normal_7.mp3": {
+      "filename": "normal_7.mp3",
+      "label": 0,
+      "duration_s": 4.4,
+      "first_alert_s": null,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 12
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 10
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 11
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Friendly greeting",
+          "tier": "low"
+        },
+        {
+          "time_s": 4.4,
+          "label": "Casual conversational flow",
+          "tier": "low"
+        }
+      ]
+    },
+    "normal_8.mp3": {
+      "filename": "normal_8.mp3",
+      "label": 0,
+      "duration_s": 4.4,
+      "first_alert_s": null,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 12
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 10
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 11
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Friendly greeting",
+          "tier": "low"
+        },
+        {
+          "time_s": 4.4,
+          "label": "Casual conversational flow",
+          "tier": "low"
+        }
+      ]
+    },
+    "normal_9.mp3": {
+      "filename": "normal_9.mp3",
+      "label": 0,
+      "duration_s": 4.4,
+      "first_alert_s": null,
+      "ask_moment_s": null,
+      "lead_time_s": null,
+      "risk_progression": [
+        {
+          "time_s": 0.0,
+          "risk_score": 12
+        },
+        {
+          "time_s": 2.0,
+          "risk_score": 10
+        },
+        {
+          "time_s": 4.0,
+          "risk_score": 11
+        }
+      ],
+      "markers": [
+        {
+          "time_s": 2.0,
+          "label": "Friendly greeting",
+          "tier": "low"
+        },
+        {
+          "time_s": 4.4,
+          "label": "Casual conversational flow",
+          "tier": "low"
+        }
+      ]
+    }
+  }
+}

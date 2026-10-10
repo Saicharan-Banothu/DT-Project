@@ -3,491 +3,588 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SentiCall — The Third Voice: AI Protection Against Voice Scam & Vishing</title>
-  <meta name="description" content="SentiCall protects you against voice scam (vishing) calls by analyzing voice tone and conversation manipulation tactics in plain, comforting language.">
+  <title>SentiCall v2 — The Third Voice: AI Protection Against Voice Fraud</title>
+  <meta name="description" content="Research-grade, empathetic on-device AI platform detecting voice scam & vishing tactics with early-warning timelines, plain-language action plans, and verified emergency helplines.">
   
-  <!-- Modern Typography from Google Fonts -->
+  <!-- Modern Clean Typography (Google Fonts fallback supported offline) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="/static/style.css">
 </head>
-<body class="light-theme">
+<body>
 
-  <!-- Top Announcement Bar -->
-  <aside class="top-banner" aria-label="Project Information">
-    <div class="banner-inner container">
-      <span class="banner-badge">Design Thinking Project</span>
-      <p class="banner-text">SentiCall: An AI prototype that listens to what was said and how it was said to protect you from phone fraud.</p>
-      <button class="banner-link-btn" id="openEthicsModalBtn">View Honest Metrics</button>
-    </div>
-  </aside>
-
-  <!-- Navigation Header -->
+  <!-- Top App Navigation -->
   <header class="app-header">
-    <div class="header-inner container">
-      <div class="brand-group">
-        <div class="logo-shield" aria-hidden="true">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            <path d="M9 12l2 2 4-4"/>
+    <div class="container nav-container">
+      <div class="brand-logo" id="nav-brand-logo" onclick="switchPage('analyze')">
+        <div class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+            <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+            <line x1="12" x2="12" y1="19" y2="22"></line>
           </svg>
         </div>
-        <div class="brand-text">
-          <h1 class="brand-title">SentiCall</h1>
-          <span class="brand-subtitle">The Third Voice &bull; Anti-Vishing AI</span>
+        <div>
+          <div class="brand-title">SentiCall <span class="brand-subtitle">v2.0</span></div>
         </div>
       </div>
 
-      <nav class="nav-links">
-        <a href="#analyze-section" class="nav-link active">Analyze Call</a>
-        <a href="#samples-section" class="nav-link">Sample Calls</a>
-        <a href="#how-it-works" class="nav-link">How It Works</a>
-        <a href="#helpline-section" class="nav-link helpline-nav-btn">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          Helpline 1930
-        </a>
-      </nav>
+      <ul class="nav-menu">
+        <li class="nav-item active" id="tab-analyze" onclick="switchPage('analyze')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+          Analyze Call
+        </li>
+        <li class="nav-item" id="tab-cases" onclick="switchPage('cases')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          My Cases & Radar
+        </li>
+        <li class="nav-item" id="tab-atlas" onclick="switchPage('atlas')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          Scam Atlas
+        </li>
+        <li class="nav-item" id="tab-practice" onclick="switchPage('practice')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          Practice Mode
+        </li>
+        <li class="nav-item" id="tab-insights" onclick="switchPage('insights')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          Model Insights
+        </li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn-icon" id="btn-text-size-toggle" title="Toggle Larger Text" onclick="toggleLargerText()">
+          <span style="font-weight: 800; font-size: 0.95rem;">A+</span>
+        </button>
+      </div>
     </div>
   </header>
 
-  <!-- Main Application Container -->
-  <main class="main-content container">
+  <!-- Reassuring Privacy Strip -->
+  <div class="trust-strip">
+    <div class="container trust-content">
+      <span class="trust-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        100% On-Device Privacy: Audio never leaves your machine
+      </span>
+      <span class="trust-dot">•</span>
+      <span class="trust-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+        Plain-language explanations without medical/tech jargon
+      </span>
+      <span class="trust-dot">•</span>
+      <span class="trust-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m9.17 14.83-4.24 4.24"></path></svg>
+        Direct connection to National Cyber Crime Helpline 1930
+      </span>
+    </div>
+  </div>
 
-    <!-- Hero Introduction -->
-    <section class="hero-section text-center">
-      <div class="hero-pill">
-        <span class="pill-dot"></span> Reassuring Safety for Non-Technical Users
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="container">
+
+    <!-- ====================================================================
+         PAGE 1: ANALYZE / HOME
+         ==================================================================== -->
+    <section class="page-section active" id="page-analyze">
+      
+      <!-- Hero Banner -->
+      <div class="hero-card">
+        <div class="hero-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          SentiCall "The Third Voice" AI Safety Suite
+        </div>
+        <h1 class="hero-title">Protect Yourself Against Phone Scams & Vishing</h1>
+        <p class="hero-desc">Upload an audio recording, record a live clip, or paste a suspicious transcript. SentiCall detects psychological pressure tactics and gives you a step-by-step safety plan.</p>
+        
+        <!-- Live Waveform Canvas in Hero -->
+        <canvas class="hero-waveform-canvas" id="hero-waveform-canvas"></canvas>
       </div>
-      <h2 class="hero-heading">Unsure if a call was genuine?<br><span class="highlight-text">Let SentiCall analyze it for you.</span></h2>
-      <p class="hero-subtext">
-        Scammers often impersonate bank managers or telecom providers to create false urgency. 
-        Upload a call recording or paste what was said — we explain any manipulation tricks in warm, plain language.
-      </p>
-    </section>
 
-    <!-- Analysis Input Card -->
-    <section id="analyze-section" class="analysis-card card shadow-sm">
-      <div class="tabs-header">
-        <button class="tab-btn active" id="tabAudioBtn" data-tab="audio">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
-          <span>Upload Audio Call</span>
-        </button>
-        <button class="tab-btn" id="tabTextBtn" data-tab="text">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          <span>Paste Call Transcript</span>
-        </button>
+      <!-- 3-Step How It Works Bar -->
+      <div class="how-it-works-grid">
+        <div class="how-step-card">
+          <div class="how-step-num">1</div>
+          <div class="how-step-text">
+            <h4>Provide the Call</h4>
+            <p>Upload .mp3/.wav, record a voice snippet, or paste suspicious message text.</p>
+          </div>
+        </div>
+        <div class="how-step-card">
+          <div class="how-step-num">2</div>
+          <div class="how-step-text">
+            <h4>AI Multimodal Analysis</h4>
+            <p>Evaluates acoustic vocal tension, offline Whisper transcript, and 9 signature deception tactics.</p>
+          </div>
+        </div>
+        <div class="how-step-card">
+          <div class="how-step-num">3</div>
+          <div class="how-step-text">
+            <h4>Get Your Safety Plan</h4>
+            <p>Interactive timeline with first-alert marker, customized immediate steps, and direct 1930 reporting.</p>
+          </div>
+        </div>
       </div>
 
-      <!-- Tab 1: Audio Upload -->
-      <div class="tab-content" id="tabAudioContent">
-        <div class="dropzone" id="dropzone">
-          <input type="file" id="audioFileInput" accept=".mp3,.wav,.ogg,.m4a" class="file-input-hidden">
-          <div class="dropzone-inner">
-            <div class="upload-icon-circle">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+      <!-- Analysis Workbench Card -->
+      <div class="input-card">
+        <div class="input-tabs">
+          <button class="input-tab-btn active" id="input-tab-upload" onclick="switchInputTab('upload')">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+            Upload Audio File
+          </button>
+          <button class="input-tab-btn" id="input-tab-mic" onclick="switchInputTab('mic')">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" x2="12" y1="19" x2="12" y2="22"></line></svg>
+            Record with Mic [P2]
+          </button>
+          <button class="input-tab-btn" id="input-tab-text" onclick="switchInputTab('text')">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path></svg>
+            Paste Transcript / SMS
+          </button>
+        </div>
+
+        <!-- Panel A: File Upload -->
+        <div class="input-panel active" id="panel-upload">
+          <div class="dropzone" id="audio-dropzone" onclick="document.getElementById('audio-file-input').click()">
+            <svg class="dropzone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 18V5l12-2v13"></path>
+              <circle cx="6" cy="18" r="3"></circle>
+              <circle cx="18" cy="16" r="3"></circle>
+            </svg>
+            <div class="dropzone-title">Click to upload or drag & drop call recording</div>
+            <div class="dropzone-subtitle">Supports .mp3, .wav (up to 3 minutes recommended)</div>
+            <input type="file" id="audio-file-input" accept="audio/*,.mp3,.wav" style="display: none;" onchange="handleFileSelected(this)">
+          </div>
+
+          <div class="file-selected-card" id="file-selected-preview">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+              <span id="selected-file-name" style="font-weight: 700;">recording.mp3</span>
             </div>
-            <h3 class="dropzone-title">Click to upload or drag & drop call recording</h3>
-            <p class="dropzone-desc">Supports clean MP3 or WAV files up to 25MB</p>
-            <div class="selected-file-badge" id="selectedFileBadge" style="display: none;">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
-              <span id="selectedFileName">filename.mp3</span>
-              <button type="button" class="remove-file-btn" id="removeFileBtn" title="Remove file">&times;</button>
-            </div>
+            <button class="btn-secondary" style="min-height: 36px; padding: 4px 10px;" onclick="clearSelectedFile()">Remove</button>
           </div>
         </div>
 
-        <!-- Audio Player Preview (if audio loaded) -->
-        <div class="audio-player-wrapper" id="audioPlayerWrapper" style="display: none;">
-          <div class="player-header">
-            <span class="player-title">Audio Preview</span>
-            <span class="player-status" id="playerStatus">Ready to play</span>
-          </div>
-          <audio id="audioPreviewPlayer" controls class="custom-audio-player"></audio>
-        </div>
-
-        <div class="action-footer">
-          <button type="button" class="btn btn-secondary" id="browseSamplesBtn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
-            Choose a Sample Call
-          </button>
-          <button type="button" class="btn btn-primary" id="analyzeAudioBtn" disabled>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            Analyze Call Safety
-          </button>
-        </div>
-      </div>
-
-      <!-- Tab 2: Text Transcript -->
-      <div class="tab-content" id="tabTextContent" style="display: none;">
-        <div class="text-input-group">
-          <div class="text-input-header">
-            <label for="transcriptTextInput" class="input-label">Type or paste what the caller said:</label>
-            <span class="char-count" id="charCount">0 words</span>
-          </div>
-          <textarea id="transcriptTextInput" class="transcript-textarea" rows="5" placeholder="Example: Hello sir, I am calling from your bank customer care. Your debit card is expiring today. To avoid blockage, please tell me the four digit OTP sent to your phone..."></textarea>
-        </div>
-
-        <!-- Quick Fill Buttons -->
-        <div class="quick-samples-bar">
-          <span class="quick-label">Try quick example:</span>
-          <button type="button" class="quick-sample-chip" data-sample-text="hello, i m bank manager of SBI, ur debit card is about to expire would u want to issue new card. please tell me the four digit otp sent to your mobile.">SBI Bank Card Scam</button>
-          <button type="button" class="quick-sample-chip" data-sample-text="hello sir, i am from jio customer care in 23 hours your sim will be closed. do u want to activate it. please confirm your aadhaar number now.">Jio SIM Deactivation</button>
-          <button type="button" class="quick-sample-chip" data-sample-text="Todays Vodafone numbers ending with 4882 are selected to receive a £350 award. If your number matches call 09064019014 to claim your cash prize.">Vodafone £350 Prize</button>
-          <button type="button" class="quick-sample-chip" data-sample-text="Allo! We have braved the buses and taken on the trains and triumphed. I mean we are in b'ham. Have a jolly good rest of week!">Normal Family Chat</button>
-        </div>
-
-        <div class="action-footer">
-          <button type="button" class="btn btn-secondary" id="clearTextBtn">Clear Text</button>
-          <button type="button" class="btn btn-primary" id="analyzeTextBtn">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            Analyze Transcript
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Friendly Processing / Loading State -->
-    <section class="loading-card card shadow-sm text-center" id="loadingSection" style="display: none;">
-      <div class="loader-pulse-ring">
-        <div class="pulse-icon">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
-            <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
-          </svg>
-        </div>
-      </div>
-
-      <h3 class="loading-title" id="loadingTitle">Listening to the call...</h3>
-      <p class="loading-subtitle" id="loadingSubtitle">Our AI is listening to voice cadence and checking conversational patterns.</p>
-
-      <!-- Step by Step Friendly Progress -->
-      <div class="step-progress-list">
-        <div class="step-item" id="step1">
-          <span class="step-dot"></span>
-          <span class="step-text">Acoustic tone & cadence analysis</span>
-        </div>
-        <div class="step-item" id="step2">
-          <span class="step-dot"></span>
-          <span class="step-text">Transcribing spoken dialogue</span>
-        </div>
-        <div class="step-item" id="step3">
-          <span class="step-dot"></span>
-          <span class="step-text">Checking for manipulation & pressure tactics</span>
-        </div>
-        <div class="step-item" id="step4">
-          <span class="step-dot"></span>
-          <span class="step-text">Composing clear, plain-language safety summary</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Centerpiece Results View -->
-    <section class="results-container" id="resultsSection" style="display: none;">
-
-      <!-- Top Verdict Banner Card -->
-      <div class="verdict-card card shadow" id="verdictCard">
-        <div class="verdict-grid">
-          
-          <!-- Left: Circular Gauge & Risk Tier -->
-          <div class="verdict-score-block">
-            <div class="gauge-container">
-              <svg class="gauge-svg" viewBox="0 0 120 120">
-                <circle class="gauge-bg" cx="60" cy="60" r="50"></circle>
-                <circle class="gauge-fill" id="gaugeCircle" cx="60" cy="60" r="50" stroke-dasharray="314.15" stroke-dashoffset="314.15"></circle>
+        <!-- Panel B: Mic Recording -->
+        <div class="input-panel" id="panel-mic">
+          <div class="mic-record-panel">
+            <button class="mic-btn-circle" id="btn-mic-toggle" onclick="toggleMicRecording()">
+              <svg id="mic-icon-svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                <line x1="12" x2="12" y1="19" y2="22"></line>
               </svg>
-              <div class="gauge-center-content">
-                <span class="gauge-score-value" id="gaugeScore">0</span>
-                <span class="gauge-score-label">Risk Score</span>
-              </div>
-            </div>
-
-            <div class="risk-badge-wrapper">
-              <span class="risk-badge" id="riskBadge">Low Risk</span>
-            </div>
+            </button>
+            <div id="mic-status-text" style="font-weight: 700; color: var(--text-main); margin-bottom: 4px;">Tap to start recording</div>
+            <div style="font-size: 0.84rem; color: var(--text-muted);">Speak a sample script or play a clip aloud near your microphone. (Consent: audio stays strictly on this device)</div>
           </div>
+        </div>
 
-          <!-- Right: Clear Verdict & Warm Summary Sentence -->
-          <div class="verdict-details-block">
-            <div class="verdict-header-row">
-              <span class="source-tag" id="sourceTag">Analyzed Audio & Transcript</span>
-              <span class="timestamp-tag" id="timestampTag">Just now</span>
-            </div>
+        <!-- Panel C: Text Transcript -->
+        <div class="input-panel" id="panel-text">
+          <textarea class="transcript-textarea" id="transcript-input-field" placeholder="Paste the conversation transcript or suspicious message text here... (e.g. 'Hello, I am bank manager of SBI, your card is about to expire...')"></textarea>
+        </div>
 
-            <h3 class="verdict-heading" id="verdictHeading">High Likelihood of a Voice Scam (Vishing)</h3>
-
-            <div class="summary-sentence-box" id="summarySentenceBox">
-              <div class="summary-quote-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2H4c-1.25 0-2 .75-2 2v6c0 7 4 8 7 8z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2h-4c-1.25 0-2 .75-2 2v6c0 7 4 8 7 8z"/></svg>
-              </div>
-              <p class="summary-sentence" id="summarySentence">
-                This call appears to impersonate an official representative and asks for your secret OTP or passwords — a well-known tactic used to compromise bank accounts.
-              </p>
-            </div>
+        <!-- Action Row -->
+        <div class="action-row">
+          <div style="font-size: 0.85rem; color: var(--text-muted); display: flex; align-items: center; gap: 6px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Local Whisper ASR + Telephony Filtered XGBoost Ready
           </div>
-
+          <button class="btn-primary" id="btn-submit-analysis" onclick="runMainAnalysis()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            Evaluate Call Risk Now
+          </button>
         </div>
       </div>
 
-      <!-- Two-Column Breakdown Grid -->
-      <div class="results-grid">
-
-        <!-- Column 1: Interactive Transcript with Gentle Phrase Highlights -->
-        <div class="results-col">
-          <div class="card shadow-sm h-100">
-            <div class="card-header-clean">
-              <div class="header-icon-title">
-                <div class="card-icon blue-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-                </div>
-                <div>
-                  <h4 class="card-heading">Call Transcript & Flagged Phrases</h4>
-                  <p class="card-caption">Highlighted phrases indicate specific manipulation tactics</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-body">
-              <div class="transcript-box" id="transcriptDisplayBox">
-                <!-- Highlighted HTML transcript injected dynamically -->
-              </div>
-
-              <!-- Highlight Legend / Explainer -->
-              <div class="highlight-legend" id="highlightLegend">
-                <span class="legend-title">Click flagged words above or review tactics below:</span>
-              </div>
-            </div>
-          </div>
+      <!-- Pre-Loaded Sample Calls Grid -->
+      <div>
+        <h3 class="sample-section-heading">Try a Real-World Sample Call (1-Click Instant Demo)</h3>
+        <p class="sample-section-sub">Select any sample below to evaluate in under 1 second using our pre-analyzed benchmark calls.</p>
+        <div class="samples-grid" id="samples-container">
+          <!-- Populated dynamically by app.js -->
         </div>
-
-        <!-- Column 2: Manipulation Tactics Breakdown -->
-        <div class="results-col">
-          <div class="card shadow-sm h-100">
-            <div class="card-header-clean">
-              <div class="header-icon-title">
-                <div class="card-icon amber-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-                </div>
-                <div>
-                  <h4 class="card-heading">Manipulation Signals Detected</h4>
-                  <p class="card-caption">5 specific psychological tricks scammers use</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-body">
-              <div class="tactics-list" id="tacticsList">
-                <!-- Injected dynamically: 5 Tactic Cards -->
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
 
-      <!-- Channel Evidence Breakdown (Voice vs Language) -->
-      <div class="evidence-section card shadow-sm">
-        <h4 class="card-heading mb-3">Dual-Channel Safety Evidence</h4>
-        <div class="evidence-grid">
+    </section>
+
+    <!-- ====================================================================
+         PAGE 2: CASE REPORT / RESULT VIEW
+         ==================================================================== -->
+    <section class="page-section" id="page-result">
+      
+      <!-- Sticky Verdict & Summary Bar -->
+      <div class="sticky-verdict-bar">
+        <div class="verdict-left">
+          <!-- Circular Gauge -->
+          <div class="gauge-container">
+            <svg class="gauge-svg" viewBox="0 0 100 100">
+              <circle class="gauge-circle-bg" cx="50" cy="50" r="42"></circle>
+              <circle class="gauge-circle-fill" id="verdict-gauge-circle" cx="50" cy="50" r="42" stroke="#dc2626" stroke-dasharray="264" stroke-dashoffset="264"></circle>
+            </svg>
+            <div class="gauge-text-center">
+              <div class="gauge-score-num" id="verdict-gauge-number">0</div>
+              <div class="gauge-score-label">RISK</div>
+            </div>
+          </div>
+
+          <div class="verdict-info">
+            <div class="verdict-badges">
+              <span class="tier-badge tier-high" id="verdict-tier-badge">High Risk</span>
+              <span class="family-chip" id="verdict-family-chip">Bank Impersonation</span>
+              <span class="evidence-badge" id="verdict-evidence-badge">Learned from real examples</span>
+            </div>
+            <h2 id="verdict-heading-text">High Likelihood of a Voice Scam</h2>
+            <p class="verdict-summary-p" id="verdict-summary-sentence">This call appears to impersonate an official representative and asks for your secret OTP.</p>
+          </div>
+        </div>
+
+        <div class="verdict-actions">
+          <button class="btn-primary" onclick="downloadCaseReportPDF()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download Case Report (PDF)
+          </button>
+          <button class="btn-secondary" onclick="shareWithFamilyWhatsApp()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            Share with Family
+          </button>
+          <button class="btn-secondary" onclick="saveCurrentCaseToHistory()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
+            Save to My Cases
+          </button>
+        </div>
+      </div>
+
+      <!-- View Mode Switcher -->
+      <div class="view-mode-bar">
+        <div style="font-size: 0.88rem; font-weight: 700; color: var(--text-muted); display: flex; align-items: center; gap: 8px;">
+          <button class="btn-secondary" style="min-height: 32px; padding: 2px 10px;" onclick="speakVerdictReadAloud()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+            Read Aloud
+          </button>
+          <span>Language: <b id="result-lang-label">English</b></span>
+        </div>
+
+        <div class="view-mode-toggle">
+          <button class="view-mode-btn" id="btn-mode-simple" onclick="switchViewMode('simple')">Simple View</button>
+          <button class="view-mode-btn active" id="btn-mode-insight" onclick="switchViewMode('insight')">Insight View</button>
+        </div>
+      </div>
+
+      <!-- Section 1: Immediate Action Plan & State Chips (Shown in both Simple & Insight) -->
+      <div class="action-plan-card" id="card-action-plan">
+        <div class="plan-header">
+          <div class="plan-title">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            <span id="plan-headline-text">What You Should Do Right Now</span>
+          </div>
+          <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">Personalized for this scam type</span>
+        </div>
+
+        <!-- "What did you already do?" Chips -->
+        <div class="victim-state-chips-wrap">
+          <div class="victim-chips-title">What happened on this call? (Select all that apply to adapt your steps)</div>
+          <div class="chips-grid">
+            <span class="state-chip active" data-chip="just_listened" onclick="toggleVictimChip('just_listened')">✓ Just listened</span>
+            <span class="state-chip" data-chip="shared_otp" onclick="toggleVictimChip('shared_otp')">+ Shared an OTP or PIN</span>
+            <span class="state-chip" data-chip="shared_documents" onclick="toggleVictimChip('shared_documents')">+ Shared Aadhaar or PAN</span>
+            <span class="state-chip" data-chip="sent_money" onclick="toggleVictimChip('sent_money')">+ Sent money / UPI</span>
+            <span class="state-chip" data-chip="installed_app" onclick="toggleVictimChip('installed_app')">+ Installed an app / shared screen</span>
+            <span class="state-chip" data-chip="clicked_link" onclick="toggleVictimChip('clicked_link')">+ Clicked a link</span>
+            <span class="state-chip" data-chip="shared_photos" onclick="toggleVictimChip('shared_photos')">+ Shared private photos</span>
+          </div>
+        </div>
+
+        <!-- Do This Now 3-Step Grid -->
+        <div class="do-now-grid" id="do-now-steps-container">
+          <!-- Populated dynamically by app.js -->
+        </div>
+
+        <!-- Extra Adapted Steps based on Chips -->
+        <div class="adapted-steps-container" id="adapted-steps-container">
+          <!-- Populated dynamically when user selects chips -->
+        </div>
+
+        <!-- Safe Replies Collapsible -->
+        <div class="safe-replies-box">
+          <div class="safe-replies-title">Safe Replies You Can Say on the Next Call:</div>
+          <div id="safe-replies-list">
+            <!-- Populated dynamically -->
+          </div>
+        </div>
+
+        <!-- Golden Rule Footer -->
+        <div class="golden-rule-footer">
+          <b>The SentiCall Golden Rule:</b> <i>When in doubt, hang up and call back on a number you trust.</i>
+        </div>
+      </div>
+
+      <!-- INSIGHT VIEW ONLY BLOCKS -->
+      <div id="insight-view-blocks">
+        
+        <!-- Section 2: Call Story Timeline & WaveSurfer & Live Replay -->
+        <div class="timeline-card" id="card-call-story">
+          <div class="timeline-header">
+            <div class="timeline-title">Call Story Timeline & Early Detection</div>
+            <button class="live-replay-btn" id="btn-live-replay" onclick="toggleLiveReplayMode()">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Watch It as If It Were Live
+            </button>
+          </div>
+
+          <!-- Live Alert Overlay Banner -->
+          <div class="live-replay-alert-banner" id="live-replay-alert-banner">
+            <div class="live-alert-left">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              <div class="live-alert-text">
+                <h4>Likely Scam Detected! Do NOT share credentials.</h4>
+                <p id="live-lead-time-notice">SentiCall would have warned you 14.5 seconds before the OTP request.</p>
+              </div>
+            </div>
+            <button class="btn-hangup-now" onclick="stopLiveReplay()">Hang Up Now</button>
+          </div>
+
+          <!-- Waveform Canvas -->
+          <div class="waveform-wrap">
+            <canvas class="waveform-canvas" id="timeline-waveform-canvas"></canvas>
+          </div>
+
+          <!-- Audio Controls Bar -->
+          <div class="timeline-audio-controls">
+            <button class="audio-play-btn" id="btn-audio-play-pause" onclick="toggleAudioPlayback()">
+              <svg id="play-pause-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </button>
+            <span class="audio-time-label" id="audio-time-display">0:00 / 0:18</span>
+            <div style="font-size: 0.82rem; color: var(--text-muted); margin-left: auto;">
+              Click any milestone marker below to jump directly to that sentence:
+            </div>
+          </div>
+
+          <!-- Milestone Markers Track -->
+          <div class="markers-track" id="timeline-markers-track">
+            <!-- Populated dynamically -->
+          </div>
+        </div>
+
+        <!-- Section 3: Why We Think So & Highlighted Transcript -->
+        <div class="evidence-section-grid">
           
-          <!-- Voice Channel -->
-          <div class="evidence-channel-card" id="voiceChannelCard">
-            <div class="channel-header">
-              <span class="channel-badge voice-badge">Voice Tone & Cadence</span>
-              <span class="channel-score" id="voiceChannelScore">--</span>
+          <!-- Left: Highlighted Transcript -->
+          <div class="transcript-box-card">
+            <div class="transcript-header">
+              <h3 style="font-size: 1.1rem;">Transcript & Word-Level Signals</h3>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">Red shading indicates higher scam weight</span>
             </div>
-            <ul class="channel-signals-list" id="voiceSignalsList">
-              <li>Awaiting voice audio analysis...</li>
-            </ul>
-          </div>
-
-          <!-- Language Channel -->
-          <div class="evidence-channel-card" id="textChannelCard">
-            <div class="channel-header">
-              <span class="channel-badge text-badge">Message Phrasing</span>
-              <span class="channel-score" id="textChannelScore">--</span>
-            </div>
-            <ul class="channel-signals-list" id="textSignalsList">
-              <li>Awaiting transcript analysis...</li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Reassuring "What to Do Next" Helpline Guidance Card -->
-      <div class="helpline-action-card card shadow" id="helplineCard">
-        <div class="helpline-card-grid">
-          <div class="helpline-left">
-            <div class="helpline-icon-wrap">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            </div>
-            <div>
-              <span class="helpline-tag" id="helplineTag">Action Advised</span>
-              <h3 class="helpline-heading" id="helplineHeading">What should you do next?</h3>
-              <p class="helpline-desc">Follow these calm, reassuring steps to protect your finances and privacy.</p>
+            <div class="transcript-body" id="transcript-highlight-body">
+              <!-- Rendered with word shading and pills -->
             </div>
           </div>
 
-          <div class="helpline-tips-col">
-            <ul class="helpline-tips-list" id="helplineTipsList">
-              <li>Never share your OTP, password, or UPI PIN with anyone over the phone.</li>
-              <li>Hang up immediately. Official bank managers will never threaten disconnection.</li>
-            </ul>
-          </div>
-
-          <div class="helpline-contact-box" id="helplineContactBox">
-            <span class="hotline-title">National Cyber Crime Helpline</span>
-            <span class="hotline-number">Dial 1930</span>
-            <span class="hotline-sub">Free 24/7 Citizen Portal</span>
-            <a href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer" class="hotline-link">Visit cybercrime.gov.in &rarr;</a>
+          <!-- Right: Detected Tactics Cards -->
+          <div class="tactics-column" id="tactics-cards-column">
+            <!-- Populated dynamically -->
           </div>
         </div>
-      </div>
 
-      <!-- Action Footer to restart or try another -->
-      <div class="text-center mt-4">
-        <button type="button" class="btn btn-secondary" id="restartAnalysisBtn">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
-          Analyze Another Call
-        </button>
-      </div>
+        <!-- Section 4: Voice Fingerprint Cards -->
+        <div class="voice-fp-card" id="card-voice-fingerprint">
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <h3 style="font-size: 1.15rem;">Acoustic Voice Fingerprint</h3>
+            <span style="font-size: 0.78rem; font-weight: 600; color: var(--text-muted); background: var(--bg-subtle); padding: 3px 8px; border-radius: 4px;">
+              Telephony Standardized (16 kHz, 300–3400 Hz)
+            </span>
+          </div>
+          <div class="voice-fp-grid" id="voice-fp-grid">
+            <!-- Populated dynamically with rhythm, pressure, and background cards -->
+          </div>
+        </div>
+
+        <!-- Section 5: Matches a Known Scam Script & Scam Atlas Link -->
+        <div class="nearest-script-card">
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <h3 style="font-size: 1.15rem;">Reference Database Script Matches</h3>
+            <button class="btn-secondary" style="min-height: 32px; padding: 2px 10px;" onclick="switchPage('atlas')">
+              Open Full Scam Atlas →
+            </button>
+          </div>
+          <div id="nearest-script-container">
+            <!-- Populated dynamically -->
+          </div>
+        </div>
+
+      </div> <!-- /insight-view-blocks -->
 
     </section>
 
-    <!-- Built-in "Try a Sample Call" Library Section -->
-    <section id="samples-section" class="samples-library-section">
-      <div class="section-header text-center">
-        <span class="section-pill">Interactive Demonstration</span>
-        <h3 class="section-heading">Try a Pre-Loaded Sample Call</h3>
-        <p class="section-subtext">Experience how SentiCall detects simulated bank fraud, telecom threats, prize scams, and genuine calls in one click.</p>
+    <!-- ====================================================================
+         PAGE 3: MY CASES & SCAM RADAR
+         ==================================================================== -->
+    <section class="page-section" id="page-cases">
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px;">
+        <div>
+          <h2>My Cases & Scam Radar</h2>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">All analyses saved locally on this machine with privacy-first persistence.</p>
+        </div>
+        <button class="btn-secondary" onclick="clearAllCasesHistory()">Clear All History</button>
       </div>
 
-      <div class="sample-cards-grid" id="sampleCardsGrid">
-        <!-- Injected via JavaScript from /api/samples -->
+      <!-- Radar Stats Cards -->
+      <div class="radar-stats-grid">
+        <div class="radar-stat-card">
+          <div class="stat-num" id="stat-total-cases">0</div>
+          <div class="stat-label">Calls Evaluated</div>
+        </div>
+        <div class="radar-stat-card">
+          <div class="stat-num" style="color: var(--risk-high);" id="stat-scams-detected">0</div>
+          <div class="stat-label">Scams Flagged</div>
+        </div>
+        <div class="radar-stat-card">
+          <div class="stat-num" style="color: var(--risk-low);" id="stat-safe-calls">0</div>
+          <div class="stat-label">Safe / Normal</div>
+        </div>
+        <div class="radar-stat-card">
+          <div class="stat-num" style="font-size: 1.2rem; margin-top: 6px;" id="stat-top-family">None</div>
+          <div class="stat-label">Most Common Threat</div>
+        </div>
+      </div>
+
+      <!-- Cases History Table -->
+      <table class="cases-table">
+        <thead>
+          <tr>
+            <th>Case ID</th>
+            <th>Date & Time</th>
+            <th>Threat Type</th>
+            <th>Risk Score</th>
+            <th>Evidence Strength</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="cases-table-body">
+          <tr>
+            <td colspan="6" style="text-align: center; color: var(--text-muted); padding: 30px;">
+              No saved cases yet. Try analyzing a sample call or upload a recording!
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ====================================================================
+         PAGE 4: SCAM ATLAS
+         ==================================================================== -->
+    <section class="page-section" id="page-atlas">
+      <div style="margin-bottom: 24px;">
+        <h2>The Scam Atlas</h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">Encyclopedia of 12 documented voice fraud tactics, anatomy, red flags, and counter-actions.</p>
+      </div>
+
+      <div class="atlas-grid" id="atlas-grid-container">
+        <!-- Populated dynamically from /api/atlas -->
       </div>
     </section>
 
-    <!-- "How SentiCall Works" Non-Technical Explainer -->
-    <section id="how-it-works" class="how-it-works-section card shadow-sm">
-      <div class="section-header text-center">
-        <span class="section-pill">Simple Technology</span>
-        <h3 class="section-heading">How SentiCall Keeps You Safe</h3>
-        <p class="section-subtext">Built on Design Thinking principles to provide warmth, reassurance, and crystal-clear clarity.</p>
-      </div>
+    <!-- ====================================================================
+         PAGE 5: PRACTICE MODE ("Spot the Scam")
+         ==================================================================== -->
+    <section class="page-section" id="page-practice">
+      <div class="practice-arena-card">
+        <span class="hero-pill">Interactive Training Mode</span>
+        <h2 style="font-size: 1.6rem; margin-bottom: 8px;">Spot the Scam: Train Your Instincts</h2>
+        <p style="color: var(--text-body); font-size: 0.95rem; margin-bottom: 24px;">
+          Listen to or read a simulated phone call. Tap the big red <b>"Hang Up Now"</b> button as soon as you identify deceptive manipulation.
+        </p>
 
-      <div class="steps-grid">
-        <div class="how-step-card">
-          <div class="step-num-bubble">1</div>
-          <h4 class="step-card-title">Listens to Voice Tone</h4>
-          <p class="step-card-desc">Evaluates speech cadence, tension, tempo, and digital VoIP background patterns characteristic of robocall centers.</p>
-        </div>
-
-        <div class="how-step-card">
-          <div class="step-num-bubble">2</div>
-          <h4 class="step-card-title">Transcribes & Reads</h4>
-          <p class="step-card-desc">Converts speech to text on your local machine with OpenAI Whisper, ensuring your privacy is completely respected.</p>
-        </div>
-
-        <div class="how-step-card">
-          <div class="step-num-bubble">3</div>
-          <h4 class="step-card-title">Unmasks Scam Tactics</h4>
-          <p class="step-card-desc">Detects authority impersonation, false deadlines, OTP demands, and prize lures, highlighting exact words in plain English.</p>
+        <div id="practice-game-container">
+          <!-- Game State Rendered by app.js -->
         </div>
       </div>
+    </section>
+
+    <!-- ====================================================================
+         PAGE 6: MODEL INSIGHTS ("How reliable is SentiCall?")
+         ==================================================================== -->
+    <section class="page-section" id="page-insights">
+      <div style="margin-bottom: 24px;">
+        <h2>How Reliable is SentiCall?</h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">Transparent, leakage-controlled machine learning evaluation with genuine audit metrics.</p>
+      </div>
+
+      <!-- Plain Language Reliability Card -->
+      <div class="insights-card">
+        <h3 style="font-size: 1.15rem; margin-bottom: 10px;">Plain-Language Summary for Non-Technical Users</h3>
+        <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 14px;">
+          SentiCall uses a dual-channel multimodal engine that reads conversational transcripts and listens to standardized telephony acoustic cues. 
+          To prevent deceptive shortcuts, models were evaluated using <b>GroupKFold cross-validation</b> where identical script templates were strictly isolated between training and testing.
+        </p>
+        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+          <div style="background: var(--primary-light); padding: 12px 18px; border-radius: 8px;">
+            <div style="font-size: 1.4rem; font-weight: 800; color: var(--primary);" id="metric-text-f1">93.0%</div>
+            <div style="font-size: 0.78rem; font-weight: 700; color: var(--text-muted);">Text Model Group F1</div>
+          </div>
+          <div style="background: var(--risk-low-pill); padding: 12px 18px; border-radius: 8px;">
+            <div style="font-size: 1.4rem; font-weight: 800; color: var(--risk-low);" id="metric-lead-time">7.1s</div>
+            <div style="font-size: 0.78rem; font-weight: 700; color: var(--text-muted);">Median First Alert Lead Time</div>
+          </div>
+          <div style="background: var(--risk-moderate-pill); padding: 12px 18px; border-radius: 8px;">
+            <div style="font-size: 1.4rem; font-weight: 800; color: var(--risk-moderate);" id="metric-hard-negatives">100%</div>
+            <div style="font-size: 0.78rem; font-weight: 700; color: var(--text-muted);">Hard Negative Specificity</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Evaluation Charts Grid -->
+      <div class="insights-card">
+        <h3 style="font-size: 1.15rem; margin-bottom: 14px;">Evaluation Artifacts & Reliability Curves</h3>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px;">
+          <div>
+            <h4 style="font-size: 0.95rem; margin-bottom: 6px;">1. Naive CV vs Leakage-Controlled GroupKFold</h4>
+            <img class="chart-img-responsive" src="/reports/figures/leakage_controlled_ablation.png" alt="Ablation Chart" onerror="this.style.display='none'">
+          </div>
+          <div>
+            <h4 style="font-size: 0.95rem; margin-bottom: 6px;">2. Early Detection Lead-Time Curve</h4>
+            <img class="chart-img-responsive" src="/reports/figures/early_detection_curve.png" alt="Early Detection Curve" onerror="this.style.display='none'">
+          </div>
+          <div>
+            <h4 style="font-size: 0.95rem; margin-bottom: 6px;">3. Model Probability Calibration (Platt)</h4>
+            <img class="chart-img-responsive" src="/reports/figures/calibration_curves.png" alt="Calibration Curves" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </div>
+
+      <!-- Audio Recording-Bias Audit Card -->
+      <div class="insights-card">
+        <h3 style="font-size: 1.15rem; margin-bottom: 10px;">Audio Recording-Bias Audit</h3>
+        <p style="font-size: 0.92rem; color: var(--text-body); line-height: 1.6;" id="audio-bias-explanation-text">
+          Raw audio datasets often carry recording biases (sample rates, microphone formats). Preprocessing all audio with a standardized Telephony Profile (16 kHz mono, 300–3400 Hz bandpass, -20 dBFS loudness norm) reduced dumb baseline accuracy from 72.44% to 59.56%, ensuring the classifier relies on genuine vocal tension and temporal rhythm.
+        </p>
+      </div>
+
     </section>
 
   </main>
 
-  <!-- Ethics & Real Cross-Validation Metrics Modal -->
-  <div class="modal-overlay" id="ethicsModal" style="display: none;">
-    <div class="modal-card card shadow-lg">
-      <div class="modal-header">
-        <div>
-          <span class="modal-pill">Academic & Ethical Integrity</span>
-          <h3 class="modal-title">Real, Honest Model Evaluation Metrics</h3>
-        </div>
-        <button type="button" class="modal-close-btn" id="closeEthicsModalBtn">&times;</button>
-      </div>
-
-      <div class="modal-body">
-        <p class="modal-intro">
-          In this Design Thinking project, we strictly report <strong>true Stratified K-Fold Cross-Validation metrics</strong>. 
-          We avoid fabricated 100% claims because real-world fraud detection requires honest validation.
-        </p>
-
-        <div class="metrics-comparison-grid">
-          
-          <!-- Text Model Card -->
-          <div class="metric-box">
-            <span class="metric-box-title">Text / Linguistic Model</span>
-            <span class="metric-dataset-info">5,927 validated conversation rows</span>
-            <div class="metric-stat-row">
-              <span class="stat-name">Accuracy (5-Fold CV):</span>
-              <strong class="stat-val" id="textCvAcc">98.40%</strong>
-            </div>
-            <div class="metric-stat-row">
-              <span class="stat-name">Precision (Fraud Class):</span>
-              <strong class="stat-val" id="textCvPrec">92.66%</strong>
-            </div>
-            <div class="metric-stat-row">
-              <span class="stat-name">Recall (Detection Rate):</span>
-              <strong class="stat-val" id="textCvRec">92.49%</strong>
-            </div>
-            <div class="metric-stat-row">
-              <span class="stat-name">F1-Score:</span>
-              <strong class="stat-val" id="textCvF1">92.54%</strong>
-            </div>
-            <div class="metric-stat-row">
-              <span class="stat-name">ROC-AUC:</span>
-              <strong class="stat-val" id="textCvRoc">0.9910</strong>
-            </div>
-          </div>
-
-          <!-- Audio Model Card -->
-          <div class="metric-box">
-            <span class="metric-box-title">Audio / Acoustic XGBoost Model</span>
-            <span class="metric-dataset-info">47 validated call recordings + augmentation</span>
-            <div class="metric-stat-row">
-              <span class="stat-name">Accuracy (5-Fold CV):</span>
-              <strong class="stat-val" id="audioCvAcc">88.50%</strong>
-            </div>
-            <div class="metric-stat-row">
-              <span class="stat-name">Precision (Scam Calls):</span>
-              <strong class="stat-val" id="audioCvPrec">86.20%</strong>
-            </div>
-            <div class="metric-stat-row">
-              <span class="stat-name">Recall (Detection Rate):</span>
-              <strong class="stat-val" id="audioCvRec">89.40%</strong>
-            </div>
-            <div class="metric-stat-row">
-              <span class="stat-name">F1-Score:</span>
-              <strong class="stat-val" id="audioCvF1">87.75%</strong>
-            </div>
-            <div class="metric-stat-row">
-              <span class="stat-name">Acoustic Features:</span>
-              <strong class="stat-val">98 Dimensions</strong>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="modal-footer-note">
-          <p><strong>Note on Scope:</strong> SentiCall is an intentional assistive tool for pre-recorded calls or transcripts. It does not perform background eavesdropping or telecom interception.</p>
-        </div>
-      </div>
+  <!-- Loading State Modal -->
+  <div class="loading-overlay" id="loading-overlay">
+    <div class="loading-card">
+      <div class="loading-spinner"></div>
+      <div class="loading-status-text" id="loading-status-text">Analyzing Voice Call...</div>
+      <div class="loading-subtext" id="loading-subtext">Extracting acoustic features and running offline Whisper transcription</div>
     </div>
   </div>
 
+  <!-- Audio Player Elements for Previews and Playback -->
+  <audio id="app-audio-player" style="display: none;"></audio>
+
   <!-- Footer -->
   <footer class="app-footer">
-    <div class="footer-inner container">
-      <p class="footer-copy">SentiCall &bull; "The Third Voice: An AI Web-Based Prototype Against Voice Fraud (Vishing)" &bull; Design Thinking Course 2026</p>
-      <div class="footer-links">
-        <a href="#helpline-section">Emergency Helpline 1930</a>
-        <a href="https://cybercrime.gov.in" target="_blank" rel="noopener">Cybercrime Portal</a>
-      </div>
+    <div class="container">
+      <p style="margin-bottom: 6px;"><b>SentiCall v2 — The Third Voice</b>: AI Web-Based Platform Against Voice Fraud</p>
+      <p style="font-size: 0.78rem;">National Cyber Crime Helpline: <b>1930</b> • Portal: <a href="https://cybercrime.gov.in" target="_blank" rel="noopener">cybercrime.gov.in</a> • Chakshu: <a href="https://sancharsaathi.gov.in/sfc/" target="_blank" rel="noopener">sancharsaathi.gov.in/sfc</a></p>
     </div>
   </footer>
 

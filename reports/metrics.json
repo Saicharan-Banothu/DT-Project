@@ -1,0 +1,499 @@
+{
+  "generated_at": "2026-10-11 01:00:16",
+  "project_version": "SentiCall v2.0",
+  "data_sources": {
+    "text_dataset": {
+      "file": "fraud_call.txt",
+      "total_rows": 5927,
+      "fraud_rows": 638,
+      "normal_rows": 5289,
+      "unique_templates": 5536
+    },
+    "audio_dataset": {
+      "total_files": 47,
+      "scam_calls": 23,
+      "normal_calls": 24,
+      "telephone_normalized": true,
+      "profile": "16 kHz Mono, 300-3400 Hz Butterworth Band-Pass, -20 dBFS Loudness Normalized"
+    },
+    "authored_hard_negatives": {
+      "total_authored": 30,
+      "purpose": "Robustness stress-testing only; strictly excluded from headline training accuracy."
+    }
+  },
+  "text_pipeline": {
+    "dataset_size": 5927,
+    "total_unique_templates": 5536,
+    "class_distribution": {
+      "fraud": 638,
+      "normal": 5289,
+      "fraud_prevalence_pct": 10.76
+    },
+    "model_bakeoff": {
+      "tfidf_logreg": {
+        "naive_5fold": {
+          "accuracy": 0.9848,
+          "precision": 0.9465,
+          "recall": 0.9108,
+          "f1_score": 0.928,
+          "roc_auc": 0.9909,
+          "pr_auc": 0.9713,
+          "confusion_matrix": [
+            [
+              5256,
+              33
+            ],
+            [
+              57,
+              581
+            ]
+          ]
+        },
+        "leakage_controlled_group_5fold": {
+          "accuracy": 0.9852,
+          "precision": 0.9525,
+          "recall": 0.9087,
+          "f1_score": 0.93,
+          "roc_auc": 0.9902,
+          "pr_auc": 0.9686,
+          "confusion_matrix": [
+            [
+              5260,
+              29
+            ],
+            [
+              59,
+              579
+            ]
+          ]
+        },
+        "leakage_drop": {
+          "accuracy_drop_pct": -0.03,
+          "f1_drop_pct": -0.2
+        }
+      },
+      "tfidf_linearsvc": {
+        "naive_5fold": {
+          "accuracy": 0.987,
+          "precision": 0.9636,
+          "recall": 0.9139,
+          "f1_score": 0.9379,
+          "roc_auc": 0.9913,
+          "pr_auc": 0.9721,
+          "confusion_matrix": [
+            [
+              5267,
+              22
+            ],
+            [
+              55,
+              583
+            ]
+          ]
+        },
+        "leakage_controlled_group_5fold": {
+          "accuracy": 0.9863,
+          "precision": 0.9683,
+          "recall": 0.9037,
+          "f1_score": 0.9347,
+          "roc_auc": 0.9903,
+          "pr_auc": 0.9695,
+          "confusion_matrix": [
+            [
+              5270,
+              19
+            ],
+            [
+              62,
+              576
+            ]
+          ]
+        },
+        "leakage_drop": {
+          "accuracy_drop_pct": 0.07,
+          "f1_drop_pct": 0.32
+        }
+      }
+    },
+    "champion_model": "TF-IDF (1-3 ngrams) + Logistic Regression (C=2.5, class_weight='balanced')",
+    "out_of_domain_whisper_eval": {
+      "total_audio_calls_evaluated": 47,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "roc_auc": 1.0,
+      "confusion_matrix": [
+        [
+          24,
+          0
+        ],
+        [
+          0,
+          23
+        ]
+      ]
+    },
+    "hard_negatives_robustness_eval": {
+      "total_hard_negatives_tested": 30,
+      "correctly_classified_normal": 18,
+      "false_positive_count": 12,
+      "false_positive_rate": 0.4,
+      "specificity": 0.6,
+      "false_alarm_details": [
+        {
+          "id": "hn_01",
+          "category": "banking",
+          "text": "Dear Customer, your SBI branch IFSC has been upgraded to SBIN0040123. There is no change in your account number. SBI never calls to ask for your OTP or password.",
+          "model_risk_prob": 0.9107,
+          "reason": "Legitimate bank informational notice with explicit safety warning"
+        },
+        {
+          "id": "hn_02",
+          "category": "banking",
+          "text": "Your HDFC Bank account ending 4821 was logged into from Chrome on Windows. If this was you, no action is needed. If not, call 18002026161.",
+          "model_risk_prob": 0.8069,
+          "reason": "Legitimate security notification without panic pressure"
+        },
+        {
+          "id": "hn_03",
+          "category": "banking",
+          "text": "Dear customer, your monthly ICICI bank account statement for September 2026 is ready to view in the iMobile Pay app.",
+          "model_risk_prob": 0.8571,
+          "reason": "Standard banking statement delivery notice"
+        },
+        {
+          "id": "hn_04",
+          "category": "delivery",
+          "text": "Hello sir, I am the Amazon delivery agent outside your gate. Please share the 4-digit package delivery OTP to hand over your order.",
+          "model_risk_prob": 0.9505,
+          "reason": "Legitimate delivery agent OTP request (delivery verification)"
+        },
+        {
+          "id": "hn_06",
+          "category": "delivery",
+          "text": "Dear customer, your Bluedart shipment 94821034 is out for delivery today with courier executive Rajesh.",
+          "model_risk_prob": 0.6406,
+          "reason": "Legitimate logistics tracking alert"
+        },
+        {
+          "id": "hn_08",
+          "category": "healthcare",
+          "text": "Max Healthcare: Your lab test report for CBC is now available on the patient portal. Login with your registered mobile number.",
+          "model_risk_prob": 0.8183,
+          "reason": "Safe medical report notification"
+        },
+        {
+          "id": "hn_09",
+          "category": "healthcare",
+          "text": "Reminder from Fortis Dental: Your routine 6-month dental checkup is due next Tuesday. Call 011-421100 to reschedule if needed.",
+          "model_risk_prob": 0.7618,
+          "reason": "Routine dental checkup reminder"
+        },
+        {
+          "id": "hn_12",
+          "category": "telecom",
+          "text": "Vi Alert: Enjoy unlimited 4G night data from 12 AM to 6 AM at no extra cost on your active hero recharge pack.",
+          "model_risk_prob": 0.6922,
+          "reason": "Legitimate promotional plan benefit update"
+        },
+        {
+          "id": "hn_20",
+          "category": "utility",
+          "text": "Indane Gas: Your LPG cylinder refill booking reference is 849201. Cash on delivery amount is Rs 853.",
+          "model_risk_prob": 0.545,
+          "reason": "Cooking gas booking confirmation"
+        },
+        {
+          "id": "hn_22",
+          "category": "security",
+          "text": "Google Account security alert: New sign-in from Mac OS in Hyderabad. If this was you, review your devices at myaccount.google.com.",
+          "model_risk_prob": 0.5576,
+          "reason": "Genuine security warning without external links"
+        },
+        {
+          "id": "hn_23",
+          "category": "security",
+          "text": "Microsoft Authenticator: Tap 48 on your phone app to approve sign-in to banothu@dt.edu.",
+          "model_risk_prob": 0.6553,
+          "reason": "Genuine enterprise push notification"
+        },
+        {
+          "id": "hn_24",
+          "category": "government",
+          "text": "Income Tax Department: Your ITR-V for AY 2026-27 has been successfully e-verified. Refund of Rs 4200 has been credited to your validated bank account.",
+          "model_risk_prob": 0.8678,
+          "reason": "Official tax refund notification"
+        }
+      ]
+    },
+    "calibration": {
+      "prob_pred": [
+        0.0452,
+        0.1356,
+        0.2398,
+        0.3441,
+        0.4478,
+        0.549,
+        0.666,
+        0.7563,
+        0.857,
+        0.9573
+      ],
+      "prob_true": [
+        0.0002,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1667,
+        0.6667,
+        0.92,
+        0.9718,
+        1.0
+      ]
+    },
+    "top_fraud_indicators": [
+      {
+        "word": "call",
+        "weight": 6.3774
+      },
+      {
+        "word": "txt",
+        "weight": 6.1765
+      },
+      {
+        "word": "text",
+        "weight": 5.904
+      },
+      {
+        "word": "your",
+        "weight": 5.0085
+      },
+      {
+        "word": "free",
+        "weight": 4.4953
+      },
+      {
+        "word": "mobile",
+        "weight": 4.2708
+      },
+      {
+        "word": "reply",
+        "weight": 4.2023
+      },
+      {
+        "word": "claim",
+        "weight": 4.0344
+      },
+      {
+        "word": "uk",
+        "weight": 3.9936
+      },
+      {
+        "word": "to",
+        "weight": 3.9625
+      },
+      {
+        "word": "from",
+        "weight": 3.9455
+      },
+      {
+        "word": "hello sir",
+        "weight": 3.944
+      },
+      {
+        "word": "150p",
+        "weight": 3.9066
+      },
+      {
+        "word": "won",
+        "weight": 3.8276
+      },
+      {
+        "word": "now",
+        "weight": 3.605
+      },
+      {
+        "word": "win",
+        "weight": 3.5569
+      },
+      {
+        "word": "stop",
+        "weight": 3.5116
+      },
+      {
+        "word": "prize",
+        "weight": 3.5087
+      },
+      {
+        "word": "www",
+        "weight": 3.4135
+      },
+      {
+        "word": "50",
+        "weight": 3.3663
+      }
+    ],
+    "top_normal_indicators": [
+      {
+        "word": "my",
+        "weight": -3.3796
+      },
+      {
+        "word": "ok",
+        "weight": -3.111
+      },
+      {
+        "word": "me",
+        "weight": -2.6721
+      },
+      {
+        "word": "that",
+        "weight": -2.6039
+      },
+      {
+        "word": "ll",
+        "weight": -2.3396
+      },
+      {
+        "word": "it",
+        "weight": -2.2796
+      },
+      {
+        "word": "what",
+        "weight": -2.0634
+      },
+      {
+        "word": "but",
+        "weight": -2.0498
+      },
+      {
+        "word": "then",
+        "weight": -2.0275
+      },
+      {
+        "word": "good",
+        "weight": -2.0043
+      },
+      {
+        "word": "can",
+        "weight": -1.9915
+      },
+      {
+        "word": "da",
+        "weight": -1.9049
+      },
+      {
+        "word": "later",
+        "weight": -1.7331
+      },
+      {
+        "word": "its",
+        "weight": -1.7251
+      },
+      {
+        "word": "come",
+        "weight": -1.6812
+      },
+      {
+        "word": "how",
+        "weight": -1.6808
+      },
+      {
+        "word": "got",
+        "weight": -1.6713
+      },
+      {
+        "word": "are you",
+        "weight": -1.6678
+      },
+      {
+        "word": "gt",
+        "weight": -1.5606
+      },
+      {
+        "word": "at",
+        "weight": -1.5602
+      }
+    ]
+  },
+  "audio_pipeline": {
+    "total_source_calls": 47,
+    "total_audio_windows": 514,
+    "feature_dim": 64,
+    "group_cv_metrics": {
+      "accuracy": 0.806,
+      "accuracy_std": 0.0904,
+      "precision": 0.8009,
+      "precision_std": 0.1921,
+      "recall": 0.8604,
+      "recall_std": 0.1557,
+      "f1_score": 0.799,
+      "f1_score_std": 0.1213,
+      "roc_auc": 0.9077,
+      "pr_auc": 0.8776,
+      "confusion_matrix": [
+        [
+          177,
+          53
+        ],
+        [
+          47,
+          237
+        ]
+      ]
+    },
+    "grouped_shap_importance": {
+      "speaking_rhythm": 22.5,
+      "pitch_and_tone": 24.5,
+      "voice_pressure": 28.2,
+      "line_background_quality": 24.7
+    },
+    "calibration": {
+      "prob_pred": [
+        0.0243,
+        0.1349,
+        0.2511,
+        0.3519,
+        0.4544,
+        0.5503,
+        0.6596,
+        0.7596,
+        0.8585,
+        0.9672
+      ],
+      "prob_true": [
+        0.1963,
+        0.125,
+        0.2,
+        0.2222,
+        0.381,
+        0.5625,
+        0.6,
+        0.7857,
+        0.7347,
+        0.8776
+      ]
+    }
+  },
+  "early_detection": {
+    "median_lead_time_seconds": 7.1,
+    "mean_lead_time_seconds": 7.1,
+    "detection_by_call_pct": {
+      "20": 100.0,
+      "40": 100.0,
+      "60": 100.0,
+      "80": 100.0,
+      "100": 100.0
+    }
+  },
+  "fused_multimodal_pipeline": {
+    "text_weight": 0.65,
+    "audio_weight": 0.35,
+    "safety_rules_enabled": true,
+    "fused_group_kfold_accuracy": 0.9412,
+    "fused_group_kfold_f1": 0.935,
+    "fused_group_kfold_roc_auc": 0.978
+  }
+}

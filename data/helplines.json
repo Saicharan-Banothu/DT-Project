@@ -1,0 +1,113 @@
+{
+  "helplines": [
+    {
+      "id": "1930",
+      "number": "1930",
+      "name": "National Cyber Crime Helpline",
+      "authority": "Indian Cyber Crime Coordination Centre (I4C), Ministry of Home Affairs",
+      "description": "National emergency helpline for reporting financial cyber fraud, digital arrests, and unauthorized bank transfers within the golden hour.",
+      "action_type": "tel",
+      "action_url": "tel:1930",
+      "is_primary": true,
+      "badge": "Financial Fraud & Golden Hour",
+      "last_verified": "2026-10-10"
+    },
+    {
+      "id": "cybercrime_gov",
+      "number": "cybercrime.gov.in",
+      "name": "National Cyber Crime Reporting Portal",
+      "authority": "Ministry of Home Affairs, Government of India",
+      "description": "Official portal to file formal e-complaints and FIRs for cybercrimes, identity theft, financial fraud, and crimes against women/children.",
+      "action_type": "link",
+      "action_url": "https://cybercrime.gov.in",
+      "is_primary": true,
+      "badge": "Official Legal Complaint Portal",
+      "last_verified": "2026-10-10"
+    },
+    {
+      "id": "chakshu",
+      "number": "sancharsaathi.gov.in/sfc",
+      "name": "Chakshu — Suspected Fraud Communication Facility",
+      "authority": "Department of Telecommunications (DoT)",
+      "description": "Report suspected fraudulent phone calls, fake SMS alerts, WhatsApp impersonation, and unauthorized KYC disconnection threats.",
+      "action_type": "link",
+      "action_url": "https://sancharsaathi.gov.in/sfc/",
+      "is_primary": true,
+      "badge": "Report Phone Numbers & SMS",
+      "last_verified": "2026-10-10"
+    },
+    {
+      "id": "police_112",
+      "number": "112",
+      "name": "National Emergency Response Support System (ERSS)",
+      "authority": "Ministry of Home Affairs",
+      "description": "All-in-one emergency response for immediate police, medical, or fire assistance in case of physical threats or extortion.",
+      "action_type": "tel",
+      "action_url": "tel:112",
+      "is_primary": false,
+      "badge": "Immediate Physical Danger",
+      "last_verified": "2026-10-10"
+    },
+    {
+      "id": "childline_1098",
+      "number": "1098",
+      "name": "CHILDLINE Emergency Helpline",
+      "authority": "Ministry of Women & Child Development",
+      "description": "24x7 free emergency phone service for children in need of aid and assistance, cyberbullying, or online abuse involving minors.",
+      "action_type": "tel",
+      "action_url": "tel:1098",
+      "is_primary": false,
+      "badge": "Child Protection (24x7)",
+      "last_verified": "2026-10-10"
+    },
+    {
+      "id": "women_181",
+      "number": "181",
+      "name": "Women Helpline (WHL)",
+      "authority": "Ministry of Women & Child Development",
+      "description": "24-hour toll-free telephonic service providing counseling, immediate support, and legal guidance for women facing harassment or cyberstalking.",
+      "action_type": "tel",
+      "action_url": "tel:181",
+      "is_primary": false,
+      "badge": "Women Safety & Harassment",
+      "last_verified": "2026-10-10"
+    },
+    {
+      "id": "uidai_1947",
+      "number": "1947",
+      "name": "UIDAI Aadhaar Support Helpline",
+      "authority": "Unique Identification Authority of India",
+      "description": "Support line to lock Aadhaar biometric access, verify authentication history, or report identity document misuse.",
+      "action_type": "tel",
+      "action_url": "tel:1947",
+      "is_primary": false,
+      "badge": "Aadhaar Lock & Support",
+      "last_verified": "2026-10-10"
+    },
+    {
+      "id": "trai_1909",
+      "number": "1909",
+      "name": "TRAI Do Not Disturb (DND) Registry",
+      "authority": "Telecom Regulatory Authority of India",
+      "description": "Register complaints against unsolicited commercial communications (UCC) and telemarketer harassment.",
+      "action_type": "tel",
+      "action_url": "tel:1909",
+      "is_primary": false,
+      "badge": "Spam & UCC Complaints",
+      "last_verified": "2026-10-10"
+    },
+    {
+      "id": "stopncii",
+      "number": "StopNCII.org",
+      "name": "Stop Non-Consensual Intimate Images (StopNCII)",
+      "authority": "SWGfL / Global Tech Coalition",
+      "description": "Generate unique digital hashes from private photos on your device to prevent them from being uploaded on Facebook, Instagram, TikTok, and other platforms.",
+      "action_type": "link",
+      "action_url": "https://stopncii.org",
+      "is_primary": false,
+      "badge": "Sextortion Image Protection",
+      "last_verified": "2026-10-10"
+    }
+  ],
+  "last_updated": "2026-10-10"
+}
