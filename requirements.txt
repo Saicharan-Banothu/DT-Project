@@ -12,3 +12,5 @@ joblib>=1.4.0
 openai-whisper
 SpeechRecognition
 requests
+reportlab>=4.0.0
+matplotlib>=3.8.0
