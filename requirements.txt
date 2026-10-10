@@ -1,0 +1,14 @@
+fastapi>=0.119.0
+uvicorn>=0.37.0
+numpy>=2.1.0
+scipy>=1.15.0
+scikit-learn>=1.6.0
+xgboost>=3.0.0
+librosa>=1.0.0
+soundfile>=0.14.0
+pydantic>=2.10.0
+python-multipart>=0.0.20
+joblib>=1.4.0
+openai-whisper
+SpeechRecognition
+requests
