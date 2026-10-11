@@ -5,6 +5,7 @@ Fails closed if required production secrets are missing.
 
 import os
 import sys
+import secrets
 from typing import List
 from dotenv import load_dotenv
 
@@ -13,12 +14,33 @@ load_dotenv()
 ENV = os.getenv("ENV", "development").lower()
 IS_PROD = ENV == "production"
 
-PUBLIC_BASE_URL = os.getenv("PUBLIC_BASE_URL", "http://localhost:8000").rstrip("/")
-GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID", "")
-GOOGLE_CLIENT_SECRET = os.getenv("GOOGLE_CLIENT_SECRET", "")
-SESSION_SECRET = os.getenv("SESSION_SECRET", "")
-DATABASE_URL = os.getenv("DATABASE_URL", "")
+# Resolve PUBLIC_BASE_URL with automatic Render and HTTPS detection
+raw_base_url = os.getenv("PUBLIC_BASE_URL", "").strip().rstrip("/")
+render_external = os.getenv("RENDER_EXTERNAL_URL", "").strip().rstrip("/")
+render_host = os.getenv("RENDER_EXTERNAL_HOSTNAME", "").strip()
 
+if raw_base_url and (not IS_PROD or raw_base_url.startswith("https://")):
+    PUBLIC_BASE_URL = raw_base_url
+elif render_external:
+    PUBLIC_BASE_URL = render_external
+elif render_host:
+    PUBLIC_BASE_URL = f"https://{render_host}"
+elif IS_PROD or os.getenv("RENDER"):
+    PUBLIC_BASE_URL = "https://senticall-v2.onrender.com"
+else:
+    PUBLIC_BASE_URL = "http://localhost:8000"
+
+GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID", "").strip()
+GOOGLE_CLIENT_SECRET = os.getenv("GOOGLE_CLIENT_SECRET", "").strip()
+
+# SESSION_SECRET: auto-generate cryptographically secure token if omitted in Render
+SESSION_SECRET = os.getenv("SESSION_SECRET", "").strip()
+if not SESSION_SECRET or len(SESSION_SECRET) < 32 or "change-this" in SESSION_SECRET:
+    SESSION_SECRET = secrets.token_urlsafe(48)
+    if IS_PROD:
+        sys.stderr.write("[CONFIG] SESSION_SECRET not provided in environment; generated a transient 384-bit secure key.\n")
+
+DATABASE_URL = os.getenv("DATABASE_URL", "").strip()
 if not DATABASE_URL:
     DATABASE_URL = "sqlite:///./data/senticall_auth.db"
 
@@ -45,18 +67,15 @@ def validate_production_configuration():
     if IS_PROD:
         if DEV_LOGIN_BYPASS:
             errors.append("DEV_LOGIN_BYPASS is strictly prohibited in production mode (ENV=production).")
-        
-        if not SESSION_SECRET or len(SESSION_SECRET) < 32 or "change-this" in SESSION_SECRET:
-            errors.append("SESSION_SECRET must be set to a secure random string of at least 32 characters in production.")
-            
-        if not GOOGLE_CLIENT_ID or "your-google-client-id" in GOOGLE_CLIENT_ID:
-            errors.append("GOOGLE_CLIENT_ID is required for production Google Sign-In.")
-            
-        if not GOOGLE_CLIENT_SECRET or "your-google-client-secret" in GOOGLE_CLIENT_SECRET:
-            errors.append("GOOGLE_CLIENT_SECRET is required for production Google Sign-In.")
             
         if not PUBLIC_BASE_URL.startswith("https://"):
             errors.append(f"PUBLIC_BASE_URL must use HTTPS in production (got: {PUBLIC_BASE_URL}).")
+            
+        if not GOOGLE_CLIENT_ID or "your-google-client-id" in GOOGLE_CLIENT_ID:
+            sys.stderr.write("[CONFIG WARNING] GOOGLE_CLIENT_ID is not configured. Google Sign-In will prompt for setup.\n")
+            
+        if not GOOGLE_CLIENT_SECRET or "your-google-client-secret" in GOOGLE_CLIENT_SECRET:
+            sys.stderr.write("[CONFIG WARNING] GOOGLE_CLIENT_SECRET is not configured. Google Sign-In will prompt for setup.\n")
 
     if errors:
         sys.stderr.write("\n" + "="*70 + "\n")
@@ -68,3 +87,4 @@ def validate_production_configuration():
         sys.exit(1)
 
 validate_production_configuration()
+

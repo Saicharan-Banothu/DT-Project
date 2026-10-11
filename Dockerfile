@@ -6,7 +6,8 @@ ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
     DEBIAN_FRONTEND=noninteractive \
     PORT=8000 \
-    ENV=production
+    ENV=production \
+    PUBLIC_BASE_URL=https://senticall-v2.onrender.com
 
 # Install system audio dependencies (ffmpeg, libsndfile1, curl for healthcheck)
 RUN apt-get update && apt-get install -y --no-install-recommends \
