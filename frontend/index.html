@@ -994,7 +994,19 @@
           We only request openid, email and profile. We never request access to your Gmail, Drive or Contacts.
         </div>
 
-        <div style="text-align: center; margin-top: 16px;">
+        <!-- Local Test Sign-in for immediate development testing -->
+        <div style="margin-top: 16px; padding-top: 14px; border-top: 1px dashed var(--border-card); text-align: center;">
+          <form action="/auth/dev-login-quick" method="POST" style="margin: 0;">
+            <button type="submit" class="btn-secondary" style="width: 100%; font-size: 0.88rem; padding: 10px 16px; justify-content: center; gap: 8px;">
+              ⚡ Quick Sign-In (Local Test Account)
+            </button>
+          </form>
+          <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 4px;">
+            Immediate 1-click test session on localhost without Google Cloud setup
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 14px;">
           <a href="#" style="color: var(--primary); font-size: 0.88rem; font-weight: 600;" data-action="closeSignInModalAndAnalyze">
             Try sample calls without signing in →
           </a>

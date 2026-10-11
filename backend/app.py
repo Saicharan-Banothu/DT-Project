@@ -6,6 +6,7 @@ Personal, Secure, Privacy-First Architecture with Live Listen, Google Sign-In, a
 import os
 import io
 import time
+import secrets
 import glob
 import json
 import uuid
@@ -20,7 +21,7 @@ from fastapi import (
     FastAPI, File, UploadFile, Form, HTTPException, Query,
     BackgroundTasks, Depends, Request, Response, status
 )
-from fastapi.responses import FileResponse, JSONResponse, StreamingResponse, RedirectResponse
+from fastapi.responses import FileResponse, JSONResponse, StreamingResponse, RedirectResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
@@ -183,6 +184,63 @@ def google_login_redirect(request: Request):
         "redirect_uri": redirect_uri,
         "created_at": time.time()
     }
+
+    if not GOOGLE_CLIENT_ID or "your-google-client-id" in GOOGLE_CLIENT_ID:
+        client_host = request.client.host if request.client else "unknown"
+        if ENV == "development" and client_host in ("127.0.0.1", "::1", "localhost", "testclient"):
+            return HTMLResponse(
+                content="""<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Google Sign-In Activation &mdash; SentiCall</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #F8FAFC; color: #0F172A; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 20px; box-sizing: border-box; }
+        .card { background: white; border-radius: 12px; padding: 32px; max-width: 580px; width: 100%; box-shadow: 0 4px 16px rgba(0,0,0,0.06); border: 1px solid #E2E8F0; }
+        h2 { margin-top: 0; color: #1E293B; display: flex; align-items: center; gap: 8px; font-size: 1.4rem; }
+        p { line-height: 1.6; color: #475569; font-size: 0.95rem; }
+        code { background: #F1F5F9; padding: 2px 6px; border-radius: 4px; font-family: monospace; color: #0F172A; font-size: 0.9em; }
+        .actions { margin-top: 20px; display: flex; gap: 12px; flex-wrap: wrap; }
+        .btn { display: inline-flex; align-items: center; justify-content: center; background: #2563EB; color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.95rem; cursor: pointer; border: none; }
+        .btn-sec { background: #F1F5F9; color: #334155; }
+        .steps { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px; margin: 16px 0; font-size: 0.88rem; }
+        .steps ol { margin: 6px 0 0 18px; padding: 0; line-height: 1.8; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>🔑 Google Sign-In Setup Required</h2>
+        <p>To connect live Google accounts, you need to create OAuth credentials in the Google Cloud Console and paste them into your <code>.env</code> file.</p>
+        
+        <div class="steps">
+            <b>How to activate live Google credentials:</b>
+            <ol>
+                <li>Open <a href="https://console.cloud.google.com/" target="_blank">Google Cloud Console</a> &gt; <b>APIs &amp; Services</b> &gt; <b>Credentials</b></li>
+                <li>Create an <b>OAuth 2.0 Web Client ID</b> with Authorized redirect URI:<br><code>http://localhost:8000/auth/google/callback</code></li>
+                <li>Add your credentials to your <code>.env</code> file:<br>
+                    <code>GOOGLE_CLIENT_ID=your-id.apps.googleusercontent.com</code><br>
+                    <code>GOOGLE_CLIENT_SECRET=your-secret</code>
+                </li>
+                <li>Full guide: <code>docs/SETUP_GOOGLE_AUTH.md</code></li>
+            </ol>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid #E2E8F0; margin: 20px 0;">
+
+        <b>Testing on Localhost right now?</b>
+        <p>You can sign in immediately using a local test session without waiting for Google Cloud setup:</p>
+        <div class="actions">
+            <form action="/auth/dev-login-quick" method="POST" style="margin: 0;">
+                <button type="submit" class="btn">⚡ Sign In with Local Test Account</button>
+            </form>
+            <a href="/" class="btn btn-sec">← Back to App</a>
+        </div>
+    </div>
+</body>
+</html>""",
+                status_code=200
+            )
+        raise HTTPException(status_code=500, detail="GOOGLE_CLIENT_ID is not configured in .env on this server.")
 
     params = {
         "client_id": GOOGLE_CLIENT_ID,
@@ -359,6 +417,47 @@ def dev_login(
         "user": user.to_dict(),
         "csrf_token": csrf_token
     }
+
+
+@app.post("/auth/dev-login-quick")
+def dev_login_quick(
+    request: Request,
+    response: Response,
+    db: Session = Depends(get_db)
+):
+    """
+    Form-based local development login that sets the session cookie and redirects to /.
+    Strictly denied in production!
+    """
+    if IS_PROD or not DEV_LOGIN_BYPASS:
+        raise HTTPException(status_code=403, detail="Development login bypass is disabled.")
+
+    client_ip = request.client.host if request.client else "unknown"
+    if client_ip not in ["127.0.0.1", "localhost", "::1", "testclient"]:
+        raise HTTPException(status_code=403, detail="Development login is only permitted from localhost.")
+
+    email = "tester@senticall.ai"
+    user = db.query(User).filter(User.email == email).first()
+    if not user:
+        user = User(
+            google_sub="dev_sub_tester_001",
+            email=email,
+            name="SentiCall Tester",
+            role="user",
+            consent_version="v3.0",
+            consent_timestamp=datetime.now(timezone.utc)
+        )
+        db.add(user)
+        db.commit()
+        db.refresh(user)
+
+    user.last_login_at = datetime.now(timezone.utc)
+    db.commit()
+
+    raw_token, csrf_token = create_user_session(db, user, request)
+    redir = RedirectResponse("/?auth=success", status_code=status.HTTP_302_FOUND)
+    set_session_cookie(redir, request, raw_token)
+    return redir
 
 
 @app.post("/auth/logout")
