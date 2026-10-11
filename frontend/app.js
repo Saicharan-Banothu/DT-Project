@@ -203,9 +203,13 @@ function renderAuthenticatedUser(user) {
   if (dropEmail) dropEmail.textContent = user.email || "";
   if (dropRole) dropRole.textContent = user.role === "admin" ? "Administrator" : "Verified User";
 
+  const DEFAULT_AVATAR = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2364748b'><circle cx='12' cy='8' r='4'/><path d='M12 14c-6.1 0-8 4-8 4v2h16v-2s-1.9-4-8-4z'/></svg>";
   if (navAvatar) {
-    navAvatar.src = user.picture_url || "/static/avatar-placeholder.png";
-    navAvatar.onerror = () => { navAvatar.src = "/static/avatar-placeholder.png"; };
+    navAvatar.src = user.picture_url || DEFAULT_AVATAR;
+    navAvatar.onerror = () => {
+      navAvatar.onerror = null;
+      navAvatar.src = DEFAULT_AVATAR;
+    };
   }
 
   // Show Admin tab if admin
