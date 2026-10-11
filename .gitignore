@@ -27,6 +27,19 @@ wheels/
 *.db
 *.sqlite3
 
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Testing artifacts
+test-results/
+playwright-report/
+
 # IDE & OS
 .vscode/
 .idea/
@@ -35,3 +48,4 @@ wheels/
 *~
 .DS_Store
 Thumbs.db
+

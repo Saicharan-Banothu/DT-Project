@@ -266,11 +266,15 @@ def analyze_text(text: str) -> Dict[str, Any]:
         ("appointment" in t_lower or "consultation" in t_lower or "clinic" in t_lower or "dental" in t_lower or "tuition fees" in t_lower or "library" in t_lower)
         and not has_threat
     )
+    is_safe_warning = (
+        ("never calls to ask" in t_lower or "never call to ask" in t_lower or "never ask for" in t_lower or "will not ask" in t_lower or "if you did not request this" in t_lower or "valid for 10 minutes" in t_lower)
+        and not has_threat
+    )
 
-    if is_safe_delivery or is_safe_appointment:
+    if is_safe_delivery or is_safe_appointment or is_safe_warning:
         prob = min(prob, 0.12)
         fam_id = "no_concern_found"
-        fam_name = "Safe Everyday Notice"
+        fam_name = "Safe Security / Informational Notice" if is_safe_warning else "Safe Everyday Notice"
 
     risk_score = int(round(prob * 100))
 

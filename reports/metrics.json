@@ -65,7 +65,11 @@
               59,
               579
             ]
-          ]
+          ],
+          "sample_size_n": 5927,
+          "accuracy_display": "98.5% (n=5927, 95% CI [98.2%, 98.8%])",
+          "recall_display": "90.8% (n=638, 95% CI [88.2%, 92.8%])",
+          "precision_display": "95.2% (n=608, 95% CI [93.2%, 96.7%])"
         },
         "leakage_drop": {
           "accuracy_drop_pct": -0.03,
@@ -107,7 +111,11 @@
               62,
               576
             ]
-          ]
+          ],
+          "sample_size_n": 5927,
+          "accuracy_display": "98.6% (n=5927, 95% CI [98.3%, 98.9%])",
+          "recall_display": "90.3% (n=638, 95% CI [87.7%, 92.3%])",
+          "precision_display": "96.8% (n=595, 95% CI [95.1%, 98.0%])"
         },
         "leakage_drop": {
           "accuracy_drop_pct": 0.07,
@@ -132,7 +140,13 @@
           0,
           23
         ]
-      ]
+      ],
+      "sample_size_n": 47,
+      "accuracy_ci_95": [
+        0.9244,
+        1.0
+      ],
+      "accuracy_display": "100.0% (n=47, 95% CI [92.4%, 100.0%])"
     },
     "hard_negatives_robustness_eval": {
       "total_hard_negatives_tested": 30,
@@ -225,7 +239,18 @@
           "model_risk_prob": 0.8678,
           "reason": "Official tax refund notification"
         }
-      ]
+      ],
+      "sample_size_n": 30,
+      "specificity_ci_95": [
+        0.4232,
+        0.7541
+      ],
+      "specificity_display": "60.0% (n=30, 95% CI [42.3%, 75.4%])",
+      "false_positive_rate_ci_95": [
+        0.2459,
+        0.5768
+      ],
+      "false_positive_display": "40.0% (n=30, 95% CI [24.6%, 57.7%])"
     },
     "calibration": {
       "prob_pred": [

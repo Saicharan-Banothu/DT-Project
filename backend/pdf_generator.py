@@ -363,9 +363,15 @@ def generate_pdf_report(case_data: Dict[str, Any], output_path: str) -> str:
     story.append(Spacer(1, 10))
 
     # 8. Golden Rule & Disclaimer Footer
-    footer_text = """
+    input_mode = case_data.get("input_type", "audio")
+    if input_mode == "live":
+        privacy_statement = "Audio is processed on this device and is never uploaded."
+    else:
+        privacy_statement = "Your file is processed in memory on our secure server and deleted immediately. We never store it, share it or use it for training."
+
+    footer_text = f"""
     <b>The SentiCall Golden Rule:</b> <i>When in doubt, hang up and call back on a number you trust.</i><br/>
-    <font size="7" color="#64748B"><b>Privacy & Local Processing Notice:</b> This analysis was performed 100% on-device. No audio or transcript was transmitted to external servers. This report is an assistive decision-support tool and does not constitute formal legal counsel.</font>
+    <font size="7" color="#64748B"><b>Privacy Notice:</b> {privacy_statement} This report is an assistive decision-support tool and does not constitute formal legal counsel.</font>
     """
     story.append(Paragraph(footer_text, body_style))
 

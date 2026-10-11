@@ -1,0 +1,255 @@
+{
+  "version": "3.0.0",
+  "updated_at": "2026-10-11",
+  "tactics": [
+    {
+      "id": "authority_impersonation",
+      "title": "Pretending to be an authority",
+      "icon": "shield-alert",
+      "severity": "high",
+      "badge_class": "badge-authority",
+      "checklist_label": "Claims to be your bank or official authority",
+      "description": "Claims to represent a bank manager, telecom company, police, customs, or court official.",
+      "regex": "\\b(bank\\s+manager|sbi\\s+bank|hdfc\\s+bank|icici\\s+bank|axis\\s+bank|state\\s+bank\\s+of\\s+india|jio\\s+customer\\s+care|airtel\\s+customer\\s+care|vodafone\\s+customer|vi\\s+customer|telecom\\s+official|cyber\\s+crime\\s+branch|police\\s+officer|cbi\\s+officer|customs\\s+officer|income\\s+tax\\s+department|rbi\\s+officer|supreme\\s+court|high\\s+court|mha\\s+official|trai\\s+official|customs\\s+department|sharma\\s+speaking\\s+from\\s+sbi|calling\\s+from\\s+head\\s+office|customer\\s+care\\s+executive|branch\\s+manager|nodal\\s+officer|investigating\\s+officer)\\b",
+      "hinglish_regex": "\\b(mai\\s+bank\\s+se\\s+bol\\s+raha\\s+hu|sbi\\s+ka\\s+manager\\s+hu|jio\\s+office\\s+se\\s+call\\s+hai|police\\s+thana\\s+se\\s+bol\\s+rahe\\s+hai|cyber\\s+branch\\s+se\\s+phone\\s+hai)\\b",
+      "keywords": ["bank manager", "sbi", "hdfc", "police", "customs", "cbi", "cyber crime", "telecom official", "customer care"]
+    },
+    {
+      "id": "urgency_threat",
+      "title": "Creating false urgency or pressure",
+      "icon": "clock",
+      "severity": "high",
+      "badge_class": "badge-urgency",
+      "checklist_label": "Creating immediate pressure or time limit",
+      "description": "Forces quick compliance with strict time limits or threats of immediate service cutoff.",
+      "regex": "\\b(in\\s+23\\s+hours|in\\s+2\\s+hours|within\\s+\\d+\\s+hours|immediately|right\\s+now|urgently|sim\\s+will\\s+be\\s+closed|sim\\s+will\\s+be\\s+blocked|account\\s+will\\s+be\\s+blocked|card\\s+is\\s+about\\s+to\\s+expire|last\\s+chance|before\\s+midnight|today\\s+only|final\\s+notice|service\\s+will\\s+be\\s+suspended|electricity\\s+power\\s+cut|action\\s+required\\s+within)\\b",
+      "hinglish_regex": "\\b(turant\\s+karna\\s+hoga|aaj\\s+hi\\s+karna\\s+padega|23\\s+ghante\\s+me\\s+sim\\s+band\\s+hoga|account\\s+block\\s+ho\\s+jayega|line\\s+kat\\s+di\\s+jayegi|aakhri\\s+mauka)\\b",
+      "keywords": ["immediately", "23 hours", "right now", "blocked", "closed", "final notice", "suspended", "urgently"]
+    },
+    {
+      "id": "secrecy_isolation",
+      "title": "Demanding secrecy and isolation",
+      "icon": "lock",
+      "severity": "critical",
+      "badge_class": "badge-secrecy",
+      "checklist_label": "Asking you to keep it secret or isolate yourself",
+      "description": "Instructs the listener not to disconnect, not to speak to family, or to remain isolated on video.",
+      "regex": "\\b(don'?t\\s+tell\\s+anyone|do\\s+not\\s+tell\\s+anyone|stay\\s+on\\s+the\\s+line|do\\s+not\\s+hang\\s+up|don'?t\\s+hang\\s+up|stay\\s+on\\s+video|do\\s+not\\s+speak\\s+to\\s+family|keep\\s+it\\s+strictly\\s+confidential|close\\s+the\\s+door|go\\s+to\\s+a\\s+quiet\\s+room|do\\s+not\\s+share\\s+with\\s+anyone|stay\\s+isolated)\\b",
+      "hinglish_regex": "\\b(kisi\\s+ko\\s+mat\\s+batana|ghar\\s+walo\\s+se\\s+baat\\s+mat\\s+karo|phone\\s+mat\\s+katna|line\\s+par\\s+raho|kamra\\s+band\\s+karlo)\\b",
+      "keywords": ["don't tell anyone", "do not hang up", "stay on the line", "confidential", "stay on video", "quiet room"]
+    },
+    {
+      "id": "credential_request",
+      "title": "Asking for passwords, OTP, or money",
+      "icon": "key",
+      "severity": "critical",
+      "badge_class": "badge-credential",
+      "checklist_label": "Asking for secret OTP, PIN, password or money transfer",
+      "description": "Demands disclosure of one-time passwords, CVV, ATM PINs, or money transfers.",
+      "regex": "\\b(four\\s+digit\\s+otp|six\\s+digit\\s+otp|\\botp\\b|one\\s+time\\s+password|verification\\s+code|share\\s+the\\s+otp|tell\\s+me\\s+the\\s+otp|read\\s+out\\s+the\\s+code|tell\\s+me\\s+the\\s+code|\\bcvv\\b|atm\\s+pin|upi\\s+pin|net\\s+banking\\s+password|card\\s+number|transfer\\s+money|send\\s+amount|processing\\s+fee|registration\\s+charge|refundable\\s+security\\s+deposit)\\b",
+      "hinglish_regex": "\\b(chaar\\s+digit\\s+ka\\s+otp|otp\\s+bataiye|otp\\s+share\\s+kare|pin\\s+number\\s+batao|paise\\s+transfer\\s+karo|charge\\s+dena\\s+padega)\\b",
+      "keywords": ["otp", "pin", "cvv", "verification code", "password", "transfer money", "security deposit"]
+    },
+    {
+      "id": "identity_document_request",
+      "title": "Requesting sensitive identity details",
+      "icon": "id-card",
+      "severity": "medium",
+      "badge_class": "badge-identity",
+      "checklist_label": "Asking for Aadhaar, PAN card or bank details",
+      "description": "Demands Aadhaar numbers, PAN cards, dates of birth, or full bank account details.",
+      "regex": "\\b(aadhaar|pan\\s+card|pan\\s+number|account\\s+details|account\\s+number|date\\s+of\\s+birth|passport\\s+number|voter\\s+id|kyc\\s+documents|kyc\\s+details|verify\\s+your\\s+identity)\\b",
+      "hinglish_regex": "\\b(aadhaar\\s+number\\s+batao|pan\\s+card\\s+bhejo|account\\s+number\\s+bataiye|apna\\s+kyc\\s+detail\\s+do)\\b",
+      "keywords": ["aadhaar", "pan card", "account number", "kyc details", "passport number"]
+    },
+    {
+      "id": "remote_access_install",
+      "title": "Asking you to install an app or share your screen",
+      "icon": "monitor-down",
+      "severity": "critical",
+      "badge_class": "badge-remote",
+      "checklist_label": "Asking you to install AnyDesk or share screen",
+      "description": "Instructs the listener to download remote access software or APK files.",
+      "regex": "\\b(anydesk|teamviewer|rustdesk|quicksupport|screen\\s+share|share\\s+screen|install\\s+this\\s+app|download\\s+app|download\\s+apk|open\\s+play\\s+store|accept\\s+remote\\s+connection|give\\s+permission|allow\\s+access)\\b",
+      "hinglish_regex": "\\b(anydesk\\s+install\\s+karo|screen\\s+share\\s+kijiye|ye\\s+app\\s+download\\s+karo|remote\\s+access\\s+accept\\s+karo)\\b",
+      "keywords": ["anydesk", "teamviewer", "rustdesk", "quicksupport", "screen share", "install app", "download apk"]
+    },
+    {
+      "id": "reward_prize_bait",
+      "title": "Dangling a fake prize, lottery or reward",
+      "icon": "gift",
+      "severity": "medium",
+      "badge_class": "badge-reward",
+      "checklist_label": "Offering fake prize, lottery winnings or reward",
+      "description": "Promises unsolicited lottery jackpots, cash awards, or prizes to lure advance fee payments.",
+      "regex": "\\b(won|selected\\s+to\\s+receive|£350\\s+award|\\$350\\s+award|cash\\s+prize|lucky\\s+winner|won\\s+a\\s+car|lottery\\s+winner|unclaimed\\s+reward|cashback\\s+bonus|claim\\s+your\\s+prize)\\b",
+      "hinglish_regex": "\\b(aapko\\s+lottery\\s+lagi\\s+hai|inaam\\s+jeeta\\s+hai|lucky\\s+draw\\s+nikla\\s+hai|cash\\s+prize\\s+mila\\s+hai)\\b",
+      "keywords": ["won", "cash prize", "lottery", "lucky winner", "cashback", "claim your prize"]
+    },
+    {
+      "id": "legal_arrest_threat",
+      "title": "Threatening arrest or legal consequences",
+      "icon": "alert-triangle",
+      "severity": "critical",
+      "badge_class": "badge-legal",
+      "checklist_label": "Threatening police arrest, court action or narcotics seizure",
+      "description": "Threatens digital arrest, court prosecution, CBI probe, or FIR registration.",
+      "regex": "\\b(digital\\s+arrest|arrest\\s+warrant|police\\s+custody|fir\\s+registered|supreme\\s+court\\s+notice|court\\s+order|criminal\\s+case|narcotics\\s+case|customs\\s+seizure|illegal\\s+parcel|jail\\s+term|imprisonment)\\b",
+      "hinglish_regex": "\\b(digital\\s+arrest\\s+kiya\\s+jata\\s+hai|police\\s+pakad\\s+ke\\s+le\\s+jayegi|fir\\s+darj\\s+ho\\s+chuki\\s+hai|jail\\s+jana\\s+padega)\\b",
+      "keywords": ["digital arrest", "arrest warrant", "police custody", "narcotics", "customs seizure", "fir registered"]
+    },
+    {
+      "id": "abusive_language",
+      "title": "Abusive or harassing language",
+      "icon": "message-square-off",
+      "severity": "high",
+      "badge_class": "badge-abusive",
+      "checklist_label": "Using abusive or harassing language",
+      "description": "Uses vulgarity, verbal abuse, aggressive profanity, or harassment.",
+      "regex": "\\b(bastard|bitch|idiot|fool|shut\\s+up|nonsense|harass|verbal\\s+abuse|threaten\\s+you|kill\\s+you|destroy\\s+you)\\b",
+      "hinglish_regex": "\\b(kutta|harami|badtameez|pagal|gali|marunga)\\b",
+      "keywords": ["idiot", "shut up", "fool", "bastard", "harass"]
+    }
+  ],
+  "safety_rules": {
+    "negation_patterns": [
+      "(?:never|do\\s+not|don'?t|will\\s+not|won'?t|should\\s+not|never\\s+calls?\\s+to|will\\s+never)\\s+(?:ask\\s+for|ask|share|disclose|give|tell|request)\\s+(?:your\\s+)?(?:secret\\s+|confidential\\s+|private\\s+)?(?:otp|pin|password|cvv|credentials|card\\s+details|code)",
+      "(?:sbi|hdfc|icici|axis|rbi|bank)\\s+(?:never\\s+asks?|never\\s+calls?|will\\s+never\\s+ask|does\\s+not\\s+ask)",
+      "(?:kisi\\s+ko\\s+mat\\s+batana|mat\\s+dena|mat\\s+batao|share\\s+mat\\s+karo)\\s+(?:otp|pin|password)",
+      "if\\s+you\\s+did\\s+not\\s+request\\s+this",
+      "valid\\s+for\\s+\\d+\\s+minutes"
+    ],
+    "safe_contexts": [
+      {
+        "id": "delivery_pin",
+        "description": "Legitimate ecommerce & food delivery handoff PIN verification",
+        "keywords": ["delivery agent", "delivery partner", "package delivery", "hand over your order", "swiggy", "zomato", "amazon delivery", "share delivery pin", "share pin with driver"],
+        "max_risk_cap": 0.15
+      },
+      {
+        "id": "appointment_reminder",
+        "description": "Clinic or healthcare consultation confirmations",
+        "keywords": ["appointment", "consultation", "clinic", "dental", "doctor", "patient portal"],
+        "max_risk_cap": 0.12
+      },
+      {
+        "id": "educational_notice",
+        "description": "School tuition or college library notices",
+        "keywords": ["tuition fees", "school parent portal", "semester examinations", "library notice", "due for return"],
+        "max_risk_cap": 0.12
+      },
+      {
+        "id": "utility_bill",
+        "description": "Electricity, gas, or telecom quota updates",
+        "keywords": ["electricity bill", "data pack has reached", "recharge additional", "cylinder refill", "consumer no"],
+        "max_risk_cap": 0.15
+      }
+    ]
+  },
+  "scam_families": [
+    {
+      "id": "govt_law_enforcement_digital_arrest",
+      "name": "Police & 'Digital Arrest' Threat",
+      "harm_type": "Fear and threat / Money",
+      "priority": 1,
+      "trigger_tactics": ["legal_arrest_threat"],
+      "trigger_keywords": ["digital arrest", "police", "cbi", "narcotics", "illegal parcel", "customs seizure"]
+    },
+    {
+      "id": "tech_support_remote_access",
+      "name": "Tech Support & Screen Share Trap",
+      "harm_type": "Device / Money",
+      "priority": 2,
+      "trigger_tactics": ["remote_access_install"],
+      "trigger_keywords": ["anydesk", "teamviewer", "rustdesk", "quicksupport", "screen share", "remote desktop"]
+    },
+    {
+      "id": "prize_lottery_cashback",
+      "name": "Prize & Lottery Lure",
+      "harm_type": "Money",
+      "priority": 3,
+      "trigger_tactics": ["reward_prize_bait"],
+      "trigger_keywords": ["lottery", "cash prize", "won", "award", "cashback"]
+    },
+    {
+      "id": "abusive_harassing_caller",
+      "name": "Harassment & Intimidation",
+      "harm_type": "Emotional harassment",
+      "priority": 4,
+      "trigger_tactics": ["abusive_language"],
+      "trigger_keywords": ["abusive", "harass"]
+    },
+    {
+      "id": "telecom_sim_threat",
+      "name": "SIM & Telecom Threat",
+      "harm_type": "Identity",
+      "priority": 5,
+      "trigger_tactics": ["urgency_threat"],
+      "trigger_keywords": ["sim", "jio", "airtel", "telecom", "23 hours"]
+    },
+    {
+      "id": "bank_kyc_impersonation",
+      "name": "Bank & Card Impersonation",
+      "harm_type": "Money",
+      "priority": 6,
+      "trigger_tactics": ["authority_impersonation", "credential_request"],
+      "trigger_keywords": ["bank", "card", "sbi", "hdfc", "debit card", "kyc"]
+    },
+    {
+      "id": "otp_account_takeover",
+      "name": "OTP & Account Takeover",
+      "harm_type": "Money / Identity",
+      "priority": 7,
+      "trigger_tactics": ["credential_request"],
+      "trigger_keywords": ["otp", "pin", "verification code"]
+    },
+    {
+      "id": "loan_investment_job_advance",
+      "name": "Fake Loan & Job Advance Fee",
+      "harm_type": "Money",
+      "priority": 8,
+      "trigger_tactics": [],
+      "trigger_keywords": ["loan", "investment", "task", "part time job", "earn money daily"]
+    },
+    {
+      "id": "courier_customs_parcel",
+      "name": "Courier & Customs Parcel Scam",
+      "harm_type": "Fear and threat / Money",
+      "priority": 9,
+      "trigger_tactics": [],
+      "trigger_keywords": ["parcel", "courier", "fedex", "customs"]
+    },
+    {
+      "id": "no_concern_found",
+      "name": "No Scam Indicators Detected",
+      "harm_type": "None",
+      "priority": 99,
+      "trigger_tactics": [],
+      "trigger_keywords": []
+    }
+  ],
+  "alert_thresholds": {
+    "profiles": {
+      "gentle": {
+        "danger_risk": 0.82,
+        "danger_consecutive_count": 2,
+        "heads_up_risk": 0.55
+      },
+      "balanced": {
+        "danger_risk": 0.72,
+        "danger_consecutive_count": 2,
+        "heads_up_risk": 0.45
+      },
+      "cautious": {
+        "danger_risk": 0.60,
+        "danger_consecutive_count": 1,
+        "heads_up_risk": 0.35
+      }
+    },
+    "instant_danger_combination": {
+      "authority_tactics": ["authority_impersonation", "legal_arrest_threat"],
+      "critical_extraction_tactics": ["credential_request", "remote_access_install"],
+      "window_seconds": 60
+    }
+  }
+}

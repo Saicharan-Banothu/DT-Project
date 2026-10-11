@@ -1,0 +1,1709 @@
+[
+  {
+    "id": 1,
+    "text": "Dear Customer, your SBI branch IFSC has been upgraded to SBIN0040123. There is no change in your account number. SBI never calls to ask for your OTP or password.",
+    "probability": 0.12,
+    "risk_score": 12,
+    "tactics_detected": [
+      "identity_document_request"
+    ],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 2,
+    "text": "Your HDFC Bank account ending 4821 was logged into from Chrome on Windows. If this was you, no action is needed. If not, call 18002026161.",
+    "probability": 0.8069,
+    "risk_score": 81,
+    "tactics_detected": [
+      "authority_impersonation"
+    ],
+    "primary_family_id": "bank_kyc_impersonation"
+  },
+  {
+    "id": 3,
+    "text": "Dear customer, your monthly ICICI bank account statement for September 2026 is ready to view in the iMobile Pay app.",
+    "probability": 0.8571,
+    "risk_score": 86,
+    "tactics_detected": [
+      "authority_impersonation"
+    ],
+    "primary_family_id": "bank_kyc_impersonation"
+  },
+  {
+    "id": 4,
+    "text": "Hello sir, I am the Amazon delivery agent outside your gate. Please share the 4-digit package delivery OTP to hand over your order.",
+    "probability": 0.12,
+    "risk_score": 12,
+    "tactics_detected": [
+      "credential_request"
+    ],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 5,
+    "text": "Hi madam, Swiggy delivery partner here. I have reached your building. Could you please share the delivery pin shown in your app?",
+    "probability": 0.12,
+    "risk_score": 12,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 6,
+    "text": "Dear customer, your Bluedart shipment 94821034 is out for delivery today with courier executive Rajesh.",
+    "probability": 0.6406,
+    "risk_score": 64,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 7,
+    "text": "Hello Mrs. Verma, calling from Apollo Clinic to confirm your consultation with Dr. Mehta tomorrow at 4:30 PM. Please arrive 10 minutes early.",
+    "probability": 0.12,
+    "risk_score": 12,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 8,
+    "text": "Max Healthcare: Your lab test report for CBC is now available on the patient portal. Login with your registered mobile number.",
+    "probability": 0.8183,
+    "risk_score": 82,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 9,
+    "text": "Reminder from Fortis Dental: Your routine 6-month dental checkup is due next Tuesday. Call 011-421100 to reschedule if needed.",
+    "probability": 0.12,
+    "risk_score": 12,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 10,
+    "text": "Dear Jio user, your 1.5 GB/day data pack has reached 50% usage today. Recharge additional data vouchers anytime via MyJio app.",
+    "probability": 0.4638,
+    "risk_score": 46,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 11,
+    "text": "Airtel Thanks: Your broadband bill of Rs 824 for September is due on 18th Oct. Pay online securely through the Airtel Thanks App.",
+    "probability": 0.1831,
+    "risk_score": 18,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 12,
+    "text": "Vi Alert: Enjoy unlimited 4G night data from 12 AM to 6 AM at no extra cost on your active hero recharge pack.",
+    "probability": 0.6922,
+    "risk_score": 69,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 13,
+    "text": "Dear Parent, this is a reminder from DPS Sector 45 that 3rd quarter tuition fees are due by October 25th. Pay via school parent portal.",
+    "probability": 0.12,
+    "risk_score": 12,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 14,
+    "text": "University Exam Cell: Admit cards for Semester 5 examinations can now be downloaded from the student portal using your enrollment ID.",
+    "probability": 0.2887,
+    "risk_score": 29,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 15,
+    "text": "Library Notice: The book 'Machine Learning in Action' issued to you is due for return on Monday. Renew online to avoid late fees.",
+    "probability": 0.12,
+    "risk_score": 12,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 16,
+    "text": "IRCTC: PNR 2849102834 Confirmed. Train 12951 Mumbai Rajdhani Coach B3 Berth 42. Chart prepared. Have a safe journey.",
+    "probability": 0.0876,
+    "risk_score": 9,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 17,
+    "text": "IndiGo Flight 6E-204 to Bengaluru is on time. Boarding begins at Gate 14 at 18:20. Web check-in baggage drop closes 45 mins prior.",
+    "probability": 0.286,
+    "risk_score": 29,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 18,
+    "text": "Uber: Your ride with driver Ramesh (Swift Dzire KA01AB1234) is arriving in 3 minutes. Share PIN 7182 with driver to start ride.",
+    "probability": 0.2863,
+    "risk_score": 29,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 19,
+    "text": "Bescom Electricity: Bill amount Rs 1450 for Consumer No 382910 is generated. Due date 22-Oct-2026. Pay via Bescom official portal.",
+    "probability": 0.1133,
+    "risk_score": 11,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 20,
+    "text": "Indane Gas: Your LPG cylinder refill booking reference is 849201. Cash on delivery amount is Rs 853.",
+    "probability": 0.545,
+    "risk_score": 55,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 21,
+    "text": "Your GitHub verification code is 849201. Valid for 10 minutes. If you did not request this, please change your password immediately.",
+    "probability": 0.12,
+    "risk_score": 12,
+    "tactics_detected": [
+      "urgency_threat",
+      "credential_request"
+    ],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 22,
+    "text": "Google Account security alert: New sign-in from Mac OS in Hyderabad. If this was you, review your devices at myaccount.google.com.",
+    "probability": 0.5576,
+    "risk_score": 56,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 23,
+    "text": "Microsoft Authenticator: Tap 48 on your phone app to approve sign-in to banothu@dt.edu.",
+    "probability": 0.6553,
+    "risk_score": 66,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 24,
+    "text": "Income Tax Department: Your ITR-V for AY 2026-27 has been successfully e-verified. Refund of Rs 4200 has been credited to your validated bank account.",
+    "probability": 0.8678,
+    "risk_score": 87,
+    "tactics_detected": [
+      "authority_impersonation"
+    ],
+    "primary_family_id": "bank_kyc_impersonation"
+  },
+  {
+    "id": 25,
+    "text": "Passport Seva: Your passport application file DEL1092834 is under police verification at South Delhi Police Station.",
+    "probability": 0.2509,
+    "risk_score": 25,
+    "tactics_detected": [],
+    "primary_family_id": "govt_law_enforcement_digital_arrest"
+  },
+  {
+    "id": 26,
+    "text": "Hi Sai, just following up on our project review meeting notes. I have uploaded the draft slides to the shared OneDrive folder.",
+    "probability": 0.2178,
+    "risk_score": 22,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 27,
+    "text": "IT Helpdesk: Scheduled maintenance on internal VPN servers this Saturday between 2 AM and 4 AM. No action required.",
+    "probability": 0.1606,
+    "risk_score": 16,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 28,
+    "text": "Hey! Are we still meeting for lunch at the canteen around 1 PM? Let me know once you are free after class.",
+    "probability": 0.0382,
+    "risk_score": 4,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 29,
+    "text": "Happy birthday Uncle! Wishing you great health, happiness, and peace in the coming year. See you at the family dinner tonight!",
+    "probability": 0.0157,
+    "risk_score": 2,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 30,
+    "text": "Zomato: Your order from Chai Point is on the way! Delivery partner Manoj will reach in 12 minutes.",
+    "probability": 0.12,
+    "risk_score": 12,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 31,
+    "text": "hello, i m bank manager of SBI, ur debit card is about to expire would u want to issue new card. please tell me the four digit otp sent to your mobile.",
+    "probability": 0.9631,
+    "risk_score": 96,
+    "tactics_detected": [
+      "authority_impersonation",
+      "urgency_threat",
+      "credential_request"
+    ],
+    "primary_family_id": "bank_kyc_impersonation"
+  },
+  {
+    "id": 32,
+    "text": "hello sir, i am from jio customer care in 23 hours your sim will be closed. do u want to activate it. please confirm your aadhaar and account details.",
+    "probability": 0.9794,
+    "risk_score": 98,
+    "tactics_detected": [
+      "authority_impersonation",
+      "urgency_threat",
+      "identity_document_request"
+    ],
+    "primary_family_id": "telecom_sim_threat"
+  },
+  {
+    "id": 33,
+    "text": "Todays Vodafone numbers ending with 4882 are selected to receive a \u00a3350 award. If your number matches call 09064019014 to claim your cash prize.",
+    "probability": 0.9827,
+    "risk_score": 98,
+    "tactics_detected": [
+      "reward_prize_bait"
+    ],
+    "primary_family_id": "prize_lottery_cashback"
+  },
+  {
+    "id": 34,
+    "text": "This is Officer Sharma from Delhi Cyber Crime Branch. A parcel with illegal narcotics has been seized in your name. You are placed under digital arrest.",
+    "probability": 0.678,
+    "risk_score": 68,
+    "tactics_detected": [
+      "authority_impersonation",
+      "legal_arrest_threat"
+    ],
+    "primary_family_id": "govt_law_enforcement_digital_arrest"
+  },
+  {
+    "id": 35,
+    "text": "Calling from technical customer support. Your UPI application has a security malfunction. Please install AnyDesk from Play Store and share the 9 digit code.",
+    "probability": 0.7763,
+    "risk_score": 78,
+    "tactics_detected": [
+      "remote_access_install"
+    ],
+    "primary_family_id": "tech_support_remote_access"
+  },
+  {
+    "id": 36,
+    "text": "Hi, are we still meeting for lunch at the cafeteria at 1pm? Let me know.",
+    "probability": 0.017,
+    "risk_score": 2,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 37,
+    "text": "SBI alert: SBI never calls to ask for your OTP, PIN or password. Do not share your 4-digit code with anyone.",
+    "probability": 0.12,
+    "risk_score": 12,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 38,
+    "text": "HDFC security notice: We will not ask for your secret PIN or CVV over the phone.",
+    "probability": 0.12,
+    "risk_score": 12,
+    "tactics_detected": [
+      "credential_request"
+    ],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 39,
+    "text": "Amazon delivery partner here. Please share the 4-digit package delivery OTP.",
+    "probability": 0.12,
+    "risk_score": 12,
+    "tactics_detected": [
+      "credential_request"
+    ],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 40,
+    "text": "Apollo Clinic: Confirming your dental appointment for tomorrow at 4pm.",
+    "probability": 0.12,
+    "risk_score": 12,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 41,
+    "text": "Urgent: Send money immediately or your electric power will be cut tonight.",
+    "probability": 0.723,
+    "risk_score": 72,
+    "tactics_detected": [
+      "urgency_threat"
+    ],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 42,
+    "text": "You have won a lottery of 25 lakh rupees. Pay 5000 registration fee to claim.",
+    "probability": 0.9748,
+    "risk_score": 97,
+    "tactics_detected": [
+      "reward_prize_bait"
+    ],
+    "primary_family_id": "prize_lottery_cashback"
+  },
+  {
+    "id": 43,
+    "text": "Shut up you fool, if you do not transfer money police will arrest you right now.",
+    "probability": 0.0663,
+    "risk_score": 7,
+    "tactics_detected": [
+      "urgency_threat",
+      "credential_request",
+      "abusive_language"
+    ],
+    "primary_family_id": "govt_law_enforcement_digital_arrest"
+  },
+  {
+    "id": 44,
+    "text": "Please close the door, stay on video call, and do not inform anyone in your family.",
+    "probability": 0.4095,
+    "risk_score": 41,
+    "tactics_detected": [
+      "secrecy_isolation"
+    ],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 45,
+    "text": "Your electricity bill is overdue. Pay within 2 hours or connection will be suspended.",
+    "probability": 0.5415,
+    "risk_score": 54,
+    "tactics_detected": [
+      "urgency_threat"
+    ],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 46,
+    "text": "Hello sir, i am from hdfc bank.",
+    "probability": 0.9676,
+    "risk_score": 97,
+    "tactics_detected": [
+      "authority_impersonation"
+    ],
+    "primary_family_id": "bank_kyc_impersonation"
+  },
+  {
+    "id": 47,
+    "text": "URGENT! Your mobile number *************** WON a \u00a32000 Bonus Caller prize on 10/06/03! This is the 2nd attempt to reach you! Call 09066368753 ASAP! Box 97N7QP, 150ppm",
+    "probability": 0.9818,
+    "risk_score": 98,
+    "tactics_detected": [
+      "reward_prize_bait"
+    ],
+    "primary_family_id": "prize_lottery_cashback"
+  },
+  {
+    "id": 48,
+    "text": "hello sir, i am from hdfc bank, sir i have call you for your bank account verification do you want verify your account. sir then tell me your aadhar card number and pan card and your debit/credit card number.",
+    "probability": 0.9856,
+    "risk_score": 99,
+    "tactics_detected": [
+      "authority_impersonation",
+      "credential_request",
+      "identity_document_request"
+    ],
+    "primary_family_id": "bank_kyc_impersonation"
+  },
+  {
+    "id": 49,
+    "text": "TheMob>Hit the link to get a premium Pink Panther game, the new no. 1 from Sugababes, a crazy Zebra animation or a badass Hoody wallpaper-all 4 FREE!",
+    "probability": 0.8728,
+    "risk_score": 87,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 50,
+    "text": "URGENT! You have won a 1 week FREE membership in our \u00a3100,000 Prize Jackpot! Txt the word: CLAIM to No:",
+    "probability": 0.9939,
+    "risk_score": 99,
+    "tactics_detected": [
+      "reward_prize_bait"
+    ],
+    "primary_family_id": "prize_lottery_cashback"
+  },
+  {
+    "id": 51,
+    "text": "hello sir, i am from sbi bank, sir i have call you for your bank account verification do you want verify your account. sir then tell me your aadhar card number and pan card and your debit/credit card number.",
+    "probability": 0.9866,
+    "risk_score": 99,
+    "tactics_detected": [
+      "authority_impersonation",
+      "credential_request",
+      "identity_document_request"
+    ],
+    "primary_family_id": "bank_kyc_impersonation"
+  },
+  {
+    "id": 52,
+    "text": "Had your mobile 11mths ? Update for FREE to Oranges latest colour camera mobiles & unlimited weekend calls. Call Mobile Upd8 on freefone 08000839402 or 2StopTxt",
+    "probability": 0.9755,
+    "risk_score": 98,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 53,
+    "text": "PRIVATE! Your 2003 Account Statement for 07808 XXXXXX shows 800 un-redeemed S. I. M. points. Call 08719899217 Identifier Code: 41685 Expires 07/11/04",
+    "probability": 0.9611,
+    "risk_score": 96,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 54,
+    "text": "Sir i can know your aadhar card number.",
+    "probability": 0.9133,
+    "risk_score": 91,
+    "tactics_detected": [
+      "credential_request"
+    ],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 55,
+    "text": "Well done ENGLAND! Get the official poly ringtone or colour flag on yer mobile! text TONE or FLAG to 84199 NOW! Opt-out txt ENG STOP. Box39822 W111WX \u00a31.50",
+    "probability": 0.9594,
+    "risk_score": 96,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 56,
+    "text": "U have a Secret Admirer who is looking 2 make contact with U-find out who they R*reveal who thinks UR so special-call on 09065171142-stopsms-08718727870150ppm",
+    "probability": 0.931,
+    "risk_score": 93,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 57,
+    "text": "PRIVATE! Your 2003 Account Statement for <fone no> shows 800 un-redeemed S. I. M. points. Call 08715203656 Identifier Code: 42049 Expires 26/10/04",
+    "probability": 0.9482,
+    "risk_score": 95,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 58,
+    "text": "Free msg: Single? Find a partner in your area! 1000s of real people are waiting to chat now!Send CHAT to 62220Cncl send STOPCS 08717890890\u00a31.50 per msg",
+    "probability": 0.9824,
+    "risk_score": 98,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 59,
+    "text": "Sunshine Quiz! Win a super Sony DVD recorder if you canname the capital of Australia? Text MQUIZ to 82277. B",
+    "probability": 0.9131,
+    "risk_score": 91,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 60,
+    "text": "URGENT! Your Mobile number has been awarded with a \u00a32000 prize GUARANTEED. Call 09061790121 from land line. Claim 3030. Valid 12hrs only 150ppm",
+    "probability": 0.9791,
+    "risk_score": 98,
+    "tactics_detected": [],
+    "primary_family_id": "prize_lottery_cashback"
+  },
+  {
+    "id": 61,
+    "text": "HOT LIVE FANTASIES call now 08707500020 Just 20p per min NTT Ltd, PO Box 1327 Croydon CR9 5WB 0870 is a national rate call",
+    "probability": 0.9654,
+    "risk_score": 97,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 62,
+    "text": "URGENT! Your mobile No 07xxxxxxxxx won a \u00a32,000 bonus caller prize on 02/06/03! this is the 2nd attempt to reach YOU! call 09066362231 ASAP! BOX97N7QP, 150PPM",
+    "probability": 0.9622,
+    "risk_score": 96,
+    "tactics_detected": [
+      "reward_prize_bait"
+    ],
+    "primary_family_id": "prize_lottery_cashback"
+  },
+  {
+    "id": 63,
+    "text": "This is the 2nd time we have tried 2 contact u. U have won the 750 Pound prize. 2 claim is easy, call 08712101358 NOW! Only 10p per min. BT-national-rate",
+    "probability": 0.9681,
+    "risk_score": 97,
+    "tactics_detected": [
+      "reward_prize_bait"
+    ],
+    "primary_family_id": "prize_lottery_cashback"
+  },
+  {
+    "id": 64,
+    "text": "Sir i can know your cvv pin.",
+    "probability": 0.8056,
+    "risk_score": 81,
+    "tactics_detected": [
+      "credential_request"
+    ],
+    "primary_family_id": "otp_account_takeover"
+  },
+  {
+    "id": 65,
+    "text": "Mila, age23, blonde, new in UK. I look sex with UK guys. if u like fun with me. Text MTALK to 69866.18 . 30pp/txt 1st 5free. \u00a31.50 increments. Help08718728876",
+    "probability": 0.9537,
+    "risk_score": 95,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 66,
+    "text": "hello, you have won 10000 INR, do you want to deposit it in your bank account.",
+    "probability": 0.9503,
+    "risk_score": 95,
+    "tactics_detected": [
+      "reward_prize_bait"
+    ],
+    "primary_family_id": "prize_lottery_cashback"
+  },
+  {
+    "id": 67,
+    "text": "You have won ?1,000 cash or a ?2,000 prize! To claim, call 09050000327.",
+    "probability": 0.9743,
+    "risk_score": 97,
+    "tactics_detected": [
+      "reward_prize_bait"
+    ],
+    "primary_family_id": "prize_lottery_cashback"
+  },
+  {
+    "id": 68,
+    "text": "You've won tkts to the EURO2004 CUP FINAL or \u00a3800 CASH, to collect CALL 09058099801 b4190604, POBOX 7876150ppm",
+    "probability": 0.9526,
+    "risk_score": 95,
+    "tactics_detected": [
+      "reward_prize_bait"
+    ],
+    "primary_family_id": "prize_lottery_cashback"
+  },
+  {
+    "id": 69,
+    "text": "Santa calling! Would your little ones like a call from Santa Xmas Eve? Call 09077818151 to book you time. Calls1.50ppm last 3mins 30s T&C www.santacalling.com",
+    "probability": 0.9347,
+    "risk_score": 93,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 70,
+    "text": "Had your mobile 11 months or more? you are entitled to Update to the latest colour mobiles with camera for Free! Call The Mobile Update Co FREE on 08002986030.",
+    "probability": 0.9662,
+    "risk_score": 97,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 71,
+    "text": "Urgent Urgent! We have 800 FREE flights to Europe to give away, call B4 10th Sept & take a friend 4 FREE. Call now to claim on 09050000555. BA128NNFWFLY150ppm",
+    "probability": 0.982,
+    "risk_score": 98,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 72,
+    "text": "You are a winner you have been specially selected to receive \u00a31000 cash or a \u00a32000 award. Speak to a live operator to claim call 087123002209am-7pm. Cost 10p",
+    "probability": 0.981,
+    "risk_score": 98,
+    "tactics_detected": [
+      "reward_prize_bait"
+    ],
+    "primary_family_id": "prize_lottery_cashback"
+  },
+  {
+    "id": 73,
+    "text": "SIX chances to win CASH! From 100 to 20,000 pounds txt> CSH11 and send to 87575. Cost 150p/day, 6days, 16+ TsandCs apply Reply HL 4 info",
+    "probability": 0.9937,
+    "risk_score": 99,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 74,
+    "text": "our mobile number has won \u00a35000, to claim calls us back or ring the claims hot line on 09050005321.",
+    "probability": 0.9822,
+    "risk_score": 98,
+    "tactics_detected": [
+      "reward_prize_bait"
+    ],
+    "primary_family_id": "prize_lottery_cashback"
+  },
+  {
+    "id": 75,
+    "text": "YES! The only place in town to meet exciting adult singles is now in the UK. Txt CHAT to 86688 now! 150p/Msg.",
+    "probability": 0.9575,
+    "risk_score": 96,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 76,
+    "text": "Urgent! Please call 09061213237 from landline. \u00a35000 cash or a luxury 4* Canary Islands Holiday await collection. T&Cs SAE PO Box 177. M227XY. 150ppm. 16+",
+    "probability": 0.9763,
+    "risk_score": 98,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 77,
+    "text": "New Tones This week include: 1)McFly-All Ab.., 2) Sara Jorge-Shock.. 3) Will Smith-Switch.. To order follow instructions on next message",
+    "probability": 0.9082,
+    "risk_score": 91,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 78,
+    "text": "Our brand new mobile music service is now live. The free music player will arrive shortly. Just install on your phone to browse content from the top artists.",
+    "probability": 0.9795,
+    "risk_score": 98,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 79,
+    "text": "Booked ticket for pongal?",
+    "probability": 0.7113,
+    "risk_score": 71,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 80,
+    "text": "Thanks for your Ringtone Order, Reference T91. You will be charged GBP 4 per week. You can unsubscribe at anytime by calling customer services on 09057039994.",
+    "probability": 0.9353,
+    "risk_score": 94,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 81,
+    "text": "Hello i am a military man. I need some help from you.  Will help me.",
+    "probability": 0.7754,
+    "risk_score": 78,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 82,
+    "text": "Not heard from U4 a while. Call 4 rude chat private line 01223585334 to cum. Wan 2C pics of me gettin shagged then text PIX to 8552. 2End send STOP 8552 SAM xxx",
+    "probability": 0.9676,
+    "risk_score": 97,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 83,
+    "text": "Sir, can I know your account number?",
+    "probability": 0.9429,
+    "risk_score": 94,
+    "tactics_detected": [
+      "identity_document_request"
+    ],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 84,
+    "text": "\"URGENT! This is the 2nd attempt to contact U!U have WON \u00a31000CALL 09071512432 b4 300603t&csBCM4235WC1N3XX.callcost150ppmmobilesvary. max\u00a37. 50\"",
+    "probability": 0.9182,
+    "risk_score": 92,
+    "tactics_detected": [
+      "reward_prize_bait"
+    ],
+    "primary_family_id": "prize_lottery_cashback"
+  },
+  {
+    "id": 85,
+    "text": "REMINDER FROM O2: To get 2.50 pounds free call credit and details of great offers pls reply 2 this text with your valid name, house no and postcode",
+    "probability": 0.9804,
+    "risk_score": 98,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 86,
+    "text": "Send a logo 2 ur lover - 2 names joined by a heart. Txt LOVE NAME1 NAME2 MOBNO eg LOVE ADAM EVE 07123456789 to 87077 Yahoo! POBox36504W45WQ TxtNO 4 no ads 150p.",
+    "probability": 0.8883,
+    "risk_score": 89,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 87,
+    "text": "to get free access of google cloud account hit on given message box link.",
+    "probability": 0.9277,
+    "risk_score": 93,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 88,
+    "text": "FreeMsg>FAV XMAS TONES!Reply REAL",
+    "probability": 0.9389,
+    "risk_score": 94,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 89,
+    "text": "Camera - You are awarded a SiPix Digital Camera! call 09061221066 fromm landline. Delivery within 28 days.",
+    "probability": 0.9311,
+    "risk_score": 93,
+    "tactics_detected": [],
+    "primary_family_id": "prize_lottery_cashback"
+  },
+  {
+    "id": 90,
+    "text": "Ur cash-balance is currently 500 pounds - to maximize ur cash-in now send GO to 86688 only 150p/meg. CC: 08718720201 HG/Suite342/2lands Row/W1j6HL",
+    "probability": 0.9333,
+    "risk_score": 93,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 91,
+    "text": "Update_Now - 12Mths Half Price Orange line rental: 400mins...Call MobileUpd8 on 08000839402 or call2optout=J5Q",
+    "probability": 0.9087,
+    "risk_score": 91,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 92,
+    "text": "Double Mins & 1000 txts on Orange tariffs. Latest Motorola, SonyEricsson & Nokia with Bluetooth FREE! Call MobileUpd8 on 08000839402 or call2optout/HF8",
+    "probability": 0.9702,
+    "risk_score": 97,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 93,
+    "text": "your ringtone service has changed! 25 Free credits! Go to club4mobiles.com to choose content now! Stop?",
+    "probability": 0.9928,
+    "risk_score": 99,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 94,
+    "text": "hello sir ,i am from hdfc bank of india do you have fill application form for loan. i called you for verify your document, tell me your aadhar number and otp of your mobile number.",
+    "probability": 0.9723,
+    "risk_score": 97,
+    "tactics_detected": [
+      "authority_impersonation",
+      "credential_request"
+    ],
+    "primary_family_id": "bank_kyc_impersonation"
+  },
+  {
+    "id": 95,
+    "text": "URGENT This is our 2nd attempt to contact U. Your \u00a3900 prize from YESTERDAY is still awaiting collection. To claim CALL NOW 09061702893. ACL03530150PM",
+    "probability": 0.9784,
+    "risk_score": 98,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 96,
+    "text": "You have WON a guaranteed \u00a31000 cash or a \u00a32000 prize. To claim yr prize call our customer service representative on 08714712412 between 10am-7pm Cost 10p",
+    "probability": 0.9875,
+    "risk_score": 99,
+    "tactics_detected": [
+      "reward_prize_bait"
+    ],
+    "primary_family_id": "prize_lottery_cashback"
+  },
+  {
+    "id": 97,
+    "text": "hello sir, i am from vodafone customer care in 23 hours your sim will be closed. do u want to activate it.",
+    "probability": 0.9715,
+    "risk_score": 97,
+    "tactics_detected": [
+      "authority_impersonation",
+      "urgency_threat"
+    ],
+    "primary_family_id": "telecom_sim_threat"
+  },
+  {
+    "id": 98,
+    "text": "LORD OF THE RINGS:RETURN OF THE KING in store NOW!REPLY LOTR by 2 June 4 Chance 2 WIN LOTR soundtrack CDs StdTxtRate. Reply STOP to end txts",
+    "probability": 0.934,
+    "risk_score": 93,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 99,
+    "text": "As a registered optin subscriber ur draw 4 \u00a3100 gift voucher will be entered on receipt of a correct ans to 80062 Whats No1 in the BBC charts",
+    "probability": 0.8655,
+    "risk_score": 87,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 100,
+    "text": "I'd like to tell you my deepest darkest fantasies. Call me 09094646631 just 60p/min. To stop texts call 08712460324 (nat rate)",
+    "probability": 0.8608,
+    "risk_score": 86,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 101,
+    "text": "U\u2019ve Bin Awarded \u00a350 to Play 4 Instant Cash. Call 08715203028 To Claim. EVERY 9th Player Wins Min \u00a350-\u00a3500. OptOut 08718727870",
+    "probability": 0.9834,
+    "risk_score": 98,
+    "tactics_detected": [],
+    "primary_family_id": "prize_lottery_cashback"
+  },
+  {
+    "id": 102,
+    "text": "Had your mobile 11mths ? Update for FREE to Oranges latest colour camera mobiles & unlimited weekend calls. Call Mobile 08000839402",
+    "probability": 0.9703,
+    "risk_score": 97,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 103,
+    "text": "four months half price Orange line rental & latest camera phones 4 FREE. Had your phone 11mths ? Call MobilesDirect free on 08000938767 to update now.",
+    "probability": 0.9652,
+    "risk_score": 97,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 104,
+    "text": "Oh my god! I've found your number again! I'm so glad, text me back xafter this msgs cst std ntwk chg \u00a31.50",
+    "probability": 0.7393,
+    "risk_score": 74,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 105,
+    "text": "Welcome to Select, an O2 service with added benefits. You can now call our specially trained advisors FREE from your mobile by dialling 402.",
+    "probability": 0.987,
+    "risk_score": 99,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 106,
+    "text": "hello sir, i am from airtel customer care in 23 hours your sim will be deactivate. do u want to activate it.",
+    "probability": 0.9668,
+    "risk_score": 97,
+    "tactics_detected": [
+      "authority_impersonation",
+      "urgency_threat"
+    ],
+    "primary_family_id": "telecom_sim_threat"
+  },
+  {
+    "id": 107,
+    "text": "Please CALL 08712402779 immediately as there is an urgent message waiting for you",
+    "probability": 0.9281,
+    "risk_score": 93,
+    "tactics_detected": [
+      "urgency_threat"
+    ],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 108,
+    "text": "Hello, I am from Maharashtra Police.  Your account number has been hacked.  Please share your account number with me",
+    "probability": 0.9581,
+    "risk_score": 96,
+    "tactics_detected": [
+      "identity_document_request"
+    ],
+    "primary_family_id": "govt_law_enforcement_digital_arrest"
+  },
+  {
+    "id": 109,
+    "text": "Do you want a new Video phone? 600 anytime any network mins 400 Inclusive Video calls AND downloads 5 per week Free delTOMORROW call 08002888812 or reply NOW",
+    "probability": 0.9775,
+    "risk_score": 98,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 110,
+    "text": "You are a winner U have been specially selected 2 receive \u00a31000 cash or a 4* holiday (flights inc) speak to a live operator 2 claim 0871277810810",
+    "probability": 0.9324,
+    "risk_score": 93,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 111,
+    "text": "Knock Knock Txt whose there to 80082 to enter r weekly draw 4 a \u00a3250 gift voucher 4 a store of yr choice. T&Cs www.tkls.com age16 to stoptxtstop\u00a31.50/week",
+    "probability": 0.9774,
+    "risk_score": 98,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 112,
+    "text": "Call Germany for only 1 pence per minute! Call from a fixed line via access number 0844 861 85 85. No prepayment. Direct access! www.telediscount.co.uk",
+    "probability": 0.9811,
+    "risk_score": 98,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 113,
+    "text": "to get 1000 INR voucher please call on 889865556178.",
+    "probability": 0.9468,
+    "risk_score": 95,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 114,
+    "text": "Dear you have been invited to XCHAT. This is our final attempt to contact you! Text CHAT to 86688",
+    "probability": 0.9513,
+    "risk_score": 95,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 115,
+    "text": "hello sir, i am from paytm there are offer in paytm upgrade your account so you can enjoy better cashback offrs.",
+    "probability": 0.9613,
+    "risk_score": 96,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 116,
+    "text": "URGENT!: Your Mobile Number was awarded a \u00a32,000 Bonus Caller Prize on 02/09/03! This is our second attempt to contact YOU! Call 0871-872-9755 BOX95QU",
+    "probability": 0.9731,
+    "risk_score": 97,
+    "tactics_detected": [],
+    "primary_family_id": "prize_lottery_cashback"
+  },
+  {
+    "id": 117,
+    "text": "Dear Voucher Holder 2 claim your 1st class airport lounge passes when using Your holiday voucher call 08704439680. When booking quote 1st class x 2",
+    "probability": 0.8909,
+    "risk_score": 89,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 118,
+    "text": "Congrats! 1 year special cinema pass for 2 is yours. Dont miss out!",
+    "probability": 0.7598,
+    "risk_score": 76,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 119,
+    "text": "PRIVATE! Your 2003 Account Statement for shows 800 un-redeemed S.I.M. points. Call 08715203685 Identifier Code:4xx26 Expires 13/10/04",
+    "probability": 0.9545,
+    "risk_score": 95,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 120,
+    "text": "URGENT! We are trying to contact you. Todays draw shows that you have won a \u00a3800 prize GUARANTEED. Call 09050003091 from land line. Claim C52. Valid12hrs only",
+    "probability": 0.98,
+    "risk_score": 98,
+    "tactics_detected": [
+      "reward_prize_bait"
+    ],
+    "primary_family_id": "prize_lottery_cashback"
+  },
+  {
+    "id": 121,
+    "text": "Sir i can know your atm card number.",
+    "probability": 0.9737,
+    "risk_score": 97,
+    "tactics_detected": [
+      "credential_request"
+    ],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 122,
+    "text": "Please call our customer service representative on FREEPHONE 0808 145 4742 between 9am-11pm as you have WON a guaranteed \u00a31000 cash or \u00a35000 prize!",
+    "probability": 0.9696,
+    "risk_score": 97,
+    "tactics_detected": [
+      "reward_prize_bait"
+    ],
+    "primary_family_id": "prize_lottery_cashback"
+  },
+  {
+    "id": 123,
+    "text": "hello sir this is your allahabad bank manager. your kyc has been expired.so you have to kyc your self, but due to covid setuation we are doing kyc online, pleae tell me your account detail.",
+    "probability": 0.9581,
+    "risk_score": 96,
+    "tactics_detected": [
+      "authority_impersonation"
+    ],
+    "primary_family_id": "bank_kyc_impersonation"
+  },
+  {
+    "id": 124,
+    "text": "Do you want 750 anytime any network mins 150 text and a NEW video phone for only five pounds per week call 08000776320 now or reply for delivery Tomorrow",
+    "probability": 0.9575,
+    "risk_score": 96,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 125,
+    "text": "YOU ARE CHOSEN TO RECEIVE A \u00a3350 AWARD! Pls call claim number 09066364311 to collect your award which you are selected to receive as a valued mobile customer.",
+    "probability": 0.9768,
+    "risk_score": 98,
+    "tactics_detected": [
+      "reward_prize_bait"
+    ],
+    "primary_family_id": "prize_lottery_cashback"
+  },
+  {
+    "id": 126,
+    "text": "I wake up long ago already... Dunno, what other thing?",
+    "probability": 0.0173,
+    "risk_score": 2,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 127,
+    "text": "Then anything special?",
+    "probability": 0.0531,
+    "risk_score": 5,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 128,
+    "text": "Oh really. May I know which problems they are? Maybe I could help you with this.",
+    "probability": 0.0601,
+    "risk_score": 6,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 129,
+    "text": "I lost 4 pounds since my doc visit last week woot woot! Now I'm gonna celebrate by stuffing my face!",
+    "probability": 0.1494,
+    "risk_score": 15,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 130,
+    "text": "How are you. Wish you a great semester",
+    "probability": 0.0305,
+    "risk_score": 3,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 131,
+    "text": "V nice! Off 2 sheffield tom 2 air my opinions on categories 2 b used 2 measure ethnicity in next census. Busy transcribing. :-)",
+    "probability": 0.0561,
+    "risk_score": 6,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 132,
+    "text": "Dip's cell dead. So i m coming with him. U better respond else we shall come back.",
+    "probability": 0.0232,
+    "risk_score": 2,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 133,
+    "text": "Only once then after ill obey all yours.",
+    "probability": 0.0564,
+    "risk_score": 6,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 134,
+    "text": "Hmmm.still we dont have opener?",
+    "probability": 0.0455,
+    "risk_score": 5,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 135,
+    "text": "If he started searching he will get job in few days.he have great potential and talent.",
+    "probability": 0.0465,
+    "risk_score": 5,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 136,
+    "text": "She said,'' do u mind if I go into the bedroom for a minute ? '' ''OK'', I sed in a sexy mood. She came out 5 minuts latr wid a cake...n My Wife,",
+    "probability": 0.0523,
+    "risk_score": 5,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 137,
+    "text": "'An Amazing Quote'' - \"Sometimes in life its difficult to decide whats wrong!! a lie that brings a smile or the truth that brings a tear....\"",
+    "probability": 0.0584,
+    "risk_score": 6,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 138,
+    "text": "Sorry about earlier. Putting out fires.Are you around to talk after 9? Or do you actually have a life, lol!",
+    "probability": 0.0632,
+    "risk_score": 6,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 139,
+    "text": "I'm putting it on now. It should be ready for  &lt;TIME&gt;",
+    "probability": 0.0771,
+    "risk_score": 8,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 140,
+    "text": "Well, it sounds like fun, but actually I\u2019ll be very busy on Saturday.",
+    "probability": 0.0365,
+    "risk_score": 4,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 141,
+    "text": "That's the way you should stay oh.",
+    "probability": 0.0158,
+    "risk_score": 2,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 142,
+    "text": "My Parents, My Kidz, My Friends n My Colleagues. All screaming.. SURPRISE !! and I was waiting on the sofa.. ... ..... ' NAKED...!",
+    "probability": 0.0443,
+    "risk_score": 4,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 143,
+    "text": "BABE !!! I miiiiiiissssssssss you ! I need you !!! I crave you !!! :-( ... Geeee ... I'm so sad without you babe ... I love you ...",
+    "probability": 0.0416,
+    "risk_score": 4,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 144,
+    "text": "Fighting with the world is easy, u either win or lose bt fightng with some1 who is close to u is dificult if u lose - u lose if u win - u still lose.",
+    "probability": 0.1293,
+    "risk_score": 13,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 145,
+    "text": "Excellent! Wish we were together right now!",
+    "probability": 0.0665,
+    "risk_score": 7,
+    "tactics_detected": [
+      "urgency_threat"
+    ],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 146,
+    "text": "Ummmmmaah Many many happy returns of d day my dear sweet heart.. HAPPY BIRTHDAY dear",
+    "probability": 0.04,
+    "risk_score": 4,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 147,
+    "text": "I'm at work. Please call",
+    "probability": 0.2144,
+    "risk_score": 21,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 148,
+    "text": "K.k:)i'm going to tirunelvali this week to see my uncle ..i already spend the amount by taking dress .so only i want money.i will give it on feb 1",
+    "probability": 0.1014,
+    "risk_score": 10,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 149,
+    "text": "Am not working but am up to eyes in philosophy so will text u later when a bit more free for chat...",
+    "probability": 0.2529,
+    "risk_score": 25,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 150,
+    "text": "Lol wtf random. Btw is that your lunch break",
+    "probability": 0.0491,
+    "risk_score": 5,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 151,
+    "text": "What you doing?how are you?",
+    "probability": 0.0335,
+    "risk_score": 3,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 152,
+    "text": "Probably, want to pick up more?",
+    "probability": 0.0566,
+    "risk_score": 6,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 153,
+    "text": "Its going good...no problem..but still need little experience to understand american customer voice...",
+    "probability": 0.0329,
+    "risk_score": 3,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 154,
+    "text": "Esplanade lor. Where else...",
+    "probability": 0.0277,
+    "risk_score": 3,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 155,
+    "text": "He is a wondarfull actor.",
+    "probability": 0.0329,
+    "risk_score": 3,
+    "tactics_detected": [],
+    "primary_family_id": "prize_lottery_cashback"
+  },
+  {
+    "id": 156,
+    "text": "OK good:)study well.",
+    "probability": 0.0059,
+    "risk_score": 1,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 157,
+    "text": "you log off for what. It's sdryb8i.",
+    "probability": 0.0658,
+    "risk_score": 7,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 158,
+    "text": "Yar lor he want to go see horse racing today mah, so eat earlier lor. I ate chicken rice.",
+    "probability": 0.0289,
+    "risk_score": 3,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 159,
+    "text": "Dai  &lt;#&gt;  naal eruku.",
+    "probability": 0.0194,
+    "risk_score": 2,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 160,
+    "text": "Yeah I'll try to scrounge something up",
+    "probability": 0.0342,
+    "risk_score": 3,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 161,
+    "text": "I will cme i want to go to hos 2morow. After that i wil cme. This what i got from her dear what to do. She didnt say any time",
+    "probability": 0.0298,
+    "risk_score": 3,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 162,
+    "text": "\"Thinking of u ;) x\"",
+    "probability": 0.0756,
+    "risk_score": 8,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 163,
+    "text": "He says he'll give me a call when his friend's got the money but that he's definitely buying before the end of the week.",
+    "probability": 0.0444,
+    "risk_score": 4,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 164,
+    "text": "Am in film ill call you later.",
+    "probability": 0.117,
+    "risk_score": 12,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 165,
+    "text": "I'm ok. Will do my part tomorrow",
+    "probability": 0.0228,
+    "risk_score": 2,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 166,
+    "text": "Oh Howda gud gud.. Mathe en samachara chikku:-)",
+    "probability": 0.0346,
+    "risk_score": 3,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 167,
+    "text": "That\u2019s huge. So have you decided what product you are going to bring?",
+    "probability": 0.0198,
+    "risk_score": 2,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 168,
+    "text": "You only hate me. You can call any but you didnt accept even a single call of mine. Or even you messaged",
+    "probability": 0.0914,
+    "risk_score": 9,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 169,
+    "text": "No it will reach by 9 only. She telling she will be there. I dont know",
+    "probability": 0.0393,
+    "risk_score": 4,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 170,
+    "text": "But tell me about your preparation in different subjects.",
+    "probability": 0.0732,
+    "risk_score": 7,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 171,
+    "text": "Dunno da next show aft 6 is 850. Toa payoh got 650.",
+    "probability": 0.0467,
+    "risk_score": 5,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 172,
+    "text": "Thats cool. How was your day?",
+    "probability": 0.0819,
+    "risk_score": 8,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 173,
+    "text": "Yeah like if it goes like it did with my friends imma flip my shit in like half an hour",
+    "probability": 0.0155,
+    "risk_score": 2,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 174,
+    "text": "HELLO PEACH! MY CAKE TASTS LUSH!",
+    "probability": 0.1126,
+    "risk_score": 11,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 175,
+    "text": "You are luckier than me. You have",
+    "probability": 0.1416,
+    "risk_score": 14,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 176,
+    "text": "Now get step 2 outta the way. Congrats again.",
+    "probability": 0.1095,
+    "risk_score": 11,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 177,
+    "text": "Yes definitely. But for that I have to factory reset your phone.",
+    "probability": 0.1791,
+    "risk_score": 18,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 178,
+    "text": "His birthday real is in april .",
+    "probability": 0.0648,
+    "risk_score": 6,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 179,
+    "text": "Anything lor is she coming?",
+    "probability": 0.0183,
+    "risk_score": 2,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 180,
+    "text": "Aight, lemme know what's up",
+    "probability": 0.0256,
+    "risk_score": 3,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 181,
+    "text": "No..but heard about..",
+    "probability": 0.0316,
+    "risk_score": 3,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 182,
+    "text": "Same, I'm at my great aunts anniversary party in tarpon springs",
+    "probability": 0.0108,
+    "risk_score": 1,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 183,
+    "text": "Honestly i've just made a lovely cup of tea and promptly dropped my keys in it and then burnt my fingers getting them out!",
+    "probability": 0.0243,
+    "risk_score": 2,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 184,
+    "text": "I dont have i shall buy one dear",
+    "probability": 0.0401,
+    "risk_score": 4,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 185,
+    "text": "Do whatever you want. You know what the rules are. We had a talk earlier this week about what had to start happening, you showing responsibility. Yet, every week it's can i bend the rule this way? What about that way? Do whatever. I'm tired of having thia same argument with you every week. And a  &lt;#&gt;  movie DOESNT inlude the previews. You're still getting in after 1.",
+    "probability": 0.0219,
+    "risk_score": 2,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 186,
+    "text": "Anytime lor...",
+    "probability": 0.0653,
+    "risk_score": 7,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 187,
+    "text": "Yet understand i'm in class can you not run water on it to make it ok. Please now.",
+    "probability": 0.0372,
+    "risk_score": 4,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 188,
+    "text": "Hahaha..use your brain dear",
+    "probability": 0.1,
+    "risk_score": 10,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 189,
+    "text": "But i dint slept in afternoon.",
+    "probability": 0.0376,
+    "risk_score": 4,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 190,
+    "text": "I meant middle left or right?",
+    "probability": 0.1238,
+    "risk_score": 12,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 191,
+    "text": "Sorry da. I gone mad so many pending works what to do.",
+    "probability": 0.0277,
+    "risk_score": 3,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 192,
+    "text": "Is that seriously how you spell his name?",
+    "probability": 0.023,
+    "risk_score": 2,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 193,
+    "text": "jay says he'll put in  &lt;#&gt;",
+    "probability": 0.0177,
+    "risk_score": 2,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 194,
+    "text": "\"NOT ENUFCREDEIT TOCALL.SHALL ILEAVE UNI AT 6 +GET A BUS TO YOR HOUSE?\"",
+    "probability": 0.0401,
+    "risk_score": 4,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 195,
+    "text": "Yes. that will be fine. Love you. Be safe.",
+    "probability": 0.0453,
+    "risk_score": 5,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 196,
+    "text": "Are you there in room.",
+    "probability": 0.0232,
+    "risk_score": 2,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 197,
+    "text": "She's borderline but yeah whatever.",
+    "probability": 0.0125,
+    "risk_score": 1,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 198,
+    "text": "We will meet soon princess! Ttyl!",
+    "probability": 0.0377,
+    "risk_score": 4,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 199,
+    "text": "Your opinion about me? 1. Over 2. Jada 3. Kusruthi 4. Lovable 5. Silent 6. Spl character 7. Not matured 8. Stylish 9. Simple Pls reply..",
+    "probability": 0.0866,
+    "risk_score": 9,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  },
+  {
+    "id": 200,
+    "text": "Da my birthdate in certificate is in april but real date is today. But dont publish it. I shall give you a special treat if you keep the secret. Any way thanks for the wishes",
+    "probability": 0.0193,
+    "risk_score": 2,
+    "tactics_detected": [],
+    "primary_family_id": "no_concern_found"
+  }
+]

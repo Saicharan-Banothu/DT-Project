@@ -3,22 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SentiCall v2 — The Third Voice: AI Protection Against Voice Fraud</title>
-  <meta name="description" content="Research-grade, empathetic on-device AI platform detecting voice scam & vishing tactics with early-warning timelines, plain-language action plans, and verified emergency helplines.">
+  <title>SentiCall v3 — The Third Voice: AI Protection Against Voice Fraud</title>
+  <meta name="description" content="Personal, secure, privacy-first AI platform detecting voice scam & vishing tactics live with on-device Whisper, early-warning alerts, plain-language action plans, and verified emergency helplines.">
   
-  <!-- Modern Clean Typography (Google Fonts fallback supported offline) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="/static/style.css?v=2.0.1">
+  <!-- Zero External Requests: Typography renders natively with crisp system font stack -->
+  <link rel="stylesheet" href="/static/style.css?v=3.0.0">
 </head>
 <body>
 
   <!-- Top App Navigation -->
   <header class="app-header">
     <div class="container nav-container">
-      <div class="brand-logo" id="nav-brand-logo" onclick="switchPage('analyze')">
+      <div class="brand-logo" id="nav-brand-logo" data-action="switchPage" data-page="analyze">
         <div class="brand-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
@@ -27,57 +23,120 @@
           </svg>
         </div>
         <div>
-          <div class="brand-title">SentiCall <span class="brand-subtitle">v2.0</span></div>
+          <div class="brand-title">SentiCall <span class="brand-subtitle">v3.0</span></div>
         </div>
       </div>
 
       <ul class="nav-menu">
-        <li class="nav-item active" id="tab-analyze" onclick="switchPage('analyze')">
+        <li class="nav-item active" id="tab-analyze" data-action="switchPage" data-page="analyze">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
           Analyze Call
         </li>
-        <li class="nav-item" id="tab-cases" onclick="switchPage('cases')">
+        <li class="nav-item" id="tab-live" data-action="switchPage" data-page="live">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" x2="12" y1="19" x2="12" y2="22"></line></svg>
+          Live Listen <span class="nav-live-dot" title="On-Device Real-Time"></span>
+        </li>
+        <li class="nav-item" id="tab-cases" data-action="switchPage" data-page="cases">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
           My Cases & Radar
         </li>
-        <li class="nav-item" id="tab-atlas" onclick="switchPage('atlas')">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+        <li class="nav-item" id="tab-atlas" data-action="switchPage" data-page="atlas">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path></svg>
           Scam Atlas
         </li>
-        <li class="nav-item" id="tab-practice" onclick="switchPage('practice')">
+        <li class="nav-item" id="tab-practice" data-action="switchPage" data-page="practice">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
           Practice Mode
         </li>
-        <li class="nav-item" id="tab-insights" onclick="switchPage('insights')">
+        <li class="nav-item" id="tab-insights" data-action="switchPage" data-page="insights">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
           Model Insights
         </li>
+        <li class="nav-item" id="tab-privacy" data-action="switchPage" data-page="privacy">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          Privacy Center
+        </li>
+        <li class="nav-item" id="tab-admin" style="display: none;" data-action="switchPage" data-page="admin">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+          Admin Health
+        </li>
       </ul>
 
+      <!-- User Authentication & Settings Actions -->
       <div class="nav-actions">
-        <button class="btn-icon" id="btn-text-size-toggle" title="Toggle Larger Text" onclick="toggleLargerText()">
+        <button class="btn-icon" id="btn-text-size-toggle" title="Toggle Larger Text" data-action="toggleLargerText">
           <span style="font-weight: 800; font-size: 0.95rem;">A+</span>
         </button>
+
+        <!-- Guest View: Sign In Button -->
+        <div id="auth-guest-view">
+          <button class="btn-signin-google-compact" id="btn-nav-signin" data-action="openSignInModal">
+            <svg class="google-icon-svg" viewBox="0 0 24 24" width="16" height="16">
+              <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+              <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.34 24 12 24z"/>
+              <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+              <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.34 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+            </svg>
+            Sign in
+          </button>
+        </div>
+
+        <!-- Signed-In View: User Avatar & Dropdown -->
+        <div id="auth-user-view" style="display: none; position: relative;">
+          <button class="user-profile-btn" id="btn-user-dropdown" data-action="toggleUserDropdown">
+            <img id="user-nav-avatar" class="user-avatar-img" src="" alt="Avatar" onerror="this.src='/static/avatar-placeholder.png'">
+            <span class="user-nav-name" id="user-nav-name">User</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+
+          <!-- User Dropdown Menu -->
+          <div class="user-dropdown-menu" id="user-dropdown-menu">
+            <div class="user-dropdown-header">
+              <div style="font-weight: 700; color: var(--text-main);" id="dropdown-full-name">User Name</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);" id="dropdown-email">user@gmail.com</div>
+              <span class="user-role-badge" id="dropdown-role-badge">Verified User</span>
+            </div>
+            <div class="user-dropdown-divider"></div>
+            <a class="dropdown-item" data-action="switchPage" data-page="privacy">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              Privacy & Security Center
+            </a>
+            <a class="dropdown-item" data-action="openAppLockModal">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              App Lock & Passphrase
+            </a>
+            <div class="user-dropdown-divider"></div>
+            <a class="dropdown-item text-danger" data-action="signOutCurrentUser">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+              Sign out
+            </a>
+            <a class="dropdown-item text-danger" data-action="signOutAllDevices">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path><line x1="12" y1="2" x2="12" y2="12"></line></svg>
+              Sign out of all devices
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
   </header>
 
-  <!-- Reassuring Privacy Strip -->
-  <div class="trust-strip">
+  <!-- Truthful Mode-Accurate Privacy Strip -->
+  <div class="trust-strip" id="global-trust-strip">
     <div class="container trust-content">
-      <span class="trust-item">
+      <span class="trust-item" id="trust-strip-mode-text">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-        100% On-Device Privacy: Audio never leaves your machine
+        Your file is processed in memory on our secure server and deleted immediately. We never store it, share it or use it for training.
       </span>
       <span class="trust-dot">•</span>
       <span class="trust-item">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-        Plain-language explanations without medical/tech jargon
+        Plain language for everyday safety
       </span>
       <span class="trust-dot">•</span>
       <span class="trust-item">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m9.17 14.83-4.24 4.24"></path></svg>
-        Direct connection to National Cyber Crime Helpline 1930
+        National Cyber Crime Helpline 1930
       </span>
     </div>
   </div>
@@ -86,7 +145,7 @@
   <main class="container">
 
     <!-- ====================================================================
-         PAGE 1: ANALYZE / HOME
+         PAGE 1: ANALYZE / UPLOAD
          ==================================================================== -->
     <section class="page-section active" id="page-analyze">
       
@@ -97,33 +156,31 @@
           SentiCall "The Third Voice" AI Safety Suite
         </div>
         <h1 class="hero-title">Protect Yourself Against Phone Scams & Vishing</h1>
-        <p class="hero-desc">Upload an audio recording, record a live clip, or paste a suspicious transcript. SentiCall detects psychological pressure tactics and gives you a step-by-step safety plan.</p>
-        
-        <!-- Live Waveform Canvas in Hero -->
+        <p class="hero-desc">Upload a call recording or paste a suspicious transcript. SentiCall detects psychological manipulation tactics in memory and generates a personalized immediate safety plan.</p>
         <canvas class="hero-waveform-canvas" id="hero-waveform-canvas"></canvas>
       </div>
 
-      <!-- 3-Step How It Works Bar -->
+      <!-- 3-Step Bar -->
       <div class="how-it-works-grid">
         <div class="how-step-card">
           <div class="how-step-num">1</div>
           <div class="how-step-text">
             <h4>Provide the Call</h4>
-            <p>Upload .mp3/.wav, record a voice snippet, or paste suspicious message text.</p>
+            <p>Upload .mp3/.wav, listen live on your device, or paste suspicious text.</p>
           </div>
         </div>
         <div class="how-step-card">
           <div class="how-step-num">2</div>
           <div class="how-step-text">
-            <h4>AI Multimodal Analysis</h4>
-            <p>Evaluates acoustic vocal tension, offline Whisper transcript, and 9 signature deception tactics.</p>
+            <h4>Empathetic AI Analysis</h4>
+            <p>Analyzes voice stress patterns, offline speech, and 9 signature deception tactics.</p>
           </div>
         </div>
         <div class="how-step-card">
           <div class="how-step-num">3</div>
           <div class="how-step-text">
             <h4>Get Your Safety Plan</h4>
-            <p>Interactive timeline with first-alert marker, customized immediate steps, and direct 1930 reporting.</p>
+            <p>Early-warning timeline, actionable steps, and direct 1930 helpline reporting.</p>
           </div>
         </div>
       </div>
@@ -131,15 +188,11 @@
       <!-- Analysis Workbench Card -->
       <div class="input-card">
         <div class="input-tabs">
-          <button class="input-tab-btn active" id="input-tab-upload" onclick="switchInputTab('upload')">
+          <button class="input-tab-btn active" id="input-tab-upload" data-action="switchInputTab" data-tab="upload">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
-            Upload Audio File
+            Upload Call File
           </button>
-          <button class="input-tab-btn" id="input-tab-mic" onclick="switchInputTab('mic')">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" x2="12" y1="19" x2="12" y2="22"></line></svg>
-            Record with Mic [P2]
-          </button>
-          <button class="input-tab-btn" id="input-tab-text" onclick="switchInputTab('text')">
+          <button class="input-tab-btn" id="input-tab-text" data-action="switchInputTab" data-tab="text">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path></svg>
             Paste Transcript / SMS
           </button>
@@ -147,15 +200,15 @@
 
         <!-- Panel A: File Upload -->
         <div class="input-panel active" id="panel-upload">
-          <div class="dropzone" id="audio-dropzone" onclick="document.getElementById('audio-file-input').click()">
+          <div class="dropzone" id="audio-dropzone" data-action="chooseFileInput">
             <svg class="dropzone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M9 18V5l12-2v13"></path>
               <circle cx="6" cy="18" r="3"></circle>
               <circle cx="18" cy="16" r="3"></circle>
             </svg>
             <div class="dropzone-title">Click to upload or drag & drop call recording</div>
-            <div class="dropzone-subtitle">Supports .mp3, .wav (up to 3 minutes recommended)</div>
-            <input type="file" id="audio-file-input" accept="audio/*,.mp3,.wav" style="display: none;" onchange="handleFileSelected(this)">
+            <div class="dropzone-subtitle">Supports MP3, WAV, OGG (Processed in memory & deleted immediately)</div>
+            <input type="file" id="audio-file-input" accept="audio/*,.mp3,.wav,.ogg" style="display: none;" onchange="handleFileSelected(this)">
           </div>
 
           <div class="file-selected-card" id="file-selected-preview">
@@ -163,26 +216,11 @@
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
               <span id="selected-file-name" style="font-weight: 700;">recording.mp3</span>
             </div>
-            <button class="btn-secondary" style="min-height: 36px; padding: 4px 10px;" onclick="clearSelectedFile()">Remove</button>
+            <button class="btn-secondary" style="min-height: 36px; padding: 4px 10px;" data-action="clearSelectedFile">Remove</button>
           </div>
         </div>
 
-        <!-- Panel B: Mic Recording -->
-        <div class="input-panel" id="panel-mic">
-          <div class="mic-record-panel">
-            <button class="mic-btn-circle" id="btn-mic-toggle" onclick="toggleMicRecording()">
-              <svg id="mic-icon-svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
-                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
-                <line x1="12" x2="12" y1="19" y2="22"></line>
-              </svg>
-            </button>
-            <div id="mic-status-text" style="font-weight: 700; color: var(--text-main); margin-bottom: 4px;">Tap to start recording</div>
-            <div style="font-size: 0.84rem; color: var(--text-muted);">Speak a sample script or play a clip aloud near your microphone. (Consent: audio stays strictly on this device)</div>
-          </div>
-        </div>
-
-        <!-- Panel C: Text Transcript -->
+        <!-- Panel B: Text Transcript -->
         <div class="input-panel" id="panel-text">
           <textarea class="transcript-textarea" id="transcript-input-field" placeholder="Paste the conversation transcript or suspicious message text here... (e.g. 'Hello, I am bank manager of SBI, your card is about to expire...')"></textarea>
         </div>
@@ -191,9 +229,9 @@
         <div class="action-row">
           <div style="font-size: 0.85rem; color: var(--text-muted); display: flex; align-items: center; gap: 6px;">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            Local Whisper ASR + Telephony Filtered XGBoost Ready
+            In-Memory Processing • No Server Call Retention
           </div>
-          <button class="btn-primary" id="btn-submit-analysis" onclick="runMainAnalysis()">
+          <button class="btn-primary" id="btn-submit-analysis" data-action="runMainAnalysis">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
             Evaluate Call Risk Now
           </button>
@@ -203,7 +241,7 @@
       <!-- Pre-Loaded Sample Calls Grid -->
       <div>
         <h3 class="sample-section-heading">Try a Real-World Sample Call (1-Click Instant Demo)</h3>
-        <p class="sample-section-sub">Select any sample below to evaluate in under 1 second using our pre-analyzed benchmark calls.</p>
+        <p class="sample-section-sub">Select any sample below to evaluate in under 1 second without uploading files.</p>
         <div class="samples-grid" id="samples-container">
           <!-- Populated dynamically by app.js -->
         </div>
@@ -212,14 +250,268 @@
     </section>
 
     <!-- ====================================================================
-         PAGE 2: CASE REPORT / RESULT VIEW
+         PAGE 2: LIVE LISTEN (ON-DEVICE)
+         ==================================================================== -->
+    <section class="page-section" id="page-live">
+      
+      <!-- Live Listen Setup Screen -->
+      <div id="live-setup-screen">
+        <div class="hero-card">
+          <div class="hero-pill">
+            <span class="nav-live-dot"></span> On-Device Privacy: Audio is processed on this device and is never uploaded
+          </div>
+          <h1 class="hero-title">Live Listen: Real-Time Scam Radar</h1>
+          <p class="hero-desc">SentiCall listens to your call live, transcribes speech in your browser, scores psychological risk as it happens, and warns you before you share confidential codes or money.</p>
+        </div>
+
+        <!-- Step A: Audio Source Selector -->
+        <div class="live-source-grid">
+          <div class="live-source-card active" id="source-card-mic" data-action="selectLiveSource" data-source="mic">
+            <div class="live-source-header">
+              <div class="live-source-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="22"></line></svg>
+              </div>
+              <span class="live-source-check" id="check-icon-mic">✓ Selected</span>
+            </div>
+            <h3>Listen through my microphone</h3>
+            <p>For calls on your phone placed on <b>speakerphone</b> on the table next to your computer.</p>
+            <div class="source-illustration">
+              <svg width="120" height="50" viewBox="0 0 120 50">
+                <rect x="10" y="8" width="24" height="38" rx="4" fill="#E2E8F0" stroke="#94A3B8" stroke-width="2"/>
+                <circle cx="22" cy="40" r="2" fill="#64748B"/>
+                <path d="M42 20 Q 52 25 42 30" fill="none" stroke="#2563EB" stroke-width="2"/>
+                <path d="M48 15 Q 62 25 48 35" fill="none" stroke="#2563EB" stroke-width="2"/>
+                <rect x="70" y="12" width="40" height="26" rx="2" fill="#F1F5F9" stroke="#64748B" stroke-width="2"/>
+                <rect x="65" y="38" width="50" height="4" rx="1" fill="#94A3B8"/>
+              </svg>
+            </div>
+            <div class="noisy-room-toggle-wrap">
+              <label class="switch-label">
+                <input type="checkbox" id="noisy-room-toggle" onchange="toggleNoisyRoomMode(this.checked)">
+                <span class="switch-slider"></span>
+                <span style="font-size: 0.85rem; font-weight: 600;">Noisy room filter</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="live-source-card" id="source-card-tab" data-action="selectLiveSource" data-source="tab">
+            <div class="live-source-header">
+              <div class="live-source-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <span class="live-source-check" id="check-icon-tab" style="display: none;">✓ Selected</span>
+            </div>
+            <h3>Listen to a browser tab</h3>
+            <p>For WhatsApp Web, Meet, Zoom or web calls in Chrome/Edge on this computer.</p>
+            <div class="source-illustration">
+              <div class="tab-audio-tip-badge">Important: Tick <b>"Share tab audio"</b> on prompt</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step B: Pre-Flight Check Panel -->
+        <div class="preflight-card">
+          <div class="preflight-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            Pre-Flight System Check (Must Pass Before Starting)
+          </div>
+          <div class="preflight-list">
+            <div class="preflight-item" id="pf-permission">
+              <span class="pf-status-dot" id="pf-dot-perm">⏳</span>
+              <div class="pf-text">
+                <b>Audio Permission:</b> <span id="pf-label-perm">Not requested yet</span>
+              </div>
+            </div>
+            <div class="preflight-item" id="pf-level">
+              <span class="pf-status-dot" id="pf-dot-level">⏳</span>
+              <div class="pf-text">
+                <b>Audio Input Detection:</b>
+                <canvas id="preflight-vu-meter" width="180" height="12" class="preflight-canvas"></canvas>
+              </div>
+            </div>
+            <div class="preflight-item" id="pf-model">
+              <span class="pf-status-dot" id="pf-dot-model">⏳</span>
+              <div class="pf-text">
+                <b>On-Device Whisper Model:</b> <span id="pf-label-model">Ready in browser memory</span>
+              </div>
+            </div>
+            <div class="preflight-item" id="pf-speed">
+              <span class="pf-status-dot" id="pf-dot-speed">⏳</span>
+              <div class="pf-text">
+                <b>Device Speed Test:</b> <span id="pf-label-speed">Pending test (RTF)</span>
+                <button class="btn-secondary btn-sm" id="btn-run-speed-test" data-action="runWorkerSpeedTest">Test Speed</button>
+              </div>
+            </div>
+            <div class="preflight-item" id="pf-support">
+              <span class="pf-status-dot" id="pf-dot-support">✓</span>
+              <div class="pf-text">
+                <b>Browser Capabilities:</b> AudioWorklet & Web Worker supported
+              </div>
+            </div>
+          </div>
+
+          <div class="preflight-action-row">
+            <div id="preflight-error-msg" class="preflight-error-banner" style="display: none;"></div>
+            <button class="btn-primary btn-lg" id="btn-start-live-listen" data-action="startLiveListenSession">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Start Live Protection
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Live Session Dashboard (Visible while listening) -->
+      <div id="live-active-dashboard" style="display: none;">
+        
+        <!-- Live Status Bar -->
+        <div class="live-status-bar">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <span class="live-pulse-indicator"></span>
+            <span class="state-pill state-calm" id="live-active-state-pill">Calm</span>
+            <span class="live-timer-text" id="live-session-timer">00:00</span>
+            <span class="live-source-pill" id="live-active-source-pill">Microphone</span>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <label class="switch-label" style="margin-right: 8px;">
+              <input type="checkbox" id="live-hide-transcript-toggle" onchange="toggleHideTranscript(this.checked)">
+              <span class="switch-slider"></span>
+              <span style="font-size: 0.8rem; font-weight: 600;">Hide transcript in public</span>
+            </label>
+            <button class="btn-danger" data-action="stopLiveListenSession">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect></svg>
+              Stop & Summarize
+            </button>
+          </div>
+        </div>
+
+        <!-- Heads-Up Banner (Amber Slide-In) -->
+        <div class="heads-up-slide-banner" id="live-heads-up-banner" style="display: none;">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+            <div>
+              <b style="color: #92400E;">Heads-up: Suspicious pressure detected.</b>
+              <div style="font-size: 0.85rem; color: #78350F;">The caller is rushing you. Do not share any verification code, OTP, or passwords.</div>
+            </div>
+          </div>
+          <button class="btn-secondary btn-sm" data-action="dismissHeadsUpBanner">Got It</button>
+        </div>
+
+        <!-- Split Layout: Transcript Left, Intelligence Right -->
+        <div class="live-split-grid">
+          
+          <!-- Left: Real-Time Transcript Stream -->
+          <div class="live-pane-card">
+            <div class="live-pane-header">
+              <h3>Live Transcript Stream</h3>
+              <span class="live-vad-badge" id="live-vad-badge">Listening...</span>
+            </div>
+            
+            <div class="live-transcript-container" id="live-transcript-box">
+              <div id="live-transcript-text" class="live-transcript-content">
+                <span class="waiting-speech-placeholder">Waiting for speech... Place phone near microphone and speak naturally.</span>
+              </div>
+            </div>
+
+            <!-- Non-English Language Beta Subline -->
+            <div class="live-lang-subline" id="live-lang-subline" style="display: none;">
+              <span style="font-weight: 700;">Language Detected:</span> <span id="live-lang-name">English</span> • 
+              <span style="color: var(--text-muted);">Scoring runs on synchronized English translation</span>
+            </div>
+          </div>
+
+          <!-- Right: Real-Time Intelligence & Gauge -->
+          <div class="live-pane-card">
+            <div class="live-pane-header">
+              <h3>Live Scam Risk Gauge</h3>
+              <span style="font-size: 0.78rem; font-weight: 700; color: var(--text-muted);" id="live-sensitivity-label">Balanced Sensitivity</span>
+            </div>
+
+            <!-- Live Circular Risk Gauge -->
+            <div class="live-gauge-wrap">
+              <svg class="gauge-svg" viewBox="0 0 100 100" style="width: 140px; height: 140px;">
+                <circle class="gauge-circle-bg" cx="50" cy="50" r="42"></circle>
+                <circle class="gauge-circle-fill" id="live-gauge-stroke" cx="50" cy="50" r="42" stroke="#059669" stroke-dasharray="264" stroke-dashoffset="264"></circle>
+              </svg>
+              <div class="gauge-text-center">
+                <div class="gauge-score-num" id="live-gauge-num">0</div>
+                <div class="gauge-score-label">RISK</div>
+              </div>
+            </div>
+
+            <!-- Checklist of Warning Signs -->
+            <div class="warning-checklist-card">
+              <div class="checklist-title">Signature Manipulation Warning Signs</div>
+              <ul class="checklist-items">
+                <li class="checklist-item" id="chk-authority">
+                  <span class="chk-icon">⚪</span> Claims to be your bank or official authority
+                </li>
+                <li class="checklist-item" id="chk-urgency">
+                  <span class="chk-icon">⚪</span> Creating pressure or tight time limit
+                </li>
+                <li class="checklist-item" id="chk-secrecy">
+                  <span class="chk-icon">⚪</span> Asking you to keep it secret or stay on line
+                </li>
+                <li class="checklist-item" id="chk-credentials">
+                  <span class="chk-icon">⚪</span> Demanding OTP, PIN, password or money transfer
+                </li>
+                <li class="checklist-item" id="chk-remote">
+                  <span class="chk-icon">⚪</span> Asking to install AnyDesk or share screen
+                </li>
+              </ul>
+            </div>
+
+            <!-- Mini Real-Time Timeline Ticker -->
+            <div class="live-ticker-wrap">
+              <div style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); margin-bottom: 4px;">Risk Trajectory Ticker</div>
+              <div class="live-ticker-bar" id="live-ticker-bar"></div>
+            </div>
+
+            <div class="live-voice-fp-notice">
+              Voice fingerprint acoustic analysis is available for uploaded recordings.
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- DANGER FULL-WIDTH TAKEOVER OVERLAY -->
+      <div class="danger-takeover-overlay" id="danger-takeover-overlay" style="display: none;">
+        <div class="danger-takeover-card">
+          <div class="danger-pulse-icon">🚨</div>
+          <h1 class="danger-takeover-title">SCAM ALERT: HANG UP NOW</h1>
+          <p class="danger-takeover-desc" id="danger-takeover-msg">
+            The caller is impersonating an authority and attempting to extract confidential credentials. Do NOT share any OTP, code or money.
+          </p>
+
+          <button class="btn-huge-hangup" data-action="userClicksHangUpAction">
+            📞 HANG UP CALL NOW
+          </button>
+
+          <div class="danger-actions-row">
+            <button class="btn-secondary" data-action="openPersonalizedActionPlan">
+              What to Do Now →
+            </button>
+            <button class="btn-outline-dismiss" data-action="dismissDangerAlert">
+              Not a scam (Dismiss)
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ====================================================================
+         PAGE 3: CASE REPORT / RESULT VIEW
          ==================================================================== -->
     <section class="page-section" id="page-result">
       
       <!-- Sticky Verdict & Summary Bar -->
       <div class="sticky-verdict-bar">
         <div class="verdict-left">
-          <!-- Circular Gauge -->
           <div class="gauge-container">
             <svg class="gauge-svg" viewBox="0 0 100 100">
               <circle class="gauge-circle-bg" cx="50" cy="50" r="42"></circle>
@@ -239,29 +531,32 @@
             </div>
             <h2 id="verdict-heading-text">High Likelihood of a Voice Scam</h2>
             <p class="verdict-summary-p" id="verdict-summary-sentence">This call appears to impersonate an official representative and asks for your secret OTP.</p>
+            <div class="lead-time-callout-badge" id="lead-time-callout-badge" style="display: none;">
+              <!-- Lead time sentence e.g. "SentiCall warned you 18 seconds before the caller asked for your OTP" -->
+            </div>
           </div>
         </div>
 
         <div class="verdict-actions">
-          <button class="btn-primary" onclick="downloadCaseReportPDF()">
+          <button class="btn-primary" data-action="downloadCaseReportPDF">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
             Download Case Report (PDF)
           </button>
-          <button class="btn-secondary" onclick="shareWithFamilyWhatsApp()">
+          <button class="btn-secondary" data-action="shareWithFamilyWhatsApp">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
             Share with Family
           </button>
-          <button class="btn-secondary" onclick="saveCurrentCaseToHistory()">
+          <button class="btn-secondary" data-action="saveCurrentCaseToHistory">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
             Save to My Cases
           </button>
         </div>
       </div>
 
-      <!-- View Mode Switcher -->
+      <!-- View Mode Bar -->
       <div class="view-mode-bar">
         <div style="font-size: 0.88rem; font-weight: 700; color: var(--text-muted); display: flex; align-items: center; gap: 8px;">
-          <button class="btn-secondary" style="min-height: 32px; padding: 2px 10px;" onclick="speakVerdictReadAloud()">
+          <button class="btn-secondary" style="min-height: 32px; padding: 2px 10px;" data-action="speakVerdictReadAloud">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
             Read Aloud
           </button>
@@ -269,54 +564,42 @@
         </div>
 
         <div class="view-mode-toggle">
-          <button class="view-mode-btn" id="btn-mode-simple" onclick="switchViewMode('simple')">Simple View</button>
-          <button class="view-mode-btn active" id="btn-mode-insight" onclick="switchViewMode('insight')">Insight View</button>
+          <button class="view-mode-btn" id="btn-mode-simple" data-action="switchViewMode" data-mode="simple">Simple View</button>
+          <button class="view-mode-btn active" id="btn-mode-insight" data-action="switchViewMode" data-mode="insight">Insight View</button>
         </div>
       </div>
 
-      <!-- Section 1: Immediate Action Plan & State Chips (Shown in both Simple & Insight) -->
+      <!-- Section 1: Immediate Action Plan & Chips -->
       <div class="action-plan-card" id="card-action-plan">
         <div class="plan-header">
           <div class="plan-title">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
             <span id="plan-headline-text">What You Should Do Right Now</span>
           </div>
-          <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">Personalized for this scam type</span>
+          <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">Personalized for this threat</span>
         </div>
 
-        <!-- "What did you already do?" Chips -->
         <div class="victim-state-chips-wrap">
           <div class="victim-chips-title">What happened on this call? (Select all that apply to adapt your steps)</div>
           <div class="chips-grid">
-            <span class="state-chip active" data-chip="just_listened" onclick="toggleVictimChip('just_listened')">✓ Just listened</span>
-            <span class="state-chip" data-chip="shared_otp" onclick="toggleVictimChip('shared_otp')">+ Shared an OTP or PIN</span>
-            <span class="state-chip" data-chip="shared_documents" onclick="toggleVictimChip('shared_documents')">+ Shared Aadhaar or PAN</span>
-            <span class="state-chip" data-chip="sent_money" onclick="toggleVictimChip('sent_money')">+ Sent money / UPI</span>
-            <span class="state-chip" data-chip="installed_app" onclick="toggleVictimChip('installed_app')">+ Installed an app / shared screen</span>
-            <span class="state-chip" data-chip="clicked_link" onclick="toggleVictimChip('clicked_link')">+ Clicked a link</span>
-            <span class="state-chip" data-chip="shared_photos" onclick="toggleVictimChip('shared_photos')">+ Shared private photos</span>
+            <span class="state-chip active" data-chip="just_listened" data-action="toggleVictimChip" data-chip="just_listened">✓ Just listened</span>
+            <span class="state-chip" data-chip="shared_otp" data-action="toggleVictimChip" data-chip="shared_otp">+ Shared an OTP or PIN</span>
+            <span class="state-chip" data-chip="shared_documents" data-action="toggleVictimChip" data-chip="shared_documents">+ Shared Aadhaar or PAN</span>
+            <span class="state-chip" data-chip="sent_money" data-action="toggleVictimChip" data-chip="sent_money">+ Sent money / UPI</span>
+            <span class="state-chip" data-chip="installed_app" data-action="toggleVictimChip" data-chip="installed_app">+ Installed an app / shared screen</span>
+            <span class="state-chip" data-chip="clicked_link" data-action="toggleVictimChip" data-chip="clicked_link">+ Clicked a link</span>
+            <span class="state-chip" data-chip="shared_photos" data-action="toggleVictimChip" data-chip="shared_photos">+ Shared private photos</span>
           </div>
         </div>
 
-        <!-- Do This Now 3-Step Grid -->
-        <div class="do-now-grid" id="do-now-steps-container">
-          <!-- Populated dynamically by app.js -->
-        </div>
+        <div class="do-now-grid" id="do-now-steps-container"></div>
+        <div class="adapted-steps-container" id="adapted-steps-container"></div>
 
-        <!-- Extra Adapted Steps based on Chips -->
-        <div class="adapted-steps-container" id="adapted-steps-container">
-          <!-- Populated dynamically when user selects chips -->
-        </div>
-
-        <!-- Safe Replies Collapsible -->
         <div class="safe-replies-box">
           <div class="safe-replies-title">Safe Replies You Can Say on the Next Call:</div>
-          <div id="safe-replies-list">
-            <!-- Populated dynamically -->
-          </div>
+          <div id="safe-replies-list"></div>
         </div>
 
-        <!-- Golden Rule Footer -->
         <div class="golden-rule-footer">
           <b>The SentiCall Golden Rule:</b> <i>When in doubt, hang up and call back on a number you trust.</i>
         </div>
@@ -325,17 +608,16 @@
       <!-- INSIGHT VIEW ONLY BLOCKS -->
       <div id="insight-view-blocks">
         
-        <!-- Section 2: Call Story Timeline & WaveSurfer & Live Replay -->
+        <!-- Timeline & Waveform -->
         <div class="timeline-card" id="card-call-story">
           <div class="timeline-header">
             <div class="timeline-title">Call Story Timeline & Early Detection</div>
-            <button class="live-replay-btn" id="btn-live-replay" onclick="toggleLiveReplayMode()">
+            <button class="live-replay-btn" id="btn-live-replay" data-action="toggleLiveReplayMode">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
               Watch It as If It Were Live
             </button>
           </div>
 
-          <!-- Live Alert Overlay Banner -->
           <div class="live-replay-alert-banner" id="live-replay-alert-banner">
             <div class="live-alert-left">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
@@ -344,17 +626,15 @@
                 <p id="live-lead-time-notice">SentiCall would have warned you 14.5 seconds before the OTP request.</p>
               </div>
             </div>
-            <button class="btn-hangup-now" onclick="stopLiveReplay()">Hang Up Now</button>
+            <button class="btn-hangup-now" data-action="stopLiveReplay">Hang Up Now</button>
           </div>
 
-          <!-- Waveform Canvas -->
           <div class="waveform-wrap">
             <canvas class="waveform-canvas" id="timeline-waveform-canvas"></canvas>
           </div>
 
-          <!-- Audio Controls Bar -->
           <div class="timeline-audio-controls">
-            <button class="audio-play-btn" id="btn-audio-play-pause" onclick="toggleAudioPlayback()">
+            <button class="audio-play-btn" id="btn-audio-play-pause" data-action="toggleAudioPlayback">
               <svg id="play-pause-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
             </button>
             <span class="audio-time-label" id="audio-time-display">0:00 / 0:18</span>
@@ -363,33 +643,23 @@
             </div>
           </div>
 
-          <!-- Milestone Markers Track -->
-          <div class="markers-track" id="timeline-markers-track">
-            <!-- Populated dynamically -->
-          </div>
+          <div class="markers-track" id="timeline-markers-track"></div>
         </div>
 
-        <!-- Section 3: Why We Think So & Highlighted Transcript -->
+        <!-- Highlighted Transcript & Tactics -->
         <div class="evidence-section-grid">
-          
-          <!-- Left: Highlighted Transcript -->
           <div class="transcript-box-card">
             <div class="transcript-header">
               <h3 style="font-size: 1.1rem;">Transcript & Word-Level Signals</h3>
               <span style="font-size: 0.8rem; color: var(--text-muted);">Red shading indicates higher scam weight</span>
             </div>
-            <div class="transcript-body" id="transcript-highlight-body">
-              <!-- Rendered with word shading and pills -->
-            </div>
+            <div class="transcript-body" id="transcript-highlight-body"></div>
           </div>
 
-          <!-- Right: Detected Tactics Cards -->
-          <div class="tactics-column" id="tactics-cards-column">
-            <!-- Populated dynamically -->
-          </div>
+          <div class="tactics-column" id="tactics-cards-column"></div>
         </div>
 
-        <!-- Section 4: Voice Fingerprint Cards -->
+        <!-- Voice Fingerprint -->
         <div class="voice-fp-card" id="card-voice-fingerprint">
           <div style="display: flex; align-items: center; justify-content: space-between;">
             <h3 style="font-size: 1.15rem;">Acoustic Voice Fingerprint</h3>
@@ -397,38 +667,37 @@
               Telephony Standardized (16 kHz, 300–3400 Hz)
             </span>
           </div>
-          <div class="voice-fp-grid" id="voice-fp-grid">
-            <!-- Populated dynamically with rhythm, pressure, and background cards -->
-          </div>
+          <div class="voice-fp-grid" id="voice-fp-grid"></div>
         </div>
 
-        <!-- Section 5: Matches a Known Scam Script & Scam Atlas Link -->
+        <!-- Reference Scripts -->
         <div class="nearest-script-card">
           <div style="display: flex; align-items: center; justify-content: space-between;">
             <h3 style="font-size: 1.15rem;">Reference Database Script Matches</h3>
-            <button class="btn-secondary" style="min-height: 32px; padding: 2px 10px;" onclick="switchPage('atlas')">
+            <button class="btn-secondary" style="min-height: 32px; padding: 2px 10px;" data-action="switchPage" data-page="atlas">
               Open Full Scam Atlas →
             </button>
           </div>
-          <div id="nearest-script-container">
-            <!-- Populated dynamically -->
-          </div>
+          <div id="nearest-script-container"></div>
         </div>
 
-      </div> <!-- /insight-view-blocks -->
+      </div>
 
     </section>
 
     <!-- ====================================================================
-         PAGE 3: MY CASES & SCAM RADAR
+         PAGE 4: MY CASES & SCAM RADAR
          ==================================================================== -->
     <section class="page-section" id="page-cases">
       <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px;">
         <div>
           <h2>My Cases & Scam Radar</h2>
-          <p style="color: var(--text-muted); font-size: 0.95rem;">All analyses saved locally on this machine with privacy-first persistence.</p>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">Personal cases stored strictly on this device in encrypted IndexedDB (WebCrypto AES-GCM).</p>
         </div>
-        <button class="btn-secondary" onclick="clearAllCasesHistory()">Clear All History</button>
+        <div style="display: flex; gap: 8px;">
+          <button class="btn-secondary btn-sm" data-action="exportEncryptedBackup">Export Encrypted Backup</button>
+          <button class="btn-secondary btn-sm text-danger" data-action="clearAllCasesHistory">Clear All Cases</button>
+        </div>
       </div>
 
       <!-- Radar Stats Cards -->
@@ -459,14 +728,14 @@
             <th>Date & Time</th>
             <th>Threat Type</th>
             <th>Risk Score</th>
-            <th>Evidence Strength</th>
+            <th>Mode</th>
             <th>Actions</th>
           </tr>
         </thead>
         <tbody id="cases-table-body">
           <tr>
             <td colspan="6" style="text-align: center; color: var(--text-muted); padding: 30px;">
-              No saved cases yet. Try analyzing a sample call or upload a recording!
+              No saved cases yet. Try analyzing a sample call or start a live listen session!
             </td>
           </tr>
         </tbody>
@@ -474,21 +743,19 @@
     </section>
 
     <!-- ====================================================================
-         PAGE 4: SCAM ATLAS
+         PAGE 5: SCAM ATLAS
          ==================================================================== -->
     <section class="page-section" id="page-atlas">
       <div style="margin-bottom: 24px;">
         <h2>The Scam Atlas</h2>
-        <p style="color: var(--text-muted); font-size: 0.95rem;">Encyclopedia of 12 documented voice fraud tactics, anatomy, red flags, and counter-actions.</p>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">Encyclopedia of documented voice fraud tactics, anatomy, red flags, and counter-actions.</p>
       </div>
 
-      <div class="atlas-grid" id="atlas-grid-container">
-        <!-- Populated dynamically from /api/atlas -->
-      </div>
+      <div class="atlas-grid" id="atlas-grid-container"></div>
     </section>
 
     <!-- ====================================================================
-         PAGE 5: PRACTICE MODE ("Spot the Scam")
+         PAGE 6: PRACTICE MODE
          ==================================================================== -->
     <section class="page-section" id="page-practice">
       <div class="practice-arena-card">
@@ -498,45 +765,40 @@
           Listen to or read a simulated phone call. Tap the big red <b>"Hang Up Now"</b> button as soon as you identify deceptive manipulation.
         </p>
 
-        <div id="practice-game-container">
-          <!-- Game State Rendered by app.js -->
-        </div>
+        <div id="practice-game-container"></div>
       </div>
     </section>
 
     <!-- ====================================================================
-         PAGE 6: MODEL INSIGHTS ("How reliable is SentiCall?")
+         PAGE 7: MODEL INSIGHTS
          ==================================================================== -->
     <section class="page-section" id="page-insights">
       <div style="margin-bottom: 24px;">
         <h2>How Reliable is SentiCall?</h2>
-        <p style="color: var(--text-muted); font-size: 0.95rem;">Transparent, leakage-controlled machine learning evaluation with genuine audit metrics.</p>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">Transparent, leakage-controlled machine learning evaluation with genuine audit metrics and sample sizes.</p>
       </div>
 
-      <!-- Plain Language Reliability Card -->
       <div class="insights-card">
-        <h3 style="font-size: 1.15rem; margin-bottom: 10px;">Plain-Language Summary for Non-Technical Users</h3>
+        <h3 style="font-size: 1.15rem; margin-bottom: 10px;">Truthful Reliability & Statistical Confidence Intervals</h3>
         <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 14px;">
-          SentiCall uses a dual-channel multimodal engine that reads conversational transcripts and listens to standardized telephony acoustic cues. 
-          To prevent deceptive shortcuts, models were evaluated using <b>GroupKFold cross-validation</b> where identical script templates were strictly isolated between training and testing.
+          SentiCall's models are tested against hard negatives (legitimate bank warnings, delivery pins, appointment reminders) and evaluated using strict GroupKFold cross-validation to isolate unique script templates.
         </p>
         <div style="display: flex; gap: 20px; flex-wrap: wrap;">
           <div style="background: var(--primary-light); padding: 12px 18px; border-radius: 8px;">
             <div style="font-size: 1.4rem; font-weight: 800; color: var(--primary);" id="metric-text-f1">93.0%</div>
-            <div style="font-size: 0.78rem; font-weight: 700; color: var(--text-muted);">Text Model Group F1</div>
+            <div style="font-size: 0.78rem; font-weight: 700; color: var(--text-muted);" id="metric-text-f1-ci">Text Model Group F1 (n=5927)</div>
           </div>
           <div style="background: var(--risk-low-pill); padding: 12px 18px; border-radius: 8px;">
             <div style="font-size: 1.4rem; font-weight: 800; color: var(--risk-low);" id="metric-lead-time">7.1s</div>
-            <div style="font-size: 0.78rem; font-weight: 700; color: var(--text-muted);">Median First Alert Lead Time</div>
+            <div style="font-size: 0.78rem; font-weight: 700; color: var(--text-muted);">Median Early Warning Lead Time</div>
           </div>
           <div style="background: var(--risk-moderate-pill); padding: 12px 18px; border-radius: 8px;">
-            <div style="font-size: 1.4rem; font-weight: 800; color: var(--risk-moderate);" id="metric-hard-negatives">100%</div>
-            <div style="font-size: 0.78rem; font-weight: 700; color: var(--text-muted);">Hard Negative Specificity</div>
+            <div style="font-size: 1.4rem; font-weight: 800; color: var(--risk-moderate);" id="metric-hard-negatives">60.0%</div>
+            <div style="font-size: 0.78rem; font-weight: 700; color: var(--text-muted);" id="metric-hard-negatives-ci">Hard Negative Specificity (n=30, 95% CI [42.3%, 75.4%])</div>
           </div>
         </div>
       </div>
 
-      <!-- Evaluation Charts Grid -->
       <div class="insights-card">
         <h3 style="font-size: 1.15rem; margin-bottom: 14px;">Evaluation Artifacts & Reliability Curves</h3>
         
@@ -556,38 +818,319 @@
         </div>
       </div>
 
-      <!-- Audio Recording-Bias Audit Card -->
       <div class="insights-card">
         <h3 style="font-size: 1.15rem; margin-bottom: 10px;">Audio Recording-Bias Audit</h3>
         <p style="font-size: 0.92rem; color: var(--text-body); line-height: 1.6;" id="audio-bias-explanation-text">
-          Raw audio datasets often carry recording biases (sample rates, microphone formats). Preprocessing all audio with a standardized Telephony Profile (16 kHz mono, 300–3400 Hz bandpass, -20 dBFS loudness norm) reduced dumb baseline accuracy from 72.44% to 59.56%, ensuring the classifier relies on genuine vocal tension and temporal rhythm.
+          Raw audio datasets often carry recording biases. Preprocessing all audio with a standardized Telephony Profile (16 kHz mono, 300–3400 Hz bandpass, -20 dBFS loudness norm) reduced baseline acoustic shortcutting from 72.44% to 59.56%, ensuring the classifier relies on genuine vocal tension and temporal rhythm.
         </p>
       </div>
 
     </section>
 
+    <!-- ====================================================================
+         PAGE 8: PRIVACY CENTER
+         ==================================================================== -->
+    <section class="page-section" id="page-privacy">
+      <div style="margin-bottom: 24px;">
+        <h2>Privacy & Security Center</h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">Truthful data boundaries, on-device encryption, and complete control over your personal data.</p>
+      </div>
+
+      <!-- Plain Language Promise -->
+      <div class="privacy-promise-card">
+        <div class="privacy-promise-badge">Our Privacy Commitment</div>
+        <h3 style="font-size: 1.4rem; color: var(--text-main); margin-bottom: 8px;">
+          "We don't sell your data. We don't listen to your calls on our servers. You can delete everything at any time."
+        </h3>
+        <p style="font-size: 0.95rem; color: var(--text-body); line-height: 1.6;">
+          Calls are strictly personal. SentiCall v3 is engineered so that live calls are transcribed directly inside your browser on this machine. Hosted file uploads are analyzed transiently in server memory and wiped immediately.
+        </p>
+      </div>
+
+      <!-- Data Inventory Table -->
+      <div class="insights-card">
+        <h3 style="font-size: 1.2rem; margin-bottom: 14px;">Data Inventory: What SentiCall Keeps vs Never Keeps</h3>
+        <table class="inventory-table">
+          <thead>
+            <tr>
+              <th style="width: 50%;">What We Store (Account & Protection Only)</th>
+              <th style="width: 50%;">What We NEVER Store, Share or Sell</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>✓ Your Google account name, email & avatar link</td>
+              <td>❌ Call audio recordings or microphone input</td>
+            </tr>
+            <tr>
+              <td>✓ Account role and non-sensitive UI settings</td>
+              <td>❌ Live call transcripts or words spoken</td>
+            </tr>
+            <tr>
+              <td>✓ Timestamp of your informed consent agreement</td>
+              <td>❌ Contacts, address book or phone dialer logs</td>
+            </tr>
+            <tr>
+              <td>✓ Security audit logs (login, logout, delete events)</td>
+              <td>❌ Physical GPS location or device hardware IDs</td>
+            </tr>
+            <tr>
+              <td>✓ Encrypted personal cases stored on <i>this device only</i></td>
+              <td>❌ Advertising identifiers or third-party tracking cookies</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Real Data Paths by Mode Card -->
+      <div class="insights-card">
+        <h3 style="font-size: 1.2rem; margin-bottom: 12px;">Real Data Flow by Mode</h3>
+        <div class="data-flow-grid">
+          <div class="data-flow-box">
+            <h4>Live Listen Mode</h4>
+            <div class="data-flow-pill on-device">100% On-Device Data Path</div>
+            <p>Microphone audio streams into an AudioWorklet and Web Worker inside your browser. Whisper transcribes speech via WebAssembly. Zero audio or transcript leaves your device.</p>
+          </div>
+          <div class="data-flow-box">
+            <h4>Upload Analysis Mode</h4>
+            <div class="data-flow-pill in-memory">Transient In-Memory Server Processing</div>
+            <p>Uploaded recordings are processed in a private, owner-only server temp directory. After extracting acoustic signals, the file is immediately deleted in a finally block. Never stored in a database.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Account Controls Card -->
+      <div class="insights-card">
+        <h3 style="font-size: 1.2rem; margin-bottom: 14px;">Your Data Controls</h3>
+        <div class="privacy-controls-grid">
+          <div class="control-box">
+            <h4>Export My Data</h4>
+            <p>Download a complete JSON export of your server-held account and consent records.</p>
+            <button class="btn-secondary" data-action="exportServerUserData">Export JSON Data</button>
+          </div>
+          <div class="control-box">
+            <h4>Wipe This Device</h4>
+            <p>Permanently delete all locally encrypted cases and cached settings stored in this browser.</p>
+            <button class="btn-secondary text-danger" data-action="wipeLocalDeviceData">Wipe Local Storage</button>
+          </div>
+          <div class="control-box">
+            <h4>Delete Account</h4>
+            <p>Permanently delete your account, session tokens, consent record and server logs.</p>
+            <button class="btn-danger" data-action="openDeleteAccountModal">Delete My Account</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Security Events List -->
+      <div class="insights-card">
+        <h3 style="font-size: 1.2rem; margin-bottom: 12px;">Security Activity (Last 20 Events)</h3>
+        <div id="security-events-container">
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Sign in to view your account's security events.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ====================================================================
+         PAGE 9: ADMIN HEALTH (Counts only)
+         ==================================================================== -->
+    <section class="page-section" id="page-admin">
+      <div style="margin-bottom: 24px;">
+        <h2>System Health Dashboard (Admin Only)</h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">High-level system counts only. Zero access to user call content or transcripts.</p>
+      </div>
+
+      <div class="radar-stats-grid">
+        <div class="radar-stat-card">
+          <div class="stat-num" id="admin-total-users">0</div>
+          <div class="stat-label">Registered Users</div>
+        </div>
+        <div class="radar-stat-card">
+          <div class="stat-num" id="admin-active-sessions">0</div>
+          <div class="stat-label">Active Sessions</div>
+        </div>
+        <div class="radar-stat-card">
+          <div class="stat-num" id="admin-security-events">0</div>
+          <div class="stat-label">Security Events Logged</div>
+        </div>
+        <div class="radar-stat-card">
+          <div class="stat-num" id="admin-server-uptime">0s</div>
+          <div class="stat-label">Server Uptime</div>
+        </div>
+      </div>
+    </section>
+
   </main>
+
+  <!-- ====================================================================
+       MODALS
+       ==================================================================== -->
+
+  <!-- 1. Google Sign-In Modal -->
+  <div class="modal-overlay" id="modal-signin" style="display: none;">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Sign In to SentiCall</h3>
+        <button class="btn-icon" data-action="closeSignInModal">✕</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.95rem; color: var(--text-body); margin-bottom: 20px;">
+          Sign in securely with your Google account to access Live Listen on your devices, view My Cases, and personalize your emergency bank contacts.
+        </p>
+
+        <!-- Official Google Sign-In Button -->
+        <a class="btn-google-official" href="/auth/google/login" id="btn-google-oauth-link">
+          <svg class="google-icon-svg" viewBox="0 0 24 24" width="20" height="20">
+            <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+            <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.34 24 12 24z"/>
+            <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+            <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.34 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+          </svg>
+          Sign in with Google
+        </a>
+
+        <div class="signin-privacy-note">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          We only request openid, email and profile. We never request access to your Gmail, Drive or Contacts.
+        </div>
+
+        <div style="text-align: center; margin-top: 16px;">
+          <a href="#" style="color: var(--primary); font-size: 0.88rem; font-weight: 600;" data-action="closeSignInModalAndAnalyze">
+            Try sample calls without signing in →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Onboarding Consent Modal (3 short screens) -->
+  <div class="modal-overlay" id="modal-onboarding" style="display: none;">
+    <div class="modal-card">
+      <div class="onboarding-step-indicator">
+        <span class="step-dot active" id="ob-dot-1"></span>
+        <span class="step-dot" id="ob-dot-2"></span>
+        <span class="step-dot" id="ob-dot-3"></span>
+      </div>
+
+      <!-- Screen 1: What SentiCall Does -->
+      <div class="onboarding-screen active" id="ob-screen-1">
+        <h3>What SentiCall Does</h3>
+        <p>SentiCall is your empathetic "Third Voice". It detects voice fraud tactics in real time to protect you and your loved ones from digital arrest threats, fake bank calls, and OTP extraction traps.</p>
+        <button class="btn-primary" data-action="nextOnboardingScreen" data-step="2">Next: What We Never Do →</button>
+      </div>
+
+      <!-- Screen 2: What SentiCall Never Does -->
+      <div class="onboarding-screen" id="ob-screen-2" style="display: none;">
+        <h3>What SentiCall Never Does</h3>
+        <p>We believe your calls are private:</p>
+        <ul style="font-size: 0.9rem; line-height: 1.8; margin-bottom: 20px;">
+          <li>❌ We never store your audio or live transcripts on servers</li>
+          <li>❌ We never sell or share your data with advertisers</li>
+          <li>❌ We never train AI models on your private conversations</li>
+        </ul>
+        <button class="btn-primary" data-action="nextOnboardingScreen" data-step="3">Next: Your Agreement →</button>
+      </div>
+
+      <!-- Screen 3: Consent Checkbox -->
+      <div class="onboarding-screen" id="ob-screen-3" style="display: none;">
+        <h3>Informed Consent</h3>
+        <p>Before using SentiCall, please review and confirm:</p>
+        <label class="consent-checkbox-label">
+          <input type="checkbox" id="consent-agree-checkbox">
+          <span>I agree to use SentiCall solely for calls I participate in and understand that live listening runs locally on my device.</span>
+        </label>
+        <button class="btn-primary" id="btn-finish-onboarding" data-action="completeOnboardingConsent">
+          Agree & Get Started
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. App Lock Passphrase Modal -->
+  <div class="modal-overlay" id="modal-app-lock" style="display: none;">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>App Lock: Protect Your Saved Cases</h3>
+        <button class="btn-icon" data-action="closeAppLockModal">✕</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.9rem; color: var(--text-body); margin-bottom: 14px;">
+          Set a passphrase to encrypt your personal cases with WebCrypto AES-GCM (PBKDF2 600,000 rounds). The app will automatically lock after 5 idle minutes.
+        </p>
+        <div style="background: var(--risk-moderate-pill); padding: 10px; border-radius: 6px; font-size: 0.82rem; color: #92400E; margin-bottom: 16px;">
+          <b>Important:</b> A forgotten passphrase means locally encrypted cases cannot be recovered. We do not hold a master key.
+        </div>
+        <input type="password" id="input-app-lock-passphrase" class="app-lock-input" placeholder="Enter passphrase (min 6 characters)">
+        <button class="btn-primary" style="width: 100%; margin-top: 12px;" data-action="saveAppLockPassphrase">Save & Lock</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Unlock Passphrase Prompt -->
+  <div class="modal-overlay" id="modal-unlock-prompt" style="display: none;">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>App Locked</h3>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.9rem; color: var(--text-body); margin-bottom: 14px;">
+          SentiCall locked automatically after 5 idle minutes to protect your privacy. Enter your passphrase to unlock:
+        </p>
+        <input type="password" id="input-unlock-passphrase" class="app-lock-input" placeholder="Enter your passphrase">
+        <div id="unlock-error-msg" style="color: var(--risk-high); font-size: 0.85rem; margin-top: 8px; display: none;"></div>
+        <button class="btn-primary" style="width: 100%; margin-top: 12px;" data-action="unlockAppWithPassphrase">Unlock</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Delete Account Modal -->
+  <div class="modal-overlay" id="modal-delete-account" style="display: none;">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 style="color: var(--risk-high);">Permanently Delete Account</h3>
+        <button class="btn-icon" data-action="closeDeleteAccountModal">✕</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.92rem; color: var(--text-body); margin-bottom: 14px;">
+          This will permanently delete your user profile, all active session tokens, your consent record, and security logs from our database.
+        </p>
+        <p style="font-size: 0.88rem; font-weight: 700; color: var(--text-main); margin-bottom: 8px;">
+          To confirm, type <b>DELETE</b> below:
+        </p>
+        <input type="text" id="input-delete-confirm" class="app-lock-input" placeholder="Type DELETE to confirm">
+        <button class="btn-danger" style="width: 100%; margin-top: 14px;" data-action="submitAccountDeletion">
+          Permanently Delete Everything
+        </button>
+      </div>
+    </div>
+  </div>
 
   <!-- Loading State Modal -->
   <div class="loading-overlay" id="loading-overlay">
     <div class="loading-card">
       <div class="loading-spinner"></div>
       <div class="loading-status-text" id="loading-status-text">Analyzing Voice Call...</div>
-      <div class="loading-subtext" id="loading-subtext">Extracting acoustic features and running offline Whisper transcription</div>
+      <div class="loading-subtext" id="loading-subtext">Extracting acoustic features and running offline speech analysis</div>
     </div>
   </div>
 
-  <!-- Audio Player Elements for Previews and Playback -->
+  <!-- Audio Player Element for Previews -->
   <audio id="app-audio-player" style="display: none;"></audio>
 
   <!-- Footer -->
   <footer class="app-footer">
     <div class="container">
-      <p style="margin-bottom: 6px;"><b>SentiCall v2 — The Third Voice</b>: AI Web-Based Platform Against Voice Fraud</p>
+      <p style="margin-bottom: 6px;"><b>SentiCall v3 — The Third Voice</b>: AI Web-Based Platform Against Voice Fraud</p>
       <p style="font-size: 0.78rem;">National Cyber Crime Helpline: <b>1930</b> • Portal: <a href="https://cybercrime.gov.in" target="_blank" rel="noopener">cybercrime.gov.in</a> • Chakshu: <a href="https://sancharsaathi.gov.in/sfc/" target="_blank" rel="noopener">sancharsaathi.gov.in/sfc</a></p>
     </div>
   </footer>
 
-  <script src="/static/app.js?v=2.0.1"></script>
+  <!-- Self-Hosted Application Scripts -->
+  <script src="/static/crypto_store.js?v=3.0.0"></script>
+  <script src="/static/live_risk_engine.js?v=3.0.0"></script>
+  <script src="/static/app.js?v=3.0.0"></script>
+
+  <!-- Service Worker Registration -->
+  <!-- Service Worker registered via static app.js for CSP compliance -->
 </body>
 </html>

@@ -1,0 +1,31 @@
+{
+  "measured_at": "2026-10-11 12:47:58",
+  "environment": "Local Machine Benchmark",
+  "model_performance": {
+    "model_load_time_ms": 2567.12,
+    "real_time_factor_rtf": 0.055,
+    "rtf_status": "Faster than real-time"
+  },
+  "early_detection": {
+    "median_lead_time_seconds": 26.6,
+    "median_first_alert_seconds": 16.9,
+    "scam_calls_evaluated_n": 8,
+    "lead_time_description": "SentiCall triggered alert 26.6s before secret credential request"
+  },
+  "robustness": {
+    "hard_negative_specificity_pct": 86.7,
+    "hard_negative_sample_size_n": 30,
+    "hard_negative_95_ci": [
+      70.3,
+      94.7
+    ],
+    "hard_negative_display": "86.7% (n=30, 95% CI [70.3%, 94.7%])",
+    "normal_calls_specificity_pct": 100.0,
+    "normal_calls_sample_size_n": 10,
+    "normal_calls_95_ci": [
+      72.2,
+      100.0
+    ],
+    "normal_calls_display": "100.0% (n=10, 95% CI [72.2%, 100.0%])"
+  }
+}
